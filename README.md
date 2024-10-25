@@ -1,42 +1,21 @@
-# rv2.0.1: 02/01/24
-Just download the file called 'export.html'.<br>
-It's the only one you need to run it.<br><br>
-<sub>yee</sub><br><br>
-```
-                  TSRA
-               RATSRAT
-              RATS  TS
-             RAT    SR                                      SRA
-           SRAT    SRA                                     SRAT
-          SRAT     RAT                      ATS           SR TS
-         SRA       ATSRATSRATS        RATSRATSR         TSR TSR
-        SRA        TSR     TSRAT RATSRATSR  SRA        TSR TSR
-       SRA          RA        TSRATS       SRA         SRA SRA
-     TSRA                   ATS           SRA         SRA SRA
-    TSR                                  SRA          RAT RAT
-    SRA    TS                           SRATS         ATS ATS
-    RA    TSRA       ATS                   SRAT       TSR TSR
-    ATS   SRAT      ATSRA                    TSRA     SRAT RAT
-    TSR   RATS      TSRATS                     ATSR     TSR TSRA
-     RAT   TSR      SRATSR                      SRAT    SRAT RATSR
-      TSR  SRA      RATSRA      RA                TSR    ATSR   RATS
-       RAT           TSRA    TSRA                  RAT     RATS   SRAT
-        TSR               RATS                      TSR     TSRA    TSR
-        SRA            TSRAT                         RAT      ATS    RAT
-         ATS         ATSRA                           ATSR      SR     TSR
-          SRA      RATSR                              SRA      RAT     RAT
-           ATS  TSRAT RAT                              ATS     ATS     ATS
-           TSRATSR     TSR                             TSR    ATS      TSR
-            RAT        SRA                             SRA   ATS       SRA
-                      SRA                              RAT RATS       SRA
-                     SRA                                TSRATS        RAT
-                    SRA                                  RA          RATS
-                   SRA                                              RATS
-                   RAT                                             RATS
-                  RAT                                            SRATS
-                 RAT                                      ATSRATSRAT
-                RAT                                  ATSRATSRATSR
-                ATSRATSR                        ATSRATSRA
-                      RATSRATSRATSRATSRATSRATSRATSRA
-                            ATSRATSRA
-```
+# :rat: RATS Version 3!
+**RATS**, `(Codename Rv3)`, is a community-based, open-source project aimed at collecting and preserving free HTML-based media, from books to games to whatever else.
+
+## :file_folder: Quick Start
+Head to the [Exports](./exports/) folder to download a version.<br>
+> [!IMPORTANT]
+> **Read the tutorials below depending on your version.<br>
+> They contain crucial info for getting some of them running.**
+
+> [!NOTE]
+> Some exports may be broken. We'll try and fix them soon.<br>
+> If you experience any bugs, glitches, or problems, head to the [Issues Page](https://github.com/Skadinkle/rats/issues). 
+
+## :busts_in_silhouette: The Dev. Team
+* :bat: **Scadaddle** - _Owner, Lead Programmer & Artist, Wiki Editor_
+* :bomb: **The Czar Bomba** - _Site Gatherer, UNB & Rv1 Beta Tester_
+* :candy: **Care** - _Site Gatherer, Additional Artist, Wiki Editor_
+* :spider: **Pes** - _Splash Text Editor, Quality Assurance, Additional Support_
+* :rabbit2: **mr springs** - _Splash Text Editor, Additional Support_
+* :duck: **The Cevinator** - _he was there_
+* :skull: **Jack** - _New UNB Owner, Site Finder, <sub>"Straight White Male" :moyai:</sub>_
