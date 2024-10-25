@@ -15,6 +15,7 @@ Head to the [Exports](./exports/) folder to download a version.<br>
 * :bat: **Scadaddle** - _Owner, Lead Programmer & Artist, Wiki Editor_
 * :bomb: **The Czar Bomba** - _Site Gatherer, UNB & Rv1 Beta Tester_
 * :candy: **Care** - _Site Gatherer, Additional Artist, Wiki Editor_
+* :butterfly: **Nyx.e** - _Concept Artist, Playtester_
 * :spider: **Pes** - _Splash Text Editor, Quality Assurance, Additional Support_
 * :rabbit2: **mr springs** - _Splash Text Editor, Additional Support_
 * :duck: **The Cevinator** - _he was there_
