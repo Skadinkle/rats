@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Chilanka");
+@import url("https://fonts.googleapis.com/css?family=Mansalva");
+:root {
+		/* General */
+	--g-bodyMain: #005945;
+	--g-cardMain: #006e55;
+	--g-cardMain-hover: #00705b;
+	--g-textLight: #fff1dc;
+	--g-textEmphasis: #ffeac8;
+	--g-textEmphasis-border: #fdc998;
+	--g-textDim: #fee0c4;
+
+		/* Title Card */
+	--t-skyUpper: #d9bc9e;
+	--t-skyLower: #ffebd5;
+
+		/* Shadows */
+	--s-cardMain: #00473375;
+	--s-cardMain-hover: #00473380;
+}
+
+body {
+	font-family: "Chilanka", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Mansalva";
+}
+header #headerLogo {
+	font-size: 20px;
+}
+header ul li {
+	margin-left: 18.5px;
+}
+header ul li a {
+	font-size: 13px;
+}
+section img#sunnySky {
+	-webkit-filter: saturate(200%) sepia();
+	filter: saturate(200%) sepia();
+	mix-blend-mode: multiply;
+	opacity: 50%;
+}
+section img#hills {
+	-webkit-filter: opacity(90%) hue-rotate(45deg);
+	filter: opacity(90%) hue-rotate(45deg);
+}
+section img#sunnyGround {
+	-webkit-filter: sepia(50%) hue-rotate(30deg);
+	filter: sepia(50%) hue-rotate(30deg);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions img {
+	-webkit-filter: sepia() hue-rotate(120deg) saturate(150%);
+	filter: sepia() hue-rotate(120deg) saturate(150%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	-webkit-filter: none;
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	font-size: 13px;
+	margin-top: 3px;
+}
+#settings_title, #settings_bar h2 {
+	font-size: 27px;
+}
+footer {
+	line-height: 22.5px;
+}
+footer a {
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}

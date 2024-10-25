@@ -1,0 +1,182 @@
+@import url("./../settings/antialiasing.css"); /* Imports */
+
+body {
+	background: linear-gradient(to top left, var(--g-bodyMain), var(--g-cardMain))!important;
+	min-height: 200vh;
+	overflow-x: hidden;
+}
+a, p, h1 { /* Text & Link Properties */
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--g-textLight);
+}
+div a {
+	font-size: 15px;
+	color: var(--g-textLight);
+}
+div a:visited {
+	color: var(--g-textEmphasis);
+}
+div a:hover, #parentDirLinkBox a:hover {
+	text-decoration: underline;
+}
+
+h1, #parentDirLinkBox { /* Header Information */
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+h1 {
+	border-bottom: 1px solid var(--g-cardMain-hover);
+	font-weight: 600;
+	padding-top: 72.5px;
+	white-space: nowrap;
+}
+#fileName:hover, #fileDate:hover, #fileSize:hover, #detailsColumn:hover {
+	text-decoration: none;
+}
+#fileHeader {
+	font-weight: 700;
+}
+#fileName {
+	left: 100px;
+	right: auto!important;
+}
+#fileSize {
+	right: 250px!important;
+}
+#fileDirectory {
+	padding-bottom: 10px;
+	padding-top: 25px;
+}
+
+#parentDirLinkBox a, div a { /* Files & Folders */
+	opacity: 90%;
+	padding-inline-start: 24px;
+	text-decoration: none;
+	user-select: auto;
+}
+#folderStuff {
+	visibility: collapse;
+	height: 0;
+}
+div#indent1 a {
+	margin-left: 10px;
+}
+div#indent2 a {
+	margin-left: 20px;
+}
+#icon-css {
+	background: url("./../../images/fileSys/css.png") left top no-repeat;
+}
+#icon-data {
+	background: url("./../../images/fileSys/data.png") left top no-repeat;
+}
+#icon-folder {
+	background: url("./../../images/fileSys/folder.png") left top no-repeat;
+	color: var(--g-textLight);
+	cursor: pointer;
+}
+#icon-folder.visited {
+	color: var(--g-textEmphasis);
+}
+#icon-aw {
+	background: url("./../../images/fileSys/aw.png") left top no-repeat;
+}
+#icon-bin {
+	background: url("./../../images/fileSys/bin.png") left top no-repeat;
+}
+#icon-csv {
+	background: url("./../../images/fileSys/csv.png") left top no-repeat;
+}
+#icon-d {
+	background: url("./../../images/fileSys/d.png") left top no-repeat;
+}
+#icon-data {
+	background: url("./../../images/fileSys/data.png") left top no-repeat;
+}
+#icon-debug {
+	background: url("./../../images/fileSys/debug.png") left top no-repeat;
+}
+#icon-dict {
+	background: url("./../../images/fileSys/dict.png") left top no-repeat;
+}
+#icon-fetch {
+	background: url("./../../images/fileSys/fetch.png") left top no-repeat;
+}
+#icon-gif, #icon-jpg, #icon-jpeg, #icon-png, #icon-webp {
+	background: url("./../../images/fileSys/image.png") left top no-repeat;
+}
+#icon-html {
+	background: url("./../../images/fileSys/html.png") left top no-repeat;
+}
+#icon-ico {
+	background: url("./../../images/fileSys/ico.png") left top no-repeat;
+}
+#icon-js {
+	background: url("./../../images/fileSys/js.png") left top no-repeat;
+}
+#icon-json {
+	background: url("./../../images/fileSys/json.png") left top no-repeat;
+}
+#icon-map {
+	background: url("./../../images/fileSys/map.png") left top no-repeat;
+}
+#icon-mem {
+	background: url("./../../images/fileSys/mem.png") left top no-repeat;
+}
+#icon-nexe {
+	background: url("./../../images/fileSys/nexe.png") left top no-repeat;
+}
+#icon-nmf {
+	background: url("./../../images/fileSys/nmf.png") left top no-repeat;
+}
+#icon-nochromeos {
+	background: url("./../../images/fileSys/nochromeos.png") left top no-repeat;
+}
+#icon-parent {
+	background: url("./../../images/fileSys/parent.png") left top no-repeat;
+}
+#icon-pb {
+	background: url("./../../images/fileSys/pb.png") left top no-repeat;
+}
+#icon-so {
+	background: url("./../../images/fileSys/so.png") left top no-repeat;
+}
+#icon-svg {
+	background: url("./../../images/fileSys/svg.png") left top no-repeat;
+}
+#icon-symbols {
+	background: url("./../../images/fileSys/symbols.png") left top no-repeat;
+}
+#icon-tmp {
+	background: url("./../../images/fileSys/tmp.png") left top no-repeat;
+}
+#icon-ts {
+	background: url("./../../images/fileSys/ts.png") left top no-repeat;
+}
+#icon-unknown {
+	background: url("./../../images/fileSys/unknown.png") left top no-repeat;
+}
+#icon-wasm {
+	background: url("./../../images/fileSys/wasm.png") left top no-repeat;
+}
+#icon-webm {
+	background: url("./../../images/fileSys/webm.png") left top no-repeat;
+}
+#icon-wav {
+	background: url("./../../images/fileSys/wav.png") left top no-repeat;
+}
+#icon-zvoice {
+	background: url("./../../images/fileSys/zvoice.png") left top no-repeat;
+}
+#detailsColumn, #fileName, #fileDate, #fileSize {
+	color: var(--g-textLight);
+	position: absolute;
+	padding-inline-start: 32px;
+	text-align: end;
+	white-space: nowrap;
+	right: 30px;
+}
+#detailsColumn:nth-child(odd) {
+	right: 250px;
+}

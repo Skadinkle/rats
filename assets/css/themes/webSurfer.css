@@ -1,0 +1,103 @@
+:root {
+		/* General */
+	--g-bodyMain: #330033;
+	--g-cardMain: #330066;
+	--g-cardMain-hover: #333399;
+	--g-textLight: #ffffcc;
+	--g-textEmphasis: #ffff00;
+	--g-textEmphasis-border: #ffcc00;
+	--g-textDim: #ccccff;
+
+		/* Title Card */
+	--t-skyUpper: #999999;
+	--t-skyLower: #000000;
+
+		/* Shadows */
+	--s-cardMain: #000000;
+	--s-cardMain-hover: #000000;
+
+		/* Special */
+	--x-cursor: url("./../../images/themes/webSurfer_cursor.png");
+	--x-cloud: url("./../../images/themes/webSurfer_clouds.jpeg");
+	--x-header: url("./../../images/themes/webSurfer_header.png");
+	--x-body: url("./../../images/themes/webSurfer_body.gif");
+	--x-card: url("./../../images/themes/webSurfer_card.png");
+	--x-settingmenu: url("./../../images/themes/webSurfer_setMenu.png");
+	--x-settingbar: url("./../../images/themes/webSurfer_setBar.gif");
+	--x-settingbutton: url("./../../images/themes/webSurfer_setButton.png");
+
+}
+
+body, :hover, :link, img.squishable:hover, :active, #pageOptions a#item, #settings_bar ul li a, #settings_branding a, #settings_colorcorrection a, #settings_themes a, #settings_credits a {
+	cursor: var(--x-cursor), auto;
+}
+body {
+	background: linear-gradient(#ffffff80, #ffffff80), var(--x-cloud);
+	font-family: Arial, Helvetica, sans-serif;
+}
+header {
+	background: var(--x-header);
+	background-size: contain;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: Arial;
+	font-weight: 700;
+}
+header #headerLogo {
+	font-size: 22px;
+}
+header ul li {
+	margin-left: 17px;
+}
+header ul li a {
+	font-size: 12px;
+}
+section::before {
+	background: none;
+}
+section img#sunnySky, section img#sunnyClouds, section img#hills, section img#sunnyGround, section img#overlay {
+	image-rendering: auto;
+}
+section img#sunnySky {
+	mix-blend-mode: multiply;
+}
+section img#hills {
+	filter: contrast(150%);
+}
+section img#sunnyGround {
+	filter: contrast(150%);
+}
+section img#overlay {
+	mix-blend-mode: multiply;
+}
+#mainBody {
+	background: linear-gradient(#000000bf, #000000bf), var(--x-body);
+}
+#pageOptions a#item, #infoBox {
+	background: linear-gradient(#00000080, #00000080), var(--x-card);
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions img {
+	-webkit-filter: saturate(150%);
+	filter: saturate(150%);
+}
+#pageOptions p {
+	font-size: 12px;
+}
+#settings_menu {
+	background: linear-gradient(#00000080, #00000080), var(--x-settingmenu);
+}
+#settings_bar {
+	background: linear-gradient(#000000bf, #000000bf), var(--x-settingbar);
+}
+#settings_branding a, #settings_colorcorrection a, #settings_themes a, #settings_credits a {
+	background: var(--x-settingbutton);
+}
+footer {
+	line-height: 20px;
+}
+footer a {
+	font-size: 14px;
+}

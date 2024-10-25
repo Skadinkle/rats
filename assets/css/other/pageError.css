@@ -1,0 +1,49 @@
+html, body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+p, li, h1, h2, h3, header, #headerLogo, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #pageOptions img, img.squishable, #settings_branding, #settings_colorcorrection, #settings_general, #settings_themes, #settings_achievements, #settings_credits, #settings_creditsmember, footer {
+	visibility: hidden;
+}
+
+#pageError {
+	background: linear-gradient(#00000080, #000000bf 100vh);
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	height: 100vh;
+	margin-top: 50px;
+	text-align: center;
+}
+#pageError h2 {
+	font-family: "Indie Flower";
+	font-size: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#pageError p#errorlog {
+	color: #bfbfbf;
+	margin: 0;
+	margin-bottom: 50px;
+}
+#pageError p, h2 {
+	color: #ffffff;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+#pageError p a:link, p a:visited {
+	color: #00ffff;
+	font-weight: 900;
+	padding: 0;
+}
+#pageError img {
+	width: 7.5%;
+}
+#pageError footer {
+	bottom: 30px;
+	position: absolute;
+	right: 50px;
+}
+#pageError footer a {
+	color: #bfbfbf;
+	text-decoration: none;
+}

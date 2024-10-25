@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope");
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
+:root {
+		/* General */
+	--g-bodyMain: #222222;
+	--g-cardMain: #323232;
+	--g-cardMain-hover: #653a3b;
+	--g-textLight: #ededed;
+	--g-textEmphasis: #ff9395;
+	--g-textEmphasis-border: #a00c0e;
+	--g-textDim: #fc6669;
+
+		/* Title Card */
+	--t-skyUpper: #878787;
+	--t-skyLower: #d7d7d7;
+
+		/* Shadows */
+	--s-cardMain: #13131375;
+	--s-cardMain-hover: #13131380;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 50vh);
+	font-family: "Architects Daughter", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Annie Use Your Telescope";
+	font-weight: bolder;
+}
+header #headerLogo {
+	font-size: 32px;
+}
+header ul li {
+	margin-left: 22.5px;
+}
+header ul li a {
+	letter-spacing: 1px;
+}
+section img#sunnyClouds {
+	filter: opacity(50%) hue-rotate(125deg);
+}
+section img#hills {
+	filter: opacity(90%) hue-rotate(22.5deg) grayscale();
+}
+section img#sunnyGround {
+	filter: grayscale();
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions img {
+	filter: sepia() hue-rotate(-45deg) saturate(200%) grayscale(50%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+footer a {
+	font-size: 16px;
+	letter-spacing: 0.8px;
+}

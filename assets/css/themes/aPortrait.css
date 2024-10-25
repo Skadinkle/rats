@@ -1,0 +1,73 @@
+:root {
+		/* General */
+	--g-bodyMain: #222123;
+	--g-cardMain: #343035;
+	--g-cardMain-hover: #422b3e;
+	--g-textLight: #eaf2e5;
+	--g-textEmphasis: #beed9e;
+	--g-textEmphasis-border: #96c44e;
+	--g-textDim: #b9b5b7;
+
+		/* Title Card */
+	--t-skyUpper: #9db4f5;
+	--t-skyLower: #754bca;
+
+		/* Shadows */
+	--s-cardMain: #13121475;
+	--s-cardMain-hover: #13121480;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 150vh);
+}
+header #headerLogo, #funkyTitleLarge {
+	scale: -100%;
+}
+section img#sunnySky {
+	filter: blur(5px) sepia(50%) grayscale(50%) hue-rotate(45deg);
+}
+section img#sunnyClouds {
+	filter: blur(0.5px) sepia(50%) grayscale(50%) hue-rotate(45deg) opacity(50%);
+}
+section img#hills {
+	filter: blur(0.25px) sepia(50%) grayscale(50%) hue-rotate(67.5deg) opacity(90%);
+	margin-top: 150px;
+}
+section img#sunnyGround {
+	filter: sepia(50%) grayscale(50%) hue-rotate(45deg);
+}
+img {
+	rotate: 180deg;
+	transform: scaleX(-100%);
+}
+#mainBody {
+	filter: hue-rotate(45deg);
+}
+#pageOptions img {
+	filter: invert() grayscale();
+}
+#pageOptions img#svg, #raidenTheRat {
+	-webkit-filter: none;
+	filter: none;
+}
+img.squishable:hover {
+	rotate: 182deg;
+	transform: scale(-105%, 95%);
+}
+img.squishable:active {
+	rotate: 183deg;
+	transform: scale(-110%, 90%);
+}
+#settings_achievements a.unlocked img, #settings_credits a img {
+	filter: hue-rotate(-33.75deg);
+}
+#settings_creditsmember img {
+	filter: hue-rotate(-33.75deg) drop-shadow(0 0 10px var(--g-bodyMain));
+}
+#settings_creditsmember img:hover {
+	filter: hue-rotate(-33.75deg) drop-shadow(0 5px 10px var(--g-bodyMain));
+	rotate: 185deg;
+}
+footer {
+	transform: scale(100%, -100%);
+}

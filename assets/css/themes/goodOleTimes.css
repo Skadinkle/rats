@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee");
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand+SC");
+:root {
+		/* General */
+	--g-bodyMain: #44240d;
+	--g-cardMain: #4f3113;
+	--g-cardMain-hover: #533317;
+	--g-textLight: #f3e3b9;
+	--g-textEmphasis: #f4d068;
+	--g-textEmphasis-border: #bb823f;
+	--g-textDim: #c5a788;
+
+		/* Title Card */
+	--t-skyUpper: #7d7d8d;
+	--t-skyLower: #e9eba8;
+
+		/* Shadows */
+	--s-cardMain: #38190d75;
+	--s-cardMain-hover: #38190d80;
+}
+
+body {
+	font-family: "Handlee", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Patrick Hand SC";
+}
+header #headerLogo {
+	font-size: 30px;
+}
+header ul li {
+	margin-left: 20.5px;
+}
+header ul li a {
+	font-size: 15px;
+}
+section img#sunnySky, section img#overlay, img.squishable {
+	filter: sepia();
+}
+section img#hills {
+	filter: opacity(90%) sepia(50%) hue-rotate(7.5deg);
+}
+section img#sunnyGround {
+	filter: saturate(80%) sepia(50%) hue-rotate(-15deg);
+}
+section img#overlay {
+	mix-blend-mode: multiply;
+}
+#pageOptions img {
+	filter: sepia() saturate(200%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	margin-top: 2px;
+}
+#settings_title, #settings_bar h2 {
+	font-size: 32px;
+}
+footer a {
+	font-size: 14px;
+	letter-spacing: 1.9px;
+}

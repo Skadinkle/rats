@@ -1,0 +1,90 @@
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	ACHIEVEMENTS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#trophy {
+	animation: trophyGet 3.5s ease;
+	color: var(--g-textLight);
+	filter: opacity(0);
+	bottom: 150px;
+	height: 50px;
+	padding-left: 10px;
+	pointer-events: none;
+	position: fixed;
+	right: -500px;
+	text-align: right;
+	width: 500px;
+	z-index: 1001;
+}
+#trophy #bg {
+	background: linear-gradient(to left, var(--a-placeholder-lower), var(--a-placeholder-upper));
+	filter: brightness(.75) saturate(.75) opacity(.75);
+	height: 50px;
+	margin: 0;
+	margin-right: -50px;
+	margin-top: -50px;
+	padding: 0;
+	transform: skew(-50deg);
+	z-index: 1;
+}
+#trophy img {
+	animation: trophyGetImg 3.5s ease;
+	background: var(--s-shadow50);
+	border: solid;
+	border-color: var(--g-textLight);
+	border-width: 3px;
+	height: 100px;
+	image-rendering: pixelated;
+	margin: 15px;
+	margin-top: 0;
+	width: 100px;
+}
+#trophy p {
+	padding-right: 15px;
+	position: relative;
+	z-index: 5;
+}
+#trophy #message {
+	color: var(--g-textEmphasis);
+	filter: brightness(2);
+	font-style: italic;
+	font-weight: 700;
+	padding-top: 5px;
+	text-decoration: underline;
+}
+#trophy #title {
+	padding-bottom: 5px;
+}
+@keyframes trophyGet {
+	0%, 100% {
+		right: -500px;
+		filter: opacity(0);
+	}
+	10%, 95% {
+		right: 0vw;
+		filter: opacity(1);
+	}
+	97.5% {
+		filter: opacity(.25);
+	}
+}
+@keyframes trophyGetImg {
+	from, 5% {
+		margin-right: 0;
+		filter: opacity(0);
+		rotate: 0deg;
+	}
+	5% {
+		rotate: 0deg;
+	}
+	15%, 85% {
+		margin-right: 15px;
+		filter: opacity(1);
+	}
+	20%, 95% {
+		rotate: -5deg;
+	}
+	95%, to {
+		margin-right: -15vw;
+		filter: opacity(0);
+	}
+}

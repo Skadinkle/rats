@@ -1,0 +1,183 @@
+@import url("https://unpkg.com/xp.css@0.2.3/dist/98.css");
+@import url("./../other/antialiasing.css");
+:root {
+		/* General */
+	--g-bodyMain: #808080;
+	--g-cardMain: #c0c0c0;
+	--g-cardMain-hover: #808080;
+	--g-textLight: #000000;
+	--g-textEmphasis: #ffff00;
+	--g-textEmphasis-border: #ff8000;
+	--g-textDim: #000000;
+
+		/* Title Card */
+	--t-skyUpper: #ffffff;
+	--t-skyLower: #ffffff;
+
+		/* Shadows */
+	--s-cardMain: transparent;
+	--s-cardMain-hover: transparent;
+
+		/* Special */
+	--x-grid: url("./../../images/themes/paintbrush_grid.png");
+}
+
+body {
+	background: var(--t-skyUpper);
+	font-family: Arial, Helvetica, sans-serif;
+}
+header {
+	background: var(--g-cardMain);
+	border-color: var(--g-cardMain-hover);
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	border-radius: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+}
+header #headerLogo, header #headerLogo:hover {
+	background: transparent;
+	border-radius: 0;
+}
+header #headerLogo, header ul li a {
+	color: var(--g-textLight);
+	transition: 0s;
+}
+header #headerLogo {
+	font-size: 22px;
+}
+header #headerLogo:hover, header ul li a:hover, header ul li a.active, header ul li a#active, #pageOptions a#item, #video-menu ul li, #settings_bar ul li a, #settings_branding a, #settings_colorcorrection a, #settings_themes a, #settings_credits a, #settings_creditsmember ul li a {
+	background: var(--g-cardMain);
+	border-color: var(--t-skyUpper) var(--g-cardMain-hover) var(--g-cardMain-hover) var(--t-skyUpper);
+	border-radius: 0;
+	border-style: ridge;
+	border-width: 1px;
+	color: var(--g-textLight);
+	transition: 0s;
+}
+header ul li {
+	margin-left: 17.5px;
+}
+header ul li a {
+	font-size: 13px;
+}
+header ul li a:hover, header ul li a.active, header ul li a#active {
+	transition: 0s;
+	padding: 5px 11.6px;
+}
+header ul li::first-letter, header ul li a.active::first-letter, header ul li a#active::first-letter {
+	text-decoration: underline;
+}
+section img#sunnyClouds {
+	filter: opacity(0);
+}
+section img#sunnyGround {
+	filter: saturate(50%) contrast(200%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#funkyTitleLarge::first-letter {
+	text-decoration: underline;
+}
+#infoBox {
+	background: transparent;
+	border-radius: 0;
+	border-style: dotted;
+	border-width: 1px;
+}
+#infoBox h2, h2#pageOptionsName {
+	color: var(--g-textLight);
+	text-decoration: none;
+}
+#infoBox h2::first-letter, #pageOptions p::first-letter, #infoHeader::first-letter {
+	text-decoration: underline;
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions a#item {
+	text-decoration: none;
+	transition: 0s;
+}
+#pageOptions a#item:hover, #settings_bar ul li a:hover, #settings_branding a:hover, #settings_colorcorrection a:hover, #settings_themes a:hover, #settings_creditsmember ul li a:hover {
+	background: var(--x-grid);
+	border-color: var(--g-cardMain-hover) var(--g-cardMain) var(--g-cardMain) var(--g-cardMain-hover);
+	border-radius: 0;
+	border-width: 1px;
+	color: var(--s-text-light);
+	rotate: 0deg;
+	transform: scale(100%, 100%);
+}
+#pageOptions a:link img, #pageOptions a:visited img {
+	border-style: none;
+}
+#pageOptions img, #video-menu ul li:hover, #settings_credits a img, #settings_creditsmember img, #settings_colorcorrection img, #settings_general img {
+	border-color: var(--g-cardMain-hover) var(--g-cardMain) var(--g-cardMain) var(--g-cardMain-hover);
+	border-radius: 0;
+	border-style: ridge;
+	border-width: 1px;
+	filter: none;
+}
+#pageOptions p {
+	color: var(--g-textLight);
+	font-size: 11px;
+	text-decoration: none;
+}
+#raidenTheRat {
+	mix-blend-mode: normal;
+}
+#video-main {
+	background: var(--g-cardMain);
+}
+#video-player {
+	border-radius: 0;
+}
+#video-menu ul li:hover {
+	font-weight: 500;
+}
+#settings_title, #settings_bar h2 {
+	font-weight: 900;
+}
+#settings_linebreak {
+	background: transparent;
+	border-radius: 0;
+	border-style: dotted;
+	border-width: 1px;
+	opacity: 1;
+}
+#settings_bar ul li a {
+	color: var(--g-textLight);
+	cursor: pointer;
+	font-weight: 700;
+	line-height: 5px;
+	padding: 3.666px;
+	position: absolute;
+	width: 293.69px;
+}
+#settings_bar ul li a:hover {
+	font-size: 13px;
+}
+#settings_branding a:hover, #settings_colorcorrection a:hover, #settings_themes a:hover {
+	font-size: 11px;
+}
+#settings_colorcorrection img, #settings_general img {
+	background: var(--x-grid);
+	filter: none;
+}
+#settings_credits a:hover {
+	filter: brightness(75%);
+	mix-blend-mode: luminosity;
+	scale: 100%;
+}
+#settings_creditsmember ul li a {
+	width: 683px;
+}
+footer {
+	line-height: 20px;
+}
+footer a {
+	font-size: 14px;
+}

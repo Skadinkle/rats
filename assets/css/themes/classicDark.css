@@ -1,0 +1,52 @@
+:root {
+		/* General */
+	--g-bodyMain: #282828;
+	--g-cardMain: #333333;
+	--g-cardMain-hover: #3d3d3d;
+	--g-textLight: #dedede;
+	--g-textEmphasis: #a8a8a8;
+	--g-textEmphasis-border: #282828;
+	--g-textDim: #c3c3c3;
+
+		/* Title Card */
+	--t-skyUpper: #000000;
+	--t-skyLower: #171717;
+
+		/* Shadows */
+	--s-cardMain: #00000075;
+	--s-cardMain-hover: #00000075;
+}
+
+section img#sunnySky {
+	-webkit-filter: saturate(200%) grayscale() contrast(30%);
+	filter: saturate(200%) grayscale() contrast(30%);
+}
+section img#sunnyClouds {
+	-webkit-filter: opacity(25%) grayscale();
+	filter: opacity(25%) grayscale();
+	mix-blend-mode: soft-light;
+}
+section img#hills {
+	-webkit-filter: opacity(90%) grayscale() brightness(30%) hue-rotate(22.5deg);
+	filter: opacity(90%) grayscale() brightness(30%) hue-rotate(22.5deg);
+}
+section img#sunnyGround {
+	-webkit-filter: saturate(80%) grayscale() brightness(50%);
+	filter: saturate(80%) grayscale() brightness(50%);
+}
+#pageOptions img {
+	-webkit-filter: grayscale() brightness(75%);
+	filter: grayscale() brightness(75%);
+}
+section img#overlay {
+	mix-blend-mode: overlay;
+	opacity: 10%;
+}
+#settings_linebreak {
+	background: var(--g-textDim);
+	opacity: 20%;
+}
+#settings_credits a img, #settings_creditsmember img {
+	-webkit-filter: grayscale(25%) brightness(90%);
+	filter: grayscale(25%) brightness(90%);
+}

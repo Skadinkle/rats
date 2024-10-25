@@ -1,0 +1,80 @@
+:root {
+		/* General */
+	--g-bodyMain: #0e0e0e;
+	--g-cardMain: #131313;
+	--g-cardMain-hover: #151515;
+	--g-textLight: #ffffff;
+	--g-textEmphasis: #ff9000;
+	--g-textEmphasis-border: #573100;
+	--g-textDim: #ffffff;
+
+		/* Title Card */
+	--t-skyUpper: #ff9000;
+	--t-skyLower: #0e0e0e;
+
+		/* Shadows */
+	--s-cardMain: #00000075;
+	--s-cardMain-hover: #00000080;
+}
+
+body {
+	background: var(--t-skyLower);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+	background: var(--t-skyUpper);
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: bolder;
+}
+header #headerLogo {
+	font-size: 24px;
+}
+header ul li a, header ul li a.fa, header ul li a.fa:hover, header ul li a.fa#active {
+	color: var(--g-bodyMain);
+}
+header ul li {
+	margin-left: 13px;
+}
+header ul li a {
+	font-size: 14px;
+}
+section img#sunnySky {
+	filter: sepia() hue-rotate(-30deg) saturate(200%);
+	mix-blend-mode: multiply;
+}
+section img#sunnyClouds {
+	filter: opacity(50%);
+	mix-blend-mode: hard-light;
+}
+section img#hills {
+	filter: opacity(90%) hue-rotate(22.5deg);
+}
+section img#sunnyGround {
+	filter: sepia() hue-rotate(-15deg) saturate(500%);
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions a#item, .credits-options a#item {
+	border-color: var(--g-textEmphasis);
+	border-style: solid;
+	border-width: 1px;
+}
+#pageOptions img {
+	filter: sepia() hue-rotate(-30deg) saturate(500%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	font-size: 12px;
+}
+footer a {
+	line-height: 20px;
+}
+footer a {
+	font-size: 14px;
+}

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Asul");
+@import url("https://fonts.googleapis.com/css?family=Atma");
+:root {
+		/* General */
+	--g-bodyMain: #28182c;
+	--g-cardMain: #462246;
+	--g-cardMain-hover: #5f2456;
+	--g-textLight: #ffc1d8;
+	--g-textEmphasis: #ff4b8d;
+	--g-textEmphasis-border: #77124d;
+	--g-textDim: #be4772;
+
+		/* Title Card */
+	--t-skyUpper: #ff8db7;
+	--t-skyLower: #ffdfe7;
+
+		/* Shadows */
+	--s-cardMain: #0a060b75;
+	--s-cardMain-hover: #0a060b80;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 75vh, var(--t-skyUpper) 100vh);
+	font-family: "Asul", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Atma";
+	font-weight: bolder;
+}
+header #headerLogo {
+	font-size: 27px;
+}
+header ul li {
+	margin-left: 22px;
+}
+header ul li a {
+	font-size: 14px;
+}
+section img#hills {
+	filter: opacity(90%) saturate(150%) hue-rotate(-125deg);
+}
+section img#sunnyGround {
+	filter: saturate(200%) sepia() hue-rotate(-45deg) grayscale(50%);
+	mix-blend-mode: difference;
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+section #funkyTitleLarge {
+	letter-spacing: 5px;
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions img {
+	filter: sepia() hue-rotate(-90deg) saturate(150%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	font-size: 12px;
+}
+footer a {
+	font-size: 13px;
+	letter-spacing: 1.6px;
+}

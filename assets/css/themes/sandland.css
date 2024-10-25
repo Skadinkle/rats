@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Itim");
+@import url("https://fonts.googleapis.com/css?family=Neucha");
+:root {
+		/* General */
+	--g-bodyMain: #6a2c00;
+	--g-cardMain: #7c4000;
+	--g-cardMain-hover: #964800;
+	--g-textLight: #ffffba;
+	--g-textEmphasis: #ffff8d;
+	--g-textEmphasis-border: #ffc038;
+	--g-textDim: #ffe078;
+
+		/* Title Card */
+	--t-skyUpper: #c39854;
+	--t-skyLower: #ffffad;
+
+		/* Shadows */
+	--s-cardMain: #55170075;
+	--s-cardMain-hover: #55170080;
+
+		/* Special */
+	--x-cardTrans: #7c4000cc;
+	--x-cardTrans-hover: #964800cc;
+	--x-stone: url("./../../images/themes/sandland_stone.jpg");
+
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 50vh);
+	font-family: "Itim", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Neucha";
+	font-weight: bolder;
+}
+header #headerLogo {
+	font-size: 30px;
+}
+header ul li {
+	margin-left: 18px;
+}
+header ul li a {
+	letter-spacing: 1px;
+}
+section img#hills {
+	filter: opacity(90%) saturate(150%) sepia() hue-rotate(22.5deg);
+}
+section img#sunnyGround {
+	filter: saturate(150%) sepia();
+}
+#pageOptions a#item, #infoBox {
+	background: linear-gradient(var(--x-cardTrans), var(--x-cardTrans)), var(--x-stone);
+}
+#pageOptions img {
+	filter: sepia() saturate(150%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#pageOptions a#item:hover {
+	background: linear-gradient(var(--x-cardTrans-hover), var(--x-cardTrans-hover)), var(--x-stone);
+}
+#settings_title, #settings_bar h2 {
+	font-size: 26px;
+}
+footer {
+	line-height: 20.5px;
+}
+footer a {
+	font-size: 14px;
+	letter-spacing: 1.4px;
+}

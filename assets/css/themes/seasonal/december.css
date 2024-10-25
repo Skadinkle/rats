@@ -1,0 +1,28 @@
+:root { /* Palette */
+	--s-sky-upper: #31313f;
+	--s-sky-lower: #484f6a;
+	--s-text-light: #f2f0e5;
+	--s-text-emphasis: #ede19e;
+	--s-text-emphasis-border: #c4994e;
+	--s-text-dim: #b8b5b9;
+	--s-body-main: #212123;
+	--s-card-main: #303035;
+	--s-card-hover: #352b42;
+	--s-card-shadow: #12121475;
+	--s-card-shadow-hover: #12121480;
+}
+
+section img#sunnySky {
+	-webkit-filter: saturate(50%) hue-rotate(-30deg);
+	filter: saturate(50%) hue-rotate(-30deg);
+	mix-blend-mode: soft-light;
+	opacity: 50%;
+}
+section img#hills {
+	-webkit-filter: opacity(90%) saturate(50%) hue-rotate(112.5deg) saturate(50%) brightness(75%);
+	filter: opacity(90%) saturate(50%) hue-rotate(112.5deg) saturate(50%) brightness(75%);
+}
+section img#sunnyGround {
+	-webkit-filter: saturate(50%) hue-rotate(90deg) saturate(50%) brightness(75%);
+	filter: saturate(50%) hue-rotate(90deg) saturate(50%) brightness(75%);
+}

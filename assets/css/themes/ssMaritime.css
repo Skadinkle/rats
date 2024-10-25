@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Chelsea+Market");
+:root {
+		/* General */
+	--g-bodyMain: #1f3e59;
+	--g-cardMain: #3b697c;
+	--g-cardMain-hover: #5ba1a7;
+	--g-textLight: #f0e3dc;
+	--g-textEmphasis: #ffb78f;
+	--g-textEmphasis-border: #c8381b;
+	--g-textDim: #ffa778;
+
+		/* Title Card */
+	--t-skyUpper: #699fa8;
+	--t-skyLower: #c6e3e0;
+
+		/* Shadows */
+	--s-cardMain: #12121475;
+	--s-cardMain-hover: #12121480;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 50vh);
+	font-family: "Chelsea Market", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Chelsea Market";
+	font-weight: bolder;
+}
+header #headerLogo {
+	font-size: 24px;
+}
+header ul li a {
+	font-size: 11px;
+}
+section img#sunnySky {
+	filter: saturate(200%) hue-rotate(90deg);
+	mix-blend-mode: color;
+}
+section img#hills {
+	filter: opacity(90%) sepia(50%) hue-rotate(-67.5deg) saturate(200%);
+}
+section img#sunnyGround {
+	filter: sepia(50%) hue-rotate(-90deg) brightness(112.5%) saturate(200%);
+}
+#infoBox p {
+	font-size: 11px;
+}
+#pageOptions img {
+	filter: sepia() hue-rotate(-12.5deg) saturate(200%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	font-size: 12px;
+}
+#settings_title, #settings_bar h2 {
+	font-size: 27px;
+}
+footer a {
+	font-size: 13px;
+}

@@ -1,0 +1,725 @@
+@import url("./popupNotifications.css");
+@import url("./settings.css");
+@import url("./other/ratified.css");
+
+@import url("./../fonts/fontawesome/all.css");
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	FONTS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+@font-face {
+	font-family: "Dosis";
+	src: url("./../fonts/Dosis-VariableFont_wght.ttf") format("woff2");
+}
+@font-face {
+	font-family: "Indie Flower";
+	src: url("./../fonts/IndieFlower-Regular.ttf") format("woff2");
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	BASIC STUFFS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+:root {
+		/* General */
+	--g-bodyMain: #212123;
+	--g-cardMain: #303035;
+	--g-cardMain-hover: #352b42;
+	--g-textLight: #f2f0e5;
+	--g-textEmphasis: #ede19e;
+	--g-textEmphasis-border: #c4994e;
+	--g-textDim: #b8b5b9;
+
+		/* Title Card */
+	--t-skyUpper: #4b80ca;
+	--t-skyLower: #9df5f4;
+
+		/* Achievements */
+	--a-areYouLost-upper: #8d949c;
+	--a-areYouLost-lower: #4b798c;
+	--a-debugger-upper: #1e4044;
+	--a-debugger-lower: #10121c;
+	--a-ohNo-upper: #ca2750;
+	--a-ohNo-lower: #000000;
+	--a-sup-upper: #6b2643;
+	--a-sup-lower: #10121c;
+	--a-placeholder-upper: #000000;
+	--a-placeholder-lower: #ffffff;
+
+		/* Shadows */
+	--s-cardMain: #12121475;
+	--s-cardMain-hover: #12121480;
+	--s-shadow25: rgba(0, 0, 0, 0.25);
+	--s-shadow30: rgba(0, 0, 0, 0.3);
+	--s-shadow50: rgba(0, 0, 0, 0.5);
+	--s-shadow75: rgba(0, 0, 0, 0.75);
+}
+body {
+	background: linear-gradient(var(--t-skyUpper) 0vh, var(--t-skyLower) 100vh);
+	background-repeat: no-repeat;
+	font-family: "Dosis", sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+i {
+	color: var(--g-textDim);
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	HEADER  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+header {
+	align-items: center;
+	display: flex;
+	height: 46px;
+	justify-content: space-between;
+	padding: 10px 50px;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	z-index: 1;
+}
+header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("./../images/frames/header.svg") no-repeat center;
+	background-size: cover; /* Use cover for better scaling */
+	opacity: .5;
+	filter: brightness(0) drop-shadow(10px 10px 5px var(--s-shadow50));
+}
+
+#headerLogo {
+	color: var(--g-textLight);
+	font-family: "Indie Flower";
+	font-size: 25px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	line-height: 36px;
+	padding: 5px 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: font-size 0.15s, text-shadow 0.15s, transform 0.125s;
+	z-index: 0;
+	will-change: font-size, text-shadow, transform;
+}
+#headerLogo:hover {
+	animation: logoOscillate 0.75s infinite;
+	font-size: 30px;
+	text-shadow: 0 0 5px var(--g-textLight), -5px 5px 5px var(--s-shadow50);
+	transform: rotate(-5deg);
+}
+@keyframes logoOscillate {
+	from, to {
+		transform: rotate(-5deg);
+		text-shadow: 0 0 5px var(--g-textLight), -5px 5px 5px var(--s-shadow50);
+	}
+	50% {
+		transform: rotate(5deg);
+		text-shadow: 0 0 5px var(--g-textLight), -3px 7px 5px var(--s-shadow50);
+	}
+}
+
+header ul {
+	position: absolute;
+	right: 11vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header ul li {
+	list-style: none;
+	margin-left: 15px;
+	text-transform: capitalize;
+}
+header ul li a {
+	border-radius: 20px;
+	color: var(--g-textLight);
+	font-family: "Indie Flower";
+	font-size: 12.5px;
+	padding: 6px 5px;
+	text-decoration: none;
+	transition: background 0.1s, color 0.1s;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	will-change: background, color;
+}
+header ul li a:hover {
+	background: var(--g-textLight);
+	color: var(--g-bodyMain);
+}
+header ul li a.active {
+	text-decoration: underline;
+}
+@keyframes icoOscillate {
+	from, to {
+		rotate: -10deg;
+	}
+	50% {
+		rotate: -20deg;
+	}
+}
+header ul li a:hover a {
+	animation: icoOscillate 2.5s infinite;
+	color: var(--g-bodyMain);
+	will-change: rotate;
+}
+#settings {
+	position: absolute;
+	background: var(--s-shadow50);
+	width: 10px;
+	right: -30px;
+	top: 0;
+	height: auto;
+	display: none;
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	SEARCH BAR  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+.autofill {
+	display: inline-block;
+}
+input {
+	border: 1px solid transparent;
+	background-color: #1d1d1d;
+	padding: 10px;
+	font-size: 12.5px;
+	height: 10px;
+	color: #fff;
+}
+input[type=text] {
+	background-color: #1a1a1a;
+	width: 275px;
+}
+input[type=submit] {
+	background-color: DodgerBlue;
+	color: #ffffff;
+}
+.autofillItems {
+	position: absolute;
+	border: 1px solid #363636;
+	border-bottom: none;
+	border-top: none;
+	color: #fff;
+	top: 45px;
+	margin-left: auto;
+	width: 300px;
+	right: 8%;
+}
+.autofillItems div {
+	height: 25px;
+	padding-left: 10px;
+	font-size: 12.5px;
+	cursor: pointer;
+	background-color: #000;
+	border-bottom: 1px solid #2c2c2c;
+	will-change: background-color;
+}
+.autofillItems div:hover {
+	background-color: #252525;
+}
+.autofillActive {
+	background-color: DodgerBlue!important;
+	color: #ffffff;
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	TITLE CARD  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+section {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin: 0;
+	padding: 100px 0;
+	position: relative;
+	height: 66.666vh;
+	width: 100vw;
+	z-index: -1;
+}
+section::after {
+	background: linear-gradient(to top, var(--g-bodyMain), transparent);
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 15vh;
+	width: 100vw;
+}
+
+section img {
+	height: 81.5vh;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 200vh;
+}
+section img#sunnySky {
+	margin-top: -25%;
+	mix-blend-mode: luminosity;
+	opacity: .25;
+	top: 50px;
+}
+section img#sunnyClouds {
+	filter: blur(1px);
+	margin-top: -10%;
+	mix-blend-mode: hard-light;
+	opacity: .5;
+	will-change: filter, opacity;
+}
+section img#sunnyGround {
+	filter: contrast(1.125) saturate(.8);
+	margin-top: -27.5%;
+	top: 16.5vh;
+	will-change: filter;
+}
+section img#overlay {
+	margin-top: -25%;
+	opacity: .2;
+	image-rendering: pixelated;
+	mix-blend-mode: color-burn;
+	pointer-events: none;
+	will-change: mix-blend-mode, opacity;
+}
+#funkyTitleBox {
+	vertical-align: auto;
+	position: fixed;
+	top: 37.5vh;
+	height: 100px;
+	will-change: font-size;
+}
+#funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash {
+	color: var(--g-textLight);
+	font-family: "Indie Flower";
+	pointer-events: none;
+	text-align: center;
+	text-shadow: 0 0 10px var(--g-bodyMain);
+	white-space: nowrap;
+	padding: 0;
+	margin: 0;
+	transition: 0.125s;
+}
+#funkyTitleSmall {
+	font-size: 25px;
+	padding: 0;
+	margin-bottom: 10px;
+}
+#funkyTitleLarge {
+	font-size: 100px;
+}
+#funkyTitleLarge a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#funkyTitleSplash {
+	animation: splashPulse 1s ease-in-out;
+	animation-iteration-count: infinite;
+	color: var(--g-textEmphasis);
+	height: 50px;
+	position: absolute;
+	rotate: -10deg;
+	margin: -35px;
+	margin-left: 0;
+	text-shadow: -1px 0 var(--g-textEmphasis-border), 0 1px var(--g-textEmphasis-border), 1px 0 var(--g-textEmphasis-border), 0 -1px var(--g-textEmphasis-border), 0 0 5px var(--g-bodyMain);
+	width: 500px;
+	will-change: font-size;
+}
+#funkyTitleSplash a {
+	color: var(--g-textEmphasis);
+	cursor: pointer;
+	font-family: "Indie Flower";
+	pointer-events: all;
+}
+#funkyTitleSplash img#splashZimfinite {
+	width: 100px;
+}
+@keyframes splashPulse {
+	50% {
+		font-size: 25px;
+	}
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	MAIN BODY SECTIONS & INFORMATIONALS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+body, #mainBody, #twoColumnSection {
+	box-sizing: border-box;
+}
+#mainBody {
+	background: var(--g-bodyMain);
+	color: var(--g-textLight);
+	font-family: "Dosis";
+	min-height: 100vh;
+	overflow-x: hidden;
+	padding-bottom: 50px;
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top: 70px;
+}
+#mainBody h2 {
+	color: var(--g-textDim);
+	font-family: "Indie Flower";
+	font-size: 27.32px;
+}
+#mainBody p {
+	font-size: 13.666px;
+}
+#subtitle {
+	color: var(--g-textDim);
+	font-size: 13px;
+	height: 10px;
+	text-align: center;
+}
+#mainBody a:link, #mainBody a:visited {
+	color: var(--g-textEmphasis);
+	font-weight: 700;
+	text-decoration: underline;
+}
+#mainBody#subpage {
+	background-color: #00000080;
+	height: 100vh;
+	overflow-x: hidden;
+	padding: 100px;
+}
+
+#infoBox {
+	background: linear-gradient(to left, var(--g-bodyMain), var(--g-cardMain));
+	border-radius: 20px;
+	color: var(--g-textLight);
+	margin: 25px;
+	padding: 10px;
+	text-align: left;
+	width: 100%;
+}
+#infoBox a, #infoBox p, #infoBox h2 {
+	padding-left: 10px;
+	margin: 10px;
+}
+#infoBox h2 {
+	color: var(--g-textDim);
+	font-size: 27.5px;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+#infoBox p a {
+	color: var(--g-textEmphasis);
+	cursor: pointer;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+#descNotice {
+	color: var(--g-textDim);
+	font-style: italic;
+}
+#descNotice::before {
+	content: "NOTE: ";
+}
+#descWarn, #descWarn2 {
+	color: var(--g-textEmphasis);
+	font-weight: 900;
+}
+#descWarn::before, #descWarn2::before {
+	content: " ⚠ "
+}
+
+#twoColumnSection, #infoBox {
+	align-content: center;
+	color: var(--g-textLight);
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#twoColumnSection {
+	width: 50%;
+}
+
+#pageOptionsName { /* Clickable Page Cards */
+	margin-top: 25px;
+	text-align: center;
+	text-decoration: underline;
+}
+#pageOptions {
+	box-sizing: border-box;
+	display: grid;
+	gap: 13.666px;
+	grid-auto-rows: 180px;
+	grid-template-columns: repeat(9, 1fr);
+	padding: 20px;
+}
+@media screen and (max-width: 6100px) {#pageOptions {grid-template-columns: repeat(36, 1fr);}}
+@media screen and (max-width: 4600px) {#pageOptions {grid-template-columns: repeat(28, 1fr);}}
+@media screen and (max-width: 3100px) {#pageOptions {grid-template-columns: repeat(18, 1fr);}}
+@media screen and (max-width: 2300px) {#pageOptions {grid-template-columns: repeat(13, 1fr);}}
+@media screen and (max-width: 2100px) {#pageOptions {grid-template-columns: repeat(12, 1fr);}}
+@media screen and (max-width: 1900px) {#pageOptions {grid-template-columns: repeat(11, 1fr);}}
+@media screen and (max-width: 1700px) {#pageOptions {grid-template-columns: repeat(10, 1fr);}}
+@media screen and (max-width: 1600px) {#pageOptions {grid-template-columns: repeat(9, 1fr);}}
+@media screen and (max-width: 1440px) {#pageOptions {grid-template-columns: repeat(8, 1fr);}}
+@media screen and (max-width: 1280px) {#pageOptions {grid-template-columns: repeat(7, 1fr);}}
+@media screen and (max-width: 1200px) {#pageOptions {grid-template-columns: repeat(5, 1fr);}}
+@media screen and (max-width: 870px) {#pageOptions {grid-template-columns: repeat(4, 1fr);}}
+@media screen and (max-width: 760px) {#pageOptions {grid-template-columns: repeat(4, 1fr);}}
+@media screen and (max-width: 610px) {#pageOptions {grid-template-columns: repeat(3, 1fr);}}
+@media screen and (max-width: 380px) {#pageOptions {grid-template-columns: repeat(1, 1fr);}}
+
+#pageOptions a#item {
+	animation: cardSlideIn 0.125s ease-out forwards;
+	animation-delay: var(--js-delay);
+	background: var(--g-cardMain);
+	border-radius: 10px;
+	cursor: pointer;
+	filter: drop-shadow(0px 5px 4px var(--s-cardMain));
+	height: 177px;
+	opacity: 0;
+	padding-top: 50px;
+	text-align: center;
+	transition: background-color 0.2s, transform 0.2s, filter 0.3s, rotate 0.3s ease-in-out;
+	will-change: background-color, filter, opacity, padding-top, rotate, transform;
+}
+@keyframes cardSlideIn {
+	to {
+		opacity: 1;
+		padding-top: 7px;
+	}
+}
+#pageOptions a#item:hover {
+	background-color: var(--g-cardMain-hover);
+	filter: drop-shadow(5px 10px 4px var(--s-cardMain-hover));
+	rotate: 5deg;
+	transform: scale(.95);
+}
+#pageOptions a#item.secret, #pageOptions a#item.secret:hover, #pageOptions a#item.secret p {
+	background: transparent;
+	color: transparent;
+	cursor: auto;
+}
+#pageOptions a#item.secret img, #pageOptions a#item.secret p {
+	visibility: hidden;
+}
+#pageOptions img, #pageOptions p {
+	border-radius: 20px;
+	display: block;
+	margin: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+	pointer-events: auto;
+	width: 90%;
+}
+#pageOptions img {
+	filter: grayscale();
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#pageOptions img#svg, #raidenTheRat {
+	mix-blend-mode: exclusion;
+}
+#pageOptions p, #pageOptions p i {
+	color: var(--g-textEmphasis);
+	font-weight: 700;
+	height: 10%;
+	padding-top: 5px;
+	text-decoration: underline;
+}
+
+img.squishable { /* Additional Image Features */
+	cursor: grab;
+	display: block;
+	filter: saturate(.5);
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform 0.2s, rotate 0.3s;
+	width: 285px;
+	will-change: rotate, transform;
+}
+img.squishable:hover {
+	rotate: 2deg;
+	transform: scale(1.05, .95);
+}
+img.squishable:active {
+	cursor: grabbing;
+	rotate: 3deg;
+	transform: scale(1.1, .9);
+}
+img#invert {
+	filter: invert() grayscale();
+	mix-blend-mode: exclusion;
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	FOOTER  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+footer {
+	position: fixed;
+	background: linear-gradient(to right, transparent, #00000040 10%);
+	bottom: 0;
+	height: 24px;
+	right: 0;
+	padding-left: 5%;
+	padding-right: 10px;
+	text-align: right;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+}
+footer a, footer a::after {
+	color: var(--g-textLight);
+	font-family: "Indie Flower";
+}
+footer a#footer-time, footer a#footer-brand {
+	color: var(--g-textLight);
+	pointer-events: none;
+}
+footer .fa, footer .fab {
+	margin-left: -2.5px;
+	transform: scale(.9);
+	letter-spacing: -2.5px;
+}
+footer span {
+	color: var(--g-textDim);
+	opacity: .5;
+	pointer-events: none;
+	margin: 5px;
+}
+footer a:link, footer a:visited {
+	color: var(--g-textEmphasis);
+	text-decoration: none;
+	transition: 0.1s;
+	will-change: text-shadow;
+}
+footer a:link:hover, footer a:visited:hover {
+	text-shadow: -0.25px -0.25px 0 var(--g-textEmphasis), 0.25px -0.25px 0 var(--g-textEmphasis), -0.25px 0.25px 0 var(--g-textEmphasis), 0.25px 0.25px 0 var(--g-textEmphasis);
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	PAGE ERRORS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#pageError {
+	background: linear-gradient(#00000080, #000000bf 100vh);
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	top: 100vh;
+	width: 100vw;
+}
+#pageError img, #pageError h2, #pageError a, #pageError p {
+	filter: drop-shadow(0 10px 2px var(--s-shadow25));
+}
+#pageError img {
+	margin-top: 50px;
+	width: 75px;
+}
+#pageError h2 {
+	font-family: "Indie Flower";
+	font-size: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#pageError p#errorlog {
+	color: #bfbfbf;
+	margin: 0;
+	margin-bottom: 50px;
+}
+#pageError p, h2 {
+	color: #ffffff;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+#pageError p a:link, p a:visited {
+	color: #00ffff;
+	font-weight: 900;
+	padding: 0;
+}
+#pageError #footer {
+	bottom: 30px;
+	color: #bfbfbf;
+	position: absolute;
+	right: 50px;
+	text-decoration: none;
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	OTHER STUFFS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#cinematicBar {
+	height: 10vh;
+	background-color: #000;
+	position: fixed;
+	width: 100vw;
+	z-index: 1;
+	transition: 0.25s ease-out;
+	will-change: filter, bottom, top;
+}
+#cinematicBar.upper {
+	top: -10vh;
+}
+#cinematicBar.lower {
+	bottom: -10vh;
+}
+#cinematicBar.upper.active {
+	top: 0vh;
+}
+#cinematicBar.lower.active {
+	bottom: 0vh;
+}
+
+noscript iframe, #nointernet, #update, #deviceinfo {
+	border: none;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+#deviceinfo {
+	pointer-events: none;
+}
+
+#roadmapMenu {
+	background-color: var(--g-textLight);
+	border: 1px solid var(--g-textDim);
+	box-shadow: 10px 10px 5px var(--s-shadow25);
+	color: var(--g-bodyMain);
+	height: 400px;
+	left: 50%;
+	overflow-y: auto;
+	padding: 15px;
+	position: fixed;
+	rotate: -5deg;
+	top: -50%;
+	transform: translate(-50%, -50%);
+	transition: 0.5s;
+	width: 350px;
+}
+#roadmapMenu li {
+	margin-bottom: 10px;
+}
+#roadmapMenu .change {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+#SPOOK { /* Jumpscare Animation */
+	animation: quickyByeBye 0.65s linear 1;
+	height: 150vh;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 314159265358979323;
+}
+@keyframes quickyByeBye {
+	from, 99% {opacity: 1;}
+	to {opacity: 0;}
+}

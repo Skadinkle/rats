@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Afacad");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+:root {
+		/* General */
+	--g-bodyMain: #253355;
+	--g-cardMain: #503d6c;
+	--g-cardMain-hover: #81357f;
+	--g-textLight: #f8e6ee;
+	--g-textEmphasis: #eec8d8;
+	--g-textEmphasis-border: #cf6591;
+	--g-textDim: #db8dad;
+
+		/* Title Card */
+	--t-skyUpper: #dd5891;
+	--t-skyLower: #edc5d5;
+
+		/* Shadows */
+	--s-cardMain: #0c325075;
+	--s-cardMain-hover: #0c325080;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 50vh);
+	font-family: "Afacad", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Nunito";
+	font-weight: bolder;
+}
+header #headerLogo {
+	font-size: 22px;
+}
+header ul li a {
+	font-size: 12px;
+}
+section img#sunnySky {
+	-webkit-filter: saturate(200%) hue-rotate(-90deg) saturate(150%);
+	filter: saturate(200%) hue-rotate(-90deg) saturate(150%);
+}
+section img#hills {
+	-webkit-filter: opacity(90%) sepia(25%) hue-rotate(225deg) brightness(95%);
+	filter: opacity(90%) sepia(25%) hue-rotate(225deg) brightness(95%);
+}
+section img#sunnyGround {
+	-webkit-filter: sepia(75%) hue-rotate(225deg) saturate(200%);
+	filter: sepia(75%) hue-rotate(225deg) saturate(200%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#pageOptions img {
+	-webkit-filter: sepia() hue-rotate(-90deg) saturate(200%);
+	filter: sepia() hue-rotate(-90deg) saturate(200%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	-webkit-filter: none;
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#settings_optiondesc {
+	font-size: 16px;
+}
+#settings_credits a img, #settings_creditsmember img {
+	-webkit-filter: sepia(25%) hue-rotate(-22.5deg);
+	filter: sepia(25%) hue-rotate(-22.5deg);
+}
+footer a {
+	font-size: 14px;
+}

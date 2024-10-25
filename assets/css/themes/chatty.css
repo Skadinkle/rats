@@ -1,0 +1,102 @@
+:root {
+		/* General */
+	--g-bodyMain: #aae5a4;
+	--g-cardMain: #99ff99;
+	--g-cardMain-hover: #bbffbb;
+	--g-textLight: #1a1a1a;
+	--g-textEmphasis: #000099;
+	--g-textEmphasis-border: #70ba78;
+	--g-textDim: #333333;
+
+		/* Title Card */
+	--t-skyUpper: #aae5a4;
+	--t-skyLower: #aae5a4;
+
+		/* Shadows */
+	--s-cardMain: #33663375;
+	--s-cardMain-hover: #33663380;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+header ul li a:hover, header ul li a.active, header ul li a#active, header ul li a.fa:hover, header ul li a.fa#active, .menu_buttons a {
+	background: var(--g-textEmphasis-border);
+	color: #ffffff;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+header #headerLogo {
+	font-size: 21px;
+}
+header ul li a {
+	font-size: 12px;
+}
+section img#sunnySky {
+	mix-blend-mode: screen;
+}
+section img#sunnyClouds {
+	filter: opacity(50%);
+	mix-blend-mode: hard-light;
+}
+section img#hills {
+	filter: opacity(90%) hue-rotate(22.5deg);
+}
+section img#sunnyGround {
+	-webkit-filter: sepia() hue-rotate(45deg);
+	filter: sepia() hue-rotate(45deg);
+}
+section img#overlay {
+	mix-blend-mode: darken;
+}
+section #funkyTitleLarge {
+	font-size: 90px;
+}
+#funkyTitleSplash {
+	color: var(--s-body-main);
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions a:link img, #pageOptions a:visited img {
+	-webkit-filter: invert();
+	filter: invert();
+	opacity: 75%;
+}
+#pageOptions img {
+	-webkit-filter: none;
+	filter: none;
+}
+#pageOptions img#svg, #raidenTheRat {
+	-webkit-filter: invert();
+	filter: invert();
+	mix-blend-mode: darken;
+}
+#pageOptions p {
+	font-size: 11px;
+}
+img.squishable {
+	opacity: 90%;
+}
+img#invert {
+	-webkit-filter: invert() sepia();
+	filter: invert() sepia();
+	mix-blend-mode: normal;
+}
+#settings_linebreak {
+	background-color: var(--g-textEmphasis-border);
+}
+#settings_optiondesc {
+	font-size: 14px;
+}
+#settings_bar h2 {
+	color: var(--s-text-dim);
+}
+#settings_credits a {
+	background: -o-linear-gradient(var(--g-textEmphasis-border) 75px, transparent);
+	background: linear-gradient(var(--g-textEmphasis-border) 75px, transparent);
+}
+footer a {
+	font-size: 14px;
+}

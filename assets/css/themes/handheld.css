@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Handjet");
+@import url("https://fonts.googleapis.com/css?family=Pixelify+Sans");
+@import url("./../other/antialiasing.css");
+:root {
+		/* General */
+	--g-bodyMain: #081820;
+	--g-cardMain: #346856;
+	--g-cardMain-hover: #88c070;
+	--g-textLight: #e0f8d0;
+	--g-textEmphasis: #e0f8d0;
+	--g-textEmphasis-border: #88c070;
+	--g-textDim: #88c070;
+
+		/* Title Card */
+	--t-skyUpper: #88c070;
+	--t-skyLower: #e0f8d0;
+
+		/* Shadows */
+	--s-cardMain: #00000075;
+	--s-cardMain-hover: #00000080;
+}
+
+body, a, p {
+	font-family: "Pixelify Sans", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Handjet";
+	letter-spacing: 2px;
+}
+header #headerLogo {
+	font-family: "Pixelify Sans";
+	font-size: 25.5px;
+}
+header ul li {
+	margin-left: 14px;
+}
+section img#sunnyClouds {
+	filter: opacity(50%) contrast(300%) sepia() hue-rotate(75deg) saturate(150%);
+}
+section img#hills {
+	filter: opacity(90%) contrast(300%) sepia() hue-rotate(75deg) saturate(150%);
+}
+section img#sunnyGround {
+	filter: contrast(300%) sepia() hue-rotate(75deg) saturate(150%);
+}
+header #headerLogo:hover, header ul li a, header ul li a:hover, header ul li a.active, header ul li a#active, #pageOptions a#item, #video-player, #video-menu ul li, #settings_linebreak, #settings_bar ul li a, .menu_buttons a, #settings_credits a, #settings_credits a img, #settings_creditsmember ul li a, #settings_creditsmember img {
+	border-radius: 0;
+	transition: 0s;
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions a#item, .menu_buttons img, #settings_general img {
+	filter: drop-shadow(0px 5px 0 var(--s-card-shadow));
+}
+#pageOptions a#item:hover {
+	filter: drop-shadow(5px 10px 0 var(--s-card-shadow));
+	rotate: 0deg;
+}
+#pageOptions img, #settings_credits a img {
+	border-radius: 0;
+	filter: sepia() hue-rotate(75deg) saturate(150%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	font-size: 14px;
+	font-weight: 500;
+}
+img.squishable {
+	transition: 0s;
+}
+img.squishable:hover, img.squishable:active {
+	rotate: 0deg;
+}
+img#invert {
+	opacity: 90%;
+	mix-blend-mode: normal;
+}
+#video-menu ul li:hover, #settings_bar ul li a:hover, .menu_buttons a:hover, #settings_creditsmember ul li a:hover {
+	border-radius: 0;
+}
+#video-player {
+	filter: drop-shadow(-5px 10px 0 var(--s-card-shadow));
+}
+#settings_title, #settings_bar h2 {
+	font-size: 32.5px;
+}
+#settings_credits a {
+	background: var(--s-card-main);
+}
+#settings_creditsmember img {
+	filter: sepia() hue-rotate(75deg) saturate(150%) drop-shadow(5px 10px 0 var(--s-card-shadow));
+}
+footer a {
+	font-size: 14px;
+}

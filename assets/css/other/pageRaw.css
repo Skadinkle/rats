@@ -1,0 +1,15 @@
+*, body {
+	margin: 5px;
+	padding: 0;
+}
+pre {
+	background: #00000080;
+	color: #ffffff;
+	font-size: 10px;
+	overflow-wrap: break-word;
+	padding: 10px;
+	position: absolute;
+	width: fit-content;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}

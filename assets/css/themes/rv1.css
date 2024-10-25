@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+:root {
+		/* General */
+	--g-bodyMain: #040426;
+	--g-cardMain: #092b38;
+	--g-cardMain-hover: #092b38;
+	--g-textLight: #ffffff;
+	--g-textEmphasis: #f1e7a4;
+	--g-textEmphasis-border: #9a9159;
+	--g-textDim: #bfbfbf;
+
+		/* Title Card */
+	--t-skyUpper: #7597de;
+	--t-skyLower: #ffffff;
+
+		/* Shadows */
+	--s-cardMain: #01010e75;
+	--s-cardMain-hover: #01010e80;
+}
+
+html#ratified {
+	image-rendering: pixelated;
+	filter: sepia() brightness(50%) hue-rotate(-45deg) contrast(5000%);
+	transform: scale(-100%);
+}
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower));
+	font-family: "Poppins", sans-serif;
+}
+header {
+	background: transparent;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Poppins";
+}
+header #headerLogo {
+	font-size: 21px;
+}
+header ul li {
+	margin-left: 16.5px;
+}
+header ul li a {
+	font-size: 12px;
+}
+header ul li a.active, header ul li a#active {
+	text-decoration: underline;
+}
+section img#sunnySky {
+	filter: saturate(50%) hue-rotate(10deg);
+	mix-blend-mode: normal;
+	opacity: 20%;
+}
+section img#sunnyClouds {
+	filter: opacity(25%);
+}
+section img#hills {
+	filter: opacity(90%) hue-rotate(32.5deg);
+}
+section img#sunnyGround {
+	filter: saturate(50%) hue-rotate(10deg);
+}
+section img#overlay {
+	visibility: hidden;
+}
+#mainBody h2 {
+	color: var(--g-textLight);
+	font-size: 3.5em;
+	text-decoration: none;
+}
+#infoBox h2 {
+	font-size: 35px;
+}
+#pageOptions {
+	grid-template-columns: repeat(6, 1fr);
+}
+#pageOptions a#item {
+	border-radius: 100%;
+}
+#pageOptions a#item:link {
+	font-weight: 400;
+	font-style: italic;
+}
+#pageOptions a#item:hover {
+	transform: scale(90%) rotate(5deg);
+	opacity: 80%;
+}
+#pageOptions img, #pageOptions p {
+	width: 75%;
+}
+#pageOptions img {
+	-webkit-filter: none;
+	filter: none;
+	width: 66.666%;
+}
+#pageOptions p {
+	color: var(--g-textLight);
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+}
+footer {
+	line-height: 20px;
+}
+footer a {
+	font-size: 13px;
+	letter-spacing: 0.1px;
+}

@@ -1,0 +1,39 @@
+@import url("./disable.css");
+#domainOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: var(--s-shadow50);
+}
+
+#domainChange {
+	background: var(--s-shadow50);
+	border-radius: 50px;
+	color: var(--g-textLight);
+	filter: drop-shadow(0 5px 3px var(--s-shadow50));
+	height: 75%;
+	left: 25%;
+	position: absolute;
+	top: 12.5%;
+	width: 50%;
+	text-align: center;
+}
+#domainChange img {
+	margin-bottom: -10%;
+	width: 33.333%;
+}
+#domainChange h2 {
+	font-family: "Indie Flower";
+	font-size: 50px;
+	font-weight: 900;
+}
+#domainChange a {
+	color: var(--g-textEmphasis);
+	font-style: italic;
+	font-weight: 900;
+}
+#cinematicBar {
+	filter: opacity(.8);
+}

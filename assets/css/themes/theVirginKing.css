@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Playpen+Sans");
+:root {
+		/* General */
+	--g-bodyMain: #d03425;
+	--g-cardMain: #ef5f3c;
+	--g-cardMain-hover: #f57d3e;
+	--g-textLight: #efefef;
+	--g-textEmphasis: #ffcc74;
+	--g-textEmphasis-border: #d88c45;
+	--g-textDim: #d9d9d9;
+
+		/* Title Card */
+	--t-skyUpper: #ffcc74;
+	--t-skyLower: #ffe7c8;
+
+		/* Shadows */
+	--s-cardMain: #8d121275;
+	--s-cardMain-hover: #8d121280;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 75vh, var(--t-skyUpper) 100vh);
+	font-family: "Playpen Sans", sans-serif;
+}
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Permanent Marker";
+	font-weight: 100;
+}
+header ul li {
+	margin-left: 12px;
+}
+header ul li a {
+	font-size: 13px;
+}
+section img#sunnySky {
+	filter: sepia() hue-rotate(-30deg) contrast(500%);
+	mix-blend-mode: multiply;
+}
+section img#hills {
+	filter: opacity(90%) sepia() hue-rotate(-37.5deg) saturate(400%);
+}
+section img#sunnyGround {
+	filter: sepia() hue-rotate(-37.5deg) saturate(400%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions img {
+	filter: sepia() hue-rotate(-30deg) saturate(200%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#settings_title, #settings_bar h2 {
+	font-size: 28px;
+}
+footer {
+	line-height: 20px;
+}
+footer a {
+	font-size: 12.5px;
+	font-weight: 100;
+	letter-spacing: 0.6px;
+}

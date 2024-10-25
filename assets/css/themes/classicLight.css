@@ -1,0 +1,42 @@
+:root {
+		/* General */
+	--g-bodyMain: #cbcbcb;
+	--g-cardMain: #bcbcbc;
+	--g-cardMain-hover: #b2b2b2;
+	--g-textLight: #282828;
+	--g-textEmphasis: #ffffff;
+	--g-textEmphasis-border: #333333;
+	--g-textDim: #292929;
+
+		/* Title Card */
+	--t-skyUpper: #ffffff;
+	--t-skyLower: #ffffff;
+
+		/* Shadows */
+	--s-cardMain: #28282875;
+	--s-cardMain-hover: #28282880;
+}
+
+section img#sunnySky {
+	filter: saturate(200%) grayscale();
+}
+section img#sunnyClouds {
+	filter: opacity(0);
+}
+section img#hills {
+	filter: opacity(90%) grayscale() hue-rotate(22.5deg);
+}
+section img#sunnyGround {
+	filter: saturate(80%) grayscale() brightness(150%);
+	mix-blend-mode: multiply;
+}
+#pageOptions p, #settings_bar h2 {
+	color: var(--g-textLight);
+}
+img.squishable {
+	filter: invert();
+	opacity: 84%;
+}
+#video-main, #settings_menu {
+	background: var(--g-bodyMain);
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Unkempt");
+@import url("https://fonts.googleapis.com/css?family=Walter+Turncoat");
+:root {
+		/* General */
+	--g-bodyMain: #2e156b;
+	--g-cardMain: #47246f;
+	--g-cardMain-hover: #4e216f;
+	--g-textLight: #fff69d;
+	--g-textEmphasis: #fde39a;
+	--g-textEmphasis-border: #e0918d;
+	--g-textDim: #dfad91;
+
+		/* Title Card */
+	--t-skyUpper: #776b7e;
+	--t-skyLower: #d7f698;
+
+		/* Shadows */
+	--s-cardMain: #15086775;
+	--s-cardMain-hover: #15086780;
+}
+
+header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Unkempt";
+	font-weight: bolder;
+	font-family: "Walter Turncoat", sans-serif;
+}
+header ul li a {
+	font-size: 13px;
+}
+section img#sunnySky {
+	mix-blend-mode: multiply;
+}
+section img#sunnyClouds {
+	filter: opacity(25%);
+}
+section img#hills {
+	filter: opacity(90%) saturate(75%) hue-rotate(7.5deg);
+}
+section img#sunnyGround {
+	filter: saturate(75%) hue-rotate(-15deg);
+}
+section img#overlay {
+	filter: sepia() hue-rotate(180deg);
+	mix-blend-mode: color-burn;
+}
+#infoBox p {
+	font-size: 12px;
+}
+#pageOptions img {
+	filter: sepia() hue-rotate(-150deg) saturate(200%);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: opacity(90%);
+	mix-blend-mode: lighten;
+}
+#pageOptions p {
+	font-size: 12px;
+}
+#settings_title, #settings_bar h2 {
+	font-size: 25px;
+	letter-spacing: 1px;
+}
+footer a {
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}

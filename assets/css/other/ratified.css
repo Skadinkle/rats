@@ -1,0 +1,54 @@
+html#ratified { /* Main Site */
+	filter: sepia() brightness(.45) hue-rotate(-45deg) contrast(50);
+	image-rendering: pixelated;
+	text-rendering: optimizeLegibility;
+	transform: scale(-1);
+	overflow: hidden;
+}
+html#ratified body section #sunnySky {
+	filter: blur(5px);
+}
+html#ratified body section #sunnyClouds {
+	filter: blur(1.5px) opacity(.5);
+}
+html#ratified body section #sunnyGround {
+	filter: blur(1px) brightness(2);
+	margin-top: -100px;
+}
+html#ratified body section #overlay {
+	visibility: hidden;
+}
+html#ratified body section div#funkyTitleBox #funkyTitleLarge {
+	color: #ffffff;
+	cursor: grab;
+	filter: brightness(10);
+	pointer-events: all;
+}
+html#ratified body noscript iframe, html#ratified body #nointernet, html#ratified body #update, html#ratified body #deviceinfo {
+	filter: contrast(.02) brightness(1.55) hue-rotate(45deg);
+	scale: -1;
+}
+
+html#popup { /* Popup Windows */
+	text-align: center;
+}
+html#popup body, html#popup img {
+	background: #000000;
+	color: #ffffff;
+	filter: hue-rotate(-30deg) brightness(.75) contrast(50);
+	font-size: 15vw;
+	overflow: hidden;
+}
+html#popup svg {
+	visibility: hidden;
+	position: absolute;
+}
+html#popup img {
+	filter: url(#glitch-filter) contrast(5);
+	margin: 0;
+	padding: 0;
+	text-shadow: -0.025vw -0.025vh 0 #ff0000, 0.025vw -0.025vh 0 #ff0000, -0.025vw 0.025vh 0 #ff0000, 0.025vw 0.025vh 0 #ff0000;
+}
+html#popup p {
+	font-size: 10px;
+}
