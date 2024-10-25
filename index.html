@@ -6,7 +6,7 @@
 		   SRAT	   SRA									   SRAT				
 		  SRAT	   RAT						ATS			  SR TS				
 		 SRA	   ATSRATSRATS		  RATSRATSR			TSR	TSR				
-		SRA		   TSR	   TSRAT RATSRATSR  SRA		   TSR TSR				
+		SRA		   TSR	   TSRAT RATSRATSR	SRA		   TSR TSR				
 	   SRA			RA		  TSRATS	   SRA		   SRA SRA				
 	 TSRA					ATS			  SRA		  SRA SRA				
 	TSR									 SRA		  RAT RAT				
@@ -15,7 +15,7 @@
 	ATS	  SRAT		ATSRA					 TSRA	  SRAT RAT				
 	TSR	  RATS		TSRATS					   ATSR		TSR	TSRA			
 	 RAT   TSR		SRATSR						SRAT	SRAT RATSR			
-	  TSR  SRA		RATSRA		RA				  TSR	 ATSR  	RATS		
+	  TSR  SRA		RATSRA		RA				  TSR	 ATSR	RATS		
 	   RAT			 TSRA	 TSRA				   RAT	   RATS	  SRAT		
 		TSR				  RATS						TSR		TSRA	TSR		
 		SRA			   TSRAT						 RAT	  ATS	 RAT	
@@ -43,52 +43,107 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Clever | Log in</title>
-		<link rel="shortcut icon" type="image/png" href="https://assets.clever.com/launchpad/92f70eac9/favicon.ico?1">
-		<link href="./assets/css/styles.css" rel="stylesheet" type="text/css" id="styles"/>
+		<link rel="shortcut icon" type="image/png" href="./assets/images/transparent.png">
+		<link href="./assets/css/stylesMain.css" rel="stylesheet" type="text/css" id="styles"/>
+		<script src="./assets/js/mainStuffs.js"></script>
 	</head>
 	<body>
-		<script src="./assets/js/main_script.js"></script>
-		<header>
-			<a href="#" id="funky-site-logo">RATS</a>
-			<ul>
-				<li><a href="./pages/allow.html">Allowers</a></li>
-				<li><a href="./pages/bookmarklets.html">Bookmarklets</a></li>
-				<li><a href="./pages/books.html">Books</a></li>
-				<li><a href="./pages/editors.html">Editors</a></li>
-				<li><a href="./pages/games.html">Games</a></li>
-				<li><a href="./pages/programs.html">Programs</a></li>
-				<li><a href="./pages/school.html">School</a></li>
-				<li><a href="./pages/other.html">Other</a></li>
-				<li><a href="./pages/settings.html" class="fa">&#xf013</a></li>
-			</ul>
-		</header>
 		<section>
-			<img src="./assets/sunnySky.png" id="sky">
-			<img src="./assets/sunnyGround.gif" id="ground">
-			<div id="funky-title">
-				<h2 id="funky-title-small">We are the</h2>
-				<h2 id="funky-title-large">RATS</h2>
-				<h2 id="funky-title-splash"></h2>
+			<img src="./assets/sunnySky.png" id="sunnySky" loading="lazy">
+			<img src="./assets/sunnyClouds.svg" id="sunnyClouds" loading="lazy">
+			<img src="./assets/sunnyGround.svg" id="sunnyGround" loading="lazy">
+			<img src="./assets/overlay.png" id="overlay" loading="lazy">
+			<div id="funkyTitleBox">
+				<h2 id="funkyTitleSmall">We are the</h2>
+				<h2 id="funkyTitleLarge">RATS</h2>
+				<h2 id="funkyTitleSplash"><!--[PLACEHODLER]--></h2>
 			</div>
-			<img src="./assets/overlay.png" id="overlay">
 		</section>
-		<div id="main-body">
-			<div id="two-column-section">
-				<h2 id="info-header">Welcome User:</h2>
-				<p>This is RATS, an open-source project containing hundreds of community-gathered and made projects, sites, and whatever else that hasn't been banned yet. (At least for us.)</p>
+		<div id="mainBody">
+				<!-- INDEX -->
+			<div id="twoColumnSection">
+				<h2 id="infoHeader">🐀 Hello there, User!</h2>
+				<p>Welcome to <b>RATS</b>, a community-based open-source project designed to amass a large collection of free browser-based & HTML5 resources for any device <i>(except mabye on Sparky; We don't talk about that.)</i></p>
 				<br>
-				<p>On the top right, there are several options to choose from.</p>
-				<p>Click on one to explore its category.</p>
+				<p><b>On the top right</b>, you'll notice several categories.</p>
+				<p>Click on one to explore their contents.</p>
+				<br>
+				<p id="descWarn">WE'RE NOT RESPONSIBLE FOR ANY TROUBLE YOU MAY FIND YOURSELF IN IF USED AT SCHOOL.</p>
+				<p id="descWarn">USE WITH CAUTION & DON'T BE A JACK</p>
 			</div>
-			<div id="two-column-section">
-				<img id="index-rat" class="squish" onclick="onRatClick();" onmouseover="onRatHover();" src="./assets/ratDoodle.png">
-				<p class="subtitle">le funky doodle wrat</p>
-				<p class="subtitle">it name is raiden</p>
+			<div id="twoColumnSection">
+				<img id="raidenTheRat" class="squishable" onclick="onRatClick();" onmouseover="onRatHover();" src="./assets/ratDoodle.svg" loading="lazy">
+				<p id="subtitle">le funki doodle wrat</p>
+				<p id="subtitle">it name isa raiden</p>
 			</div>
+
+				<!-- MAIN PAGES -->
+			<div id="infoBox" style="display: none;">
+				<h2>Info:</h2>
+				<p id="descMain"></p>
+				<p id="descNotice"></p>
+				<p id="descWarn2"></p>
+			</div>
+			<h2 style="display: none;" id="pageOptionsName"></h2>
+			<div style="display: none;" id="pageOptions"></div>
 		</div>
-		<footer></footer>
+
+		<div id="roadmapMenu">
+			<h3>Roadmap</h3>
+			<ul id="roadmapList"></ul>
+		</div>
+		
+		<!-- SETTINGS -->
+		<div id="setOverlay"></div>
+		<div id="setMenuRight">
+			<div id="setTabs">
+				<ul>
+					<li>
+						<img src="./assets/images/achievements/debugger.png">
+						<a>Branding</a>
+					</li>
+					<li>
+						<img src="./assets/images/achievements/debugger.png">
+						<a>General</a>
+					</li>
+					<li>
+						<img src="./assets/images/achievements/debugger.png">
+						<a>Theme</a>
+					</li>
+					<br>
+					<li>
+						<img src="./assets/images/achievements/debugger.png">
+						<a>Credits</a>
+					</li>
+					<li>
+						<img src="./assets/images/achievements/debugger.png">
+						<a>Resources</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Hi</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque impedit ipsum dolorum nemo doloribus aperiam fugiat quos voluptas rem? Earum, unde nulla ipsum beatae at quia! Ab a est ullam?</p>
+		</div>
+
+		<!-- SCREEN BARS -->
+		<div id="cutsceneBar" class="upper"></div>
+		<div id="cutsceneBar" class="lower"></div>
+
+		<!-- Error Handler -->
 		<noscript>
-			<iframe src="./assets/htmls/noscript.html"></iframe>
+			<link href="./assets/css/other/disable.css" rel="stylesheet" type="text/css" id="styles"/>
 		</noscript>
+		<div id="pageError">
+			<img src="./assets/images/error.svg">
+			<h2>&lt; Attention! &gt;</h2>
+			<p id="errorlog">ERR_JAVASCRIPT_DISABLED</p>
+			<p>To continue, please enable Javascript at either:</p>
+			<p><a href="chrome://settings/content/javascript">&gt; chrome://settings/content/javascript</a></p>
+			<p><a href="chrome://settings/content/siteDetails?site=file%3A%2F%2F%2F">&gt; chrome://settings/content/siteDetails?site=file%3A%2F%2F%2F</a></p>
+			<br>
+			<p>If you are experiencing any trouble, please refer to <a href="https://github.com/Skadinkle/rats/issues">here</a>.</p>
+			<p>Thank you!</p>
+			<a id="footer" href="https://github.com/Skadinkle/rats">- The RATS Dev Team!</a>
+		</div>
 	</body>
 </html>
