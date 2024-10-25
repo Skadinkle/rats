@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 150 5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+	<defs>
+		<linearGradient id="gradient-1" bx:pinned="true">
+			<stop offset="0" style="stop-color: rgba(255, 0, 0, 0.85);"/>
+			<stop offset="0.75" style="stop-color: rgb(255, 0, 0);"/>
+			<stop offset="1" style="stop-color: rgba(255, 0, 0, 0.85);"/>
+		</linearGradient>
+		<linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="100" y2="5" gradientTransform="matrix(0.011437, -0.999935, 40.000005, -0.000599, -1.143654, 102.522943)" xlink:href="#gradient-1"/>
+	</defs>
+	<path style="fill: url(&quot;#gradient-1-0&quot;); fill-rule: nonzero;" d="M 0 0 L 0 5 L 10.938 5 L 11.353 4.293 L 12.415 5 L 29.268 5 L 31.413 3.992 L 31.936 5 L 32.452 4.432 L 33.249 5 L 48.231 5 L 49.096 4.326 L 51.788 5 L 70.893 5 L 72.277 3.541 L 72.406 5 L 93.339 5 L 94.008 4.397 L 95.006 5 L 117.153 5 L 117.851 4.353 L 118.447 5 L 133.101 5 L 133.308 4.136 L 134.146 5 L 135.988 4.511 L 136.718 5 L 155.505 5 L 156.595 3.722 L 157.591 5 L 171.506 5 L 171.966 4.446 L 173.287 5 L 174.526 4.402 L 174.957 5 L 189.826 5 L 191.157 4.069 L 191.734 5 L 200 5 L 200 0 L 0 0 Z"/>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="warp-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="warp 1 47 0.1">
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="1 0.5"/>
+      </feComponentTransfer>
+      <feMerge result="a">
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp">
+        <animate attributeName="baseFrequency" values="0.005;0.01;0.005;" dur="5s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="47" in="a" in2="warp"/>
+    </filter>
+  </defs>
+  <path d="M 225.166 554.722 Q 228.204 544.405 228.204 554.722 L 228.204 604.273 Q 228.204 614.59 225.166 614.59 L 210.574 614.59 Q 207.536 614.59 210.574 604.273 Z" style="transform-origin: 218.629px 582.077px;" transform="matrix(-0.190806001425, 0.981628000736, -0.981626987457, -0.19081197679, 138.042473366989, -262.209818552991)" bx:shape="triangle 207.536 544.405 20.668 70.185 1 0.147 1@2d6024f7">
+    <title>line</title>
+  </path>
+  <ellipse id="flipGroup" style="filter: url('#warp-filter-0'); transform-origin: 277.769px 246.904px;" cx="277.769" cy="246.904" rx="147.557" ry="85.849">
+    <title>bubble</title>
+  </ellipse>
+</svg>

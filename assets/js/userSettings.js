@@ -484,7 +484,7 @@ window.addEventListener("keydown", function(event) {
 			document.head.appendChild(funkedMain);
 		}
 		if (event.key === "Escape" || event.key === "Backspace") {
-			openSettings();
+			//openSettings();
 		}
 	}
 });
