@@ -9,11 +9,11 @@ Additional in-progress builds can be found [here](https://github.com/Skadinkle/r
 | Version # | Supported | Archival Status |
 | - | - | - |
 | 3.0.0 | :white_check_mark: | :x: |
-| 2.1.0 | :white_check_mark: | :white_check_mark: |
+| [2.0.1](https://github.com/Skadinkle/rats.builds/tree/main/rv2) | :white_check_mark: | :white_check_mark: |
 | 2.0.0 | :x: | :x: |
-| 1.5.0 | :x: | :white_check_mark: |
+| [1.5.0](https://github.com/Skadinkle/rats.builds/tree/main/rv1.5) | :x: | :white_check_mark: |
 | 1.1.0 | :x: | :x: |
-| 1.0.0 | :white_check_mark: | :white_check_mark: |
+| [1.0.0](https://github.com/Skadinkle/rats.builds/tree/main/rv1) | :white_check_mark: | :white_check_mark: |
 </td><td>
 
 | Version # | Supported | Archival Status |
