@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 16">
+	<g>
+		<title>audio</title>
+		<path style="fill:#fff;" d="M 8.844 1 L 8.844 15 L 5.053 12 L 4.422 8 L 5.053 4 L 8.844 1 Z"></path>
+		<path style="fill:#fff;" d="M 3.79 4 L 3.474 8 L 3.79 12 L 0 12 L 0 4 L 3.79 4 Z"></path>
+		<path style="stroke:#fff; fill:none;" d="M 9.753 4 C 10.988 4.022 10.988 12.022 9.753 12"></path>
+		<path style="stroke:#fff; fill:none;" d="M 11.104 2 C 12.115 2.013 12.712 4.021 12.897 6.387 C 13.168 9.823 12.57 14.019 11.104 14"></path>
+		<path style="stroke:#fff; fill:none;" d="M 12.96 0.5 C 14.343 0.516 15.159 3.025 15.414 5.985 C 15.783 10.279 14.964 15.525 12.96 15.5"></path>
+	</g>
+	<g transform="matrix(1, 0, 0, 1, 16, 0)">
+		<title>branding</title>
+		<path style="fill:#fff;" d="M 0 11 L 5 16 L 15 5 L 16 3 L 14 5 L 11 5 L 11 4 L 12 3 L 12 2 L 11 3 L 9 3 L 0 11 Z"></path>
+		<path style="fill:#fff;" d="M 13 2 L 13 3 L 12 4 L 14 4 L 15 3 L 15 2 L 13 0 L 11 0 L 9 2 L 11 2 L 12 1 L 13 2 Z"></path>
+	</g>
+	<g style="" transform="matrix(1, 0, 0, 0.956995, 32, 0.68808)">
+		<title>general</title>
+		<path style="fill:#fff;" d="M 6 2 L 0 1 L 2 5 L 2 14 L 8 16 L 8 7 L 12.171 5.241 L 8 4 L 7.178 4.151 L 6.933 3.259 L 8 3 L 14 5 L 14 14 L 8 16 L 8 15 L 13 13 L 13 6 L 8 8 L 8 7 L 6 2 Z"></path>
+		<path style="fill:#fff;" d="M 7.991 2.62 L 9.975999999999999 -0.719 L 16 0.953 L 13.982 4.531 L 7.991 2.62 Z"></path>
+	</g>
+	<g style="transform-origin: 1.10723px 14.2765px;" transform="matrix(0.707099, 0.707115, -0.776559, 0.776541, 43.351028, -4.524088)">
+		<title>themes</title>
+		<path style="fill:#fff;" d="M 5 6 L 3 0 L 4.875 0 L 5.064 0.736 L 5.269 0 L 10.5 0 L 10.663 2.413 L 11.125 0 L 13 0 L 11 6 L 5 6 Z"></path>
+		<path style="fill:#fff;" d="M 11.617 6.308 L 4.337 6.253 L 5.065 8.188 L 6.521 8.188 L 7.249 11.505 L 7.103 14.823 L 8 16 L 8 15 L 7.5 14.5 L 8 14 L 8.5 14.5 L 8 15 L 8 16 L 8.887 14.823 L 8.705 11.505 L 9.433 8.188 L 10.889 8.188 L 11.617 6.308 Z"></path>
+	</g>
+	<g transform="matrix(1, 0, 0, 1, 64, 0)">
+		<title>otehr</title>
+		<ellipse style="fill:#fff;" cx="2" cy="8" rx="2" ry="2"></ellipse>
+		<ellipse style="fill:#fff;" cx="8" cy="8" rx="2" ry="2"></ellipse>
+		<ellipse style="fill:#fff;" cx="14" cy="8" rx="2" ry="2"></ellipse>
+	</g>
+	<g transform="matrix(1, 0, 0, 1, 96, 0)">
+		<title>achievements</title>
+		<path style="fill:#fff;" d="M 13 0 L 3 1 L 3 4 L 2 3 L 2 7 L 3 7 L 4 9 L 7 12 L 7 14 L 5 14 L 5 15 L 2 15 L 2 16 L 14 16 L 14 15 L 11 15 L 11 14 L 9 14 L 9 12 L 12 9 L 13 7 L 14 7 L 14 2 L 13 3 L 13 0 Z"></path>
+	</g>
+	<g transform="matrix(1, 0, 0, 1, 112, -0.5)">
+		<title>dev credits</title>
+		<path style="fill:#fff;" d="M 8 10 L 11 8 L 12 6 L 11 2 L 8 1 L 5 2 L 4 6 L 5 8 L 8 10 Z"></path>
+		<path style="fill:#fff;" d="M 6 10 L 8 11 L 10 10 L 13 11 L 8 13 L 3 11 L 6 10 Z"></path>
+		<path style="fill:#fff;" d="M 0 12 L 3 11 L 8 14 L 13 11 L 16 12 L 15 16 L 1 16 L 0 12 Z"></path>
+	</g>
+	<g transform="matrix(1, 0, 0, 1, 128, 0)">
+		<title>resources</title>
+		<path style="fill:#fff;" d="M 8 3.5 L 6 1.5 L 0 1.5 L 0 14.5 L 16 14.5 L 16 3.5 L 8 3.5 L 8 4.5 L 15 4.5 L 15 13.5 L 1 13.5 L 1 2.5 L 6 2.5 L 7 3.5 L 2 3.5 L 2 4.5 L 8 4.5 L 8 3.5 Z"></path>
+	</g>
+</svg>

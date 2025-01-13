@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 256" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-1" bx:pinned="true">
+      <stop offset="0" style="stop-color: rgb(75, 128, 202);"></stop>
+      <stop offset="1" style="stop-color: rgb(157, 245, 244);"></stop>
+    </linearGradient>
+    <linearGradient id="gradient-1-0" href="#gradient-1" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="16" y2="32" gradientTransform="matrix(0.999996, 0.00277, -0.004543, 1.640464, 0.000061, -0.044313)"></linearGradient>
+    <linearGradient id="gradient-1-1" href="#gradient-1" gradientUnits="userSpaceOnUse" x1="13.069" y1="14.922" x2="13.069" y2="23.263" gradientTransform="matrix(1, -0.000163, 0.000466, 2.840521, -0.101596, -31.248127)"></linearGradient>
+    <linearGradient id="gradient-1-2" href="#gradient-1" gradientUnits="userSpaceOnUse" x1="18.634" y1="14.704" x2="18.634" y2="23.267" gradientTransform="matrix(0.999981, 0.006253, -0.017457, 2.791816, 0.148885, -29.498352)"></linearGradient>
+  </defs>
+  <rect width="32" height="32" style="fill: url(#gradient-1-0);"></rect>
+  <path style="fill-opacity: 0.5;" d="M 0 0 L 16 0 L 16 2 L 2 16 L 16 30 L 30 16 L 16 2 L 16 0 L 32 0 L 32 32 L 0 32 L 0 0 Z"></path>
+  <path style="fill: rgb(255, 255, 255);" d="M 14.509 5.438 L 15.972 15.01 L 16.454 4.047 L 20.435 8.115 L 20.695 9.11 L 21.86 9.571 L 28.034 15.88 L 20.448 23.942 L 19.005 23.275 L 18.698 25.802 L 16.084 28.58 L 3.713 16.048 L 9.618 10.246 L 10.74 10.636 L 10.461 9.417 L 14.509 5.438 Z"></path>
+  <path style="fill: url(#gradient-1-1);" d="M 13.55 23.263 L 14.545 22.299 L 14.029 15.891 L 12.676 14.922 L 11.594 17.177 L 12.304 22.329 L 13.55 23.263 Z"></path>
+  <path style="fill: url(#gradient-1-2);" d="M 18.317 23.267 L 19.652 22.357 L 20.322 16.535 L 18.722 14.704 L 16.945 16.296 L 17.248 22.777 L 18.317 23.267 Z"></path>
+</svg>
