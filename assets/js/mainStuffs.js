@@ -13,7 +13,7 @@ for (let i = 0; i < mainScriptsArray.length; ++i) {
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
 /*	HEADER  */
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
-const headerStuffsArray = ["f02e_bookmarklets", "f044_editors", "f11b_games", "f5da_literature", "f549_school", "f1c8_video", "f187_other", "&#xf013"];
+const headerStuffsArray = ["f02e_bookmarklets", "f044_editors", "f11b_games", "f5da_literature", "f549_school", /*"f1c8_video",*/ "f187_other", "&#xf013"];
 function loadHeader() {
 	const header = document.createElement("header");
 	const logo = document.createElement("a"); // RATS Logo

@@ -2779,18 +2779,18 @@ const other = {
 			"",
 			"Links"
 		],
-		["The Catalog", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy90aGUtY2F0ZWxvZy9pbmRleC5odG1s", "_REG"],
-		["UNBv1", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy91bmJ2MS9pbmRleC5odG1s", "_REG"],
+		["The Catalog", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS90aGUtY2F0ZWxvZy9pbmRleC5odG1s", "_REG"],
+		["UNBv1", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS91bmJ2MS9pbmRleC5odG1s", "_REG"],
 		["SecretWeb", "c2l0ZXMuZ29vZ2xlLmNvbS9oaGNzZHN0dWRlbnRzLm9yZy9jbGFzc3Jvb20=", "_EXT"],
-		["UNBv2", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy91bmJ2Mi9pbmRleC5odG1s", "_REG"],
-		["The Index", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy90aGUtaW5kZXgvaW5kZXguaHRtbA==", "_REG"],
-		["RATS V1 Alpha", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy9ydjEtYWxwaGEvaW5kZXguaHRtbA==", "_REG"],
-		["RATS V1", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy9ydjEvaW5kZXguaHRtbA==", "_REG"],
-		["RATS V1.5", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy9ydjEuNS9pbmRleC5odG1s", "_REG"],
-		["RATS V2", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy9ydjIvaW5kZXguaHRtbA==", "_REG"],
+		["UNBv2", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS91bmJ2Mi9pbmRleC5odG1s", "_REG"],
+		["The Index", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS90aGUtaW5kZXgvaW5kZXguaHRtbA==", "_REG"],
+		["RATS V1 Alpha", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS9ydjEtYWxwaGEvaW5kZXguaHRtbA==", "_REG"],
+		["RATS V1", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS9ydjEvaW5kZXguaHRtbA==", "_REG"],
+		["RATS V1.5", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS9ydjEuNS9pbmRleC5odG1s", "_REG"],
+		["RATS V2", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS9ydjIvaW5kZXguaHRtbA==", "_REG"],
 		["UNBv3 <i>(SITE124)</i>", "dW5iYXJzY2hlZC5zaXRlMTIzLm1l", "_REG"],
-		["UNBv3 <i>(Canceled)</i>", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy91bmJ2My9pbmRleC5odG1s", "_REG"], // poqvjnewpovrb
-		["Разрушать", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzLmJ1aWxkcy8lRDAlQTAlRDAlQjAlRDAlQjclRDElODAlRDElODMlRDElODglRDAlQjAlRDElODIlRDElOEMvaW5kZXguaHRtbA==", "_REG"]
+		["UNBv3 <i>(Canceled)</i>", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS91bmJ2My9pbmRleC5odG1s", "_REG"], // poqvjnewpovrb
+		["Разрушать", "c2thZGlua2xlLmdpdGh1Yi5pby9yYXRzL2xlZ2FjeS8lRDAlQTAlRDAlQjAlRDAlQjclRDElODAlRDElODMlRDElODglRDAlQjAlRDElODIlRDElOEMvaW5kZXguaHRtbA==", "_REG"]
 	],
 	searchEngines: [
 		[
@@ -3622,11 +3622,11 @@ const general = {
 		["Magical Realism", "literature.magicalRealism", "_CAT"],
 		["Mystery & Crime Fiction", "literature.mysteryAndCrimeFiction", "_CAT"],
 		["Novellas", "literature.novellas", "_CAT"],
-		["NSFW", "literature.nsfw", "_CAT"],
+		//["NSFW", "literature.nsfw", "_CAT"],
 		["Plays & Scripts", "literature.playsAndScripts", "_CAT"],
 		["Poetry", "literature.poetry", "_CAT"],
 		["Psycological Fiction", "literature.psycologicalFiction", "_CAT"],
-		["Religious", "literature.religious", "_CAT"],
+		//["Religious", "literature.religious", "_CAT"],
 		["Romance", "literature.romance", "_CAT"],
 		["Satire", "literature.satire", "_CAT"],
 		["Science Fiction", "literature.scienceFiction", "_CAT"],
@@ -3635,7 +3635,7 @@ const general = {
 		["Thriller", "literature.thriller", "_CAT"],
 		["Unknown", "literature.unknown", "_CAT"],
 		["War & Political", "literature.warAndPolitical", "_CAT"],
-		["Web Comics", "literature.webComics", "_CAT"],
+		//["Web Comics", "literature.webComics", "_CAT"],
 		["Young Adult", "literature.youngAdult", "_CAT"],
 		["Other", "literature.other", "_CAT"]
 	],
