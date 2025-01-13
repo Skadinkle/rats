@@ -23,8 +23,9 @@ Go to your Bookmarks Bar and paste the contents. _**(Make sure to rename it so y
 > Your browser's homepage also doesn't work.<br>
 > Device pages, such as `chrome://new-tab`, also do not work.
 
-### :card_index: Data Exports
+### :card_index: Datatype/URI Exports
 Same as the Bookmarklet Exports, but instead you can paste it directly into the Search Bar.<br>
 Use `Ctrl+D` to bookmark it.
 > [!NOTE]
-> Unlike Bookmarklets, any page will work with these. They overwrite it.
+> URI-based exports will not be able to save data for the site.<br>
+> If you wish to have customized setttings, use a different export.

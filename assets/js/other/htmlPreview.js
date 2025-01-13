@@ -5,9 +5,8 @@
 	All Credit Goes to Them
 */
 
-	// Import Minimal HTMLPreview Code
 (function () {
-	var previewForm = document.getElementById('previewform');
+	var previewForm = document.getElementById("previewform");
 
 	var url = location.search.substring(1).replace(/\/\/github\.com/, "//raw.githubusercontent.com").replace(/\/blob\//, "/"); // Get URL of the raw file
 
@@ -22,7 +21,7 @@
 		for (i = 0; i < frame.length; ++i) {
 			src = frame[i].src; //Get absolute URL
 			if (src.indexOf("//raw.githubusercontent.com") > 0 || src.indexOf("//bitbucket.org") > 0) { // Check if it's from raw.github.com or bitbucket.org
-				frame[i].src = location.href.split("?")[0] + "?" + src; // Then rewrite URL so it can be loaded using CORS proxy
+				frame[i].src = `${location.href.split("?")[0]}?${src}`; // Then rewrite URL so it can be loaded using CORS proxy
 			}
 		}
 
@@ -31,9 +30,9 @@
 		for (i = 0; i < a.length; ++i) {
 			href = a[i].href; // Get absolute URL
 			if (href.indexOf("#") > 0) { // Check if it's an anchor
-				a[i].href = location.href.split("?")[0] + location.search + "#" + a[i].hash.substring(1); // Then rewrite URL with support for empty anchor
+				a[i].href = `${location.href.split("?")[0] + location.search}#${a[i].hash.substring(1)}`; // Then rewrite URL with support for empty anchor
 			} else if ((href.indexOf("//raw.githubusercontent.com") > 0 || href.indexOf("//bitbucket.org") > 0) && (href.indexOf(".html") > 0 || href.indexOf(".htm") > 0)) { // Check if it's from raw.github.com or bitbucket.org and to HTML files
-				a[i].href = location.href.split("?")[0] + "?" + href; // Then rewrite URL so it can be loaded using CORS proxy
+				a[i].href = `${location.href.split("?")[0]}?${href}`; // Then rewrite URL so it can be loaded using CORS proxy
 			}
 		}
 
@@ -66,13 +65,16 @@
 			for (i = 0; i < res.length; ++i) {
 				loadJS(res[i]);
 			}
-			document.dispatchEvent(new Event("DOMContentLoaded", {bubbles: true, cancelable: true})); // Dispatch DOMContentLoaded event after loading all scripts
+			document.dispatchEvent(new Event("DOMContentLoaded", {
+				bubbles: true,
+				cancelable: true
+			})); // Dispatch DOMContentLoaded event after loading all scripts
 		});
 	};
 
 	var loadHTML = function (data) {
 		if (data) {
-			data = data.replace(/<head([^>]*)>/i, '<head$1><base href="' + url + '">').replace(/<script(\s*src=["'][^"']*["'])?(\s*type=["'](text|application)\/javascript["'])?/gi, '<script type="text/htmlpreview"$1'); // Add <base> just after <head> and replace <script type="text/javascript"> with <script type="text/htmlpreview">
+			data = data.replace(/<head([^>]*)>/i, `<head$1><base href="${url}">`).replace(/<script(\s*src=["'][^"']*["'])?(\s*type=["'](text|application)\/javascript["'])?/gi, '<script type="text/htmlpreview"$1'); // Add <base> just after <head> and replace <script type="text/javascript"> with <script type="text/htmlpreview">
 			setTimeout(function () {
 				document.open();
 				document.write(data);
@@ -100,11 +102,11 @@
 	
 	var fetchProxy = function (url, options, i) {
 		var proxy = [
-			"", // Try without proxy first
+			"", /* Try without proxy first */
 			"https://api.codetabs.com/v1/proxy/?quest="
 		];
 		return fetch(proxy[i] + url, options).then(function (res) {
-			if (!res.ok) throw new Error("Cannot load " + url + ": " + res.status + " " + res.statusText);
+			if (!res.ok) throw new Error(`Cannot load ${url}: ${res.status} ${res.statusText}`);
 			return res.text();
 		}).catch(function (error) {
 			if (i === proxy.length - 1) throw error;

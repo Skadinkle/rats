@@ -6,9 +6,9 @@ const bookmarklets = {
 		[
 			"Bookmarklets",
 			"Development",
-			"This page contains a handful of bookmarklets useful for web development and debugging.",
+			"This page contains a handful of debugging-related bookmarklets.",
 			"",
-			"These can easily break the site and mess with site data.",
+			"These can modify site data permanently. Be careful when using on important sites. <i>(Ex. Social Media)</i>",
 			"Scripts",
 			"cardIcons",
 			"development.svg"
@@ -45,8 +45,8 @@ const bookmarklets = {
 		[
 			"Bookmarklets",
 			"Fun",
-			"This page contains a list of additional bookmarklets used for entertainment.",
-			"",
+			"This page contains a list of bookmarklets for more generalized entertainment.",
+			"Some of these require sound on your device.",
 			"",
 			"Scripts",
 			"cardIcons",
@@ -71,7 +71,7 @@ const bookmarklets = {
 		[
 			"Bookmarklets",
 			"Games",
-			"This page contains a list of several HTML-based games stored inside bookmarklets.",
+			"This page contains several games, ranging from arcade games to mods.",
 			"",
 			"",
 			"Scripts",
@@ -699,7 +699,7 @@ const games = {
 			"Links"
 		],
 		["10 Minutes Till Dawn", "bGlveHJ5dC9saW94cnl0LWFzc2V0cy9ibG9iL21haW4vb3RoZXIvMTBtdGQvaW5kZXguaHRtbA==", "_GIT"],
-		["Burrito Bison: <i>Launcha Libre</i>", "bW91bnRhaW42NTgvbW91bnRhaW42NTguZ2l0aHViLmlvL2Jsb2IvbWFpbi9nL2J1cnJpdG9iaXNvbi9pbmRleC5odG1s", "_GIT"],
+		["Burrito Bison: <i>Launcha Libre</i>", "bW91bnRhaW42NTgvbW91bnRhaW42NTguZ2l0aHViLmlvL2Jsb2IvbWFpbi9nL2J1cnJpdG9iaXNvbi9pbmRleC5odG1s", "_GIT"]
 	],
 	arcade: [
 		[
@@ -732,19 +732,19 @@ const games = {
 		["Jetpack Joyride", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9qZXRwYWNrLWpveXJpZGUvaW5kZXguaHRtbA==", "_REG"],
 		["Learn to Fly", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9sZWFybnRvZmx5L2luZGV4Lmh0bWw=", "_REG"],
 		["Learn to Fly 2", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9sZWFybnRvZmx5Mi9pbmRleC5odG1s", "_REG"],
-		["Mad Burger 3: Wild West", "ZGRkYXZpdC5naXRodWIuaW8vbWFkYnVyZ2VyLw==", "_REG"],
+		["Mad Burger 3: <i>Wild West</i>", "ZGRkYXZpdC5naXRodWIuaW8vbWFkYnVyZ2VyLw==", "_REG"],
 		["Running Bot - Xmas Gift", "UmFkb24tR2FtZXMvUmFkb24tR2FtZXMtQXNzZXRzL2Jsb2IvbWFpbi9odG1sL3J1bm5pbmctYm90LXhtYXMtZ2lmdHMvaW5kZXguaHRtbA==", "_GIT"],
-		["Rusher Crusher: Demolition!", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvcnVzaGVyLWNydXNoZXIvaW5kZXguaHRtbA==", "_GIT"],
+		["Rusher Crusher: <i>Demolition!</i>", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvcnVzaGVyLWNydXNoZXIvaW5kZXguaHRtbA==", "_GIT"],
 		["SHUTTLEDECK", "QmluQmFzaEJhbmFuYS9nZmlsZXMvYmxvYi9tYXN0ZXIvZ2ZpbGVzL2h0bWw1L3NodXR0bGVkZWNrL2luZGV4Lmh0bWw=", "_GIT"],
 		["Snow Rider 3D", "aGlsZmlnM3IuZ2l0aHViLmlvL1Nub3dSaWRlcjNELw==", "_REG"],
-		["Space Invaders <i>Chip 8</i>", "cGxheS1jaGlwOC53ZWIuYXBwLw==", "_REG"],
+		["Space Invaders <i>(Chip 8)</i>", "cGxheS1jaGlwOC53ZWIuYXBwLw==", "_REG"],
 		["SWERVE", "bW9ua2V5M3RocmVlL3VuYmxvY2tlZDg4LmdpdGh1Yi5pby9ibG9iL2doLXBhZ2VzL2dhbWVzL3N3ZXJ2ZS9pbmRleC5odG1s", "_GIT"],
 		["Tanuki Sunset", "UGFyY29pbC9uYXRpdmVnYW1lcy5uZXQtdjEvYmxvYi9tYWluL3BsYXkvdGFudWtpLXN1bnNldC9pbmRleC5odG1s", "_GIT"],
 		["TapTapTap", "TWFoZGlGL3RhcHRhcHRhcC9ibG9iL21hc3Rlci9wbGF5L2luZGV4Lmh0bWw=", "_GIT"],
 		["Temple Run 2", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy90ZW1wbGUtcnVuLTIvaW5kZXguaHRtbA==", "_REG"],
 		["Tomb of the Mask", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvdG9tYi1vZi10aGUtbWFzay9pbmRleC5odG1s", "_GIT"],
 		["Tube Jumpers", "Y29tYmluYXRyb25pY3MuaW8vcG9nZG90ZXhlL2JhbGQvbWFpbi9pbmRleC5odG1s", "_REG"],
-		["Zrist", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS96cmlzdC9pbmRleC5odG1s", "_GIT"],
+		["Zrist", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS96cmlzdC9pbmRleC5odG1s", "_GIT"]
 	],
 	arcade_subwaySurfers: [
 		[
@@ -755,16 +755,16 @@ const games = {
 			"",
 			"Links"
 		],
-		["World Tour <i>(Beijing)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL1N1YndheS1TdXJmZXItQmVpamluZy8=", "_REG"],
-		["World Tour <i>(Berlin)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheS1zdXJmZXJzLWJlcmxpbjMzLw==", "_REG"],
-		["World Tour <i>(Havana)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL2hhdmFuYS8=", "_REG"],
-		["World Tour <i>(Houston)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL1N1YndheVN1cmZlcnNXb3JsZFRvdXJIb3VzdG9uLw==", "_REG"],
-		["World Tour <i>(London)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheXRlc3Qv", "_REG"],
-		["World Tour <i>(Monaco)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheS1zdXJmZXItbW9uYWNvLw==", "_REG"],
-		["World Tour <i>(New Orleans)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheXN1cmZuZXdvcmxlYW5zLw==", "_REG"],
-		["World Tour <i>(San Francisco)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL1N1YndheS1TdXJmZXJzYS8=", "_REG"],
-		["World Tour <i>(Seoul)</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1cmYyLw==", "_REG"],
-		["World Tour <i>(Zurich)</i>", "U3VwZXJUZWFtWHgvU3Vid2F5LVN1cmZlcnMvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"]
+		["World Tour: <i>Beijing</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL1N1YndheS1TdXJmZXItQmVpamluZy8=", "_REG"],
+		["World Tour: <i>Berlin</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheS1zdXJmZXJzLWJlcmxpbjMzLw==", "_REG"],
+		["World Tour: <i>Havana</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL2hhdmFuYS8=", "_REG"],
+		["World Tour: <i>Houston</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL1N1YndheVN1cmZlcnNXb3JsZFRvdXJIb3VzdG9uLw==", "_REG"],
+		["World Tour: <i>London</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheXRlc3Qv", "_REG"],
+		["World Tour: <i>Monaco</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheS1zdXJmZXItbW9uYWNvLw==", "_REG"],
+		["World Tour: <i>New Orleans</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1YndheXN1cmZuZXdvcmxlYW5zLw==", "_REG"],
+		["World Tour: <i>San Francisco</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL1N1YndheS1TdXJmZXJzYS8=", "_REG"],
+		["World Tour: <i>Seoul</i>", "aGlsZmlnM3IuZ2l0aHViLmlvL3N1cmYyLw==", "_REG"],
+		["World Tour: <i>Zurich</i>", "U3VwZXJUZWFtWHgvU3Vid2F5LVN1cmZlcnMvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"]
 	],
 	bootleg: [
 		[
@@ -789,9 +789,9 @@ const games = {
 			"",
 			"Links"
 		],
-		["Maptroid: Worlds", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS9tYXB0cm9pZC9pbmRleC5odG1s", "_GIT"],
+		["Maptroid: <i>Worlds</i>", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS9tYXB0cm9pZC9pbmRleC5odG1s", "_GIT"],
 		["s l o w r o a d s", "bW9ua2V5M3RocmVlL3VuYmxvY2tlZDg4LmdpdGh1Yi5pby9ibG9iL2doLXBhZ2VzL2dhbWVzL2Zhc3Ryb2Fkcy1tYXN0ZXIvZmFzdHJvYWRzLW1hc3Rlci9pbmRleC5odG1s", "_GIT"],
-		["We Become What We Behold", "Ym9uYmFuZy5naXRodWIuaW8vd2UtYmVjb21lLXdoYXQtd2UtYmVob2xkLw==", "_REG"],
+		["We Become What We Behold", "Ym9uYmFuZy5naXRodWIuaW8vd2UtYmVjb21lLXdoYXQtd2UtYmVob2xkLw==", "_REG"]
 	],
 	downloadable: [
 		[
@@ -826,7 +826,7 @@ const games = {
 		["PlayStation 1", "games.emulators_playstation1", "_CAT"],
 		["ROMS", "games.emulators_roms", "_CAT"],
 		["Scratch", "games.emulators_scratch", "_CAT"],
-		["Other", "games.emulators_other", "_CAT"],
+		["Other", "games.emulators_other", "_CAT"]
 	],
 	emulators_amiga: [
 		[
@@ -837,7 +837,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["vAmiga Web Edition", "dmFtaWdhd2ViLmdpdGh1Yi5pby8=", "_REG"],
+		["vAmiga Web Edition", "dmFtaWdhd2ViLmdpdGh1Yi5pby8=", "_REG"]
 	],
 	emulators_atari: [
 		[
@@ -848,7 +848,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["Javatari", "amF2YXRhcmkub3JnLw==", "_REG"],
+		["Javatari", "amF2YXRhcmkub3JnLw==", "_REG"]
 	],
 	/*emulators_executables: [
 		[
@@ -882,18 +882,19 @@ const games = {
 			"Links"
 		],
 		["Age <i>(GB)</i>", "Yy1zcC5naXRodWIuaW8vYWdlLW9ubGluZS9lbg==", "_REG"],
-		["Angular  <i>(GB)</i>", "YW5ndWxhcmdiLnZlcmNlbC5hcHAv", "_REG"],
-		["BINJGB  <i>(GB)</i>", "YmluamkuZ2l0aHViLmlvL2JpbmpnYi8=", "_REG"],
-		["CAMLBOY  <i>(GB)</i>", "bGlub3Njb3BlLmdpdGh1Yi5pby9DQU1MQk9ZLw==", "_REG"],
-		["Cronyii  <i>(GB)</i>", "Y3JvbnlpaS5naXRodWIuaW8vZ2FtZWJveS8", "_REG"],
-		["Iodine  <i>(GBA)</i>", "dGFpc2VsLmdpdGh1Yi5pby9Jb2RpbmVHQkEv", "_REG"],
-		["It Failed Emulator  <i>(GBA)</i>", "aXRmYWlsZWRlbXVsYXRvci5naXRodWIuaW8v", "_REG"],
-		["JS2  <i>(GBA)</i>", "YW5keWNoYXNlLm1lL2diYWpzMi8=", "_REG"],
-		["Node  <i>(GB)</i>", "bmFrYXJkby5naXRodWIuaW8vbm9kZS1nYW1lYm95Lw==", "_REG"],
-		["Padme  <i>(GBA)</i>", "cGFkbWUuY2Mv", "_REG"],
+		["Angular <i>(GB)</i>", "YW5ndWxhcmdiLnZlcmNlbC5hcHAv", "_REG"],
+		["BINJGB <i>(GB)</i>", "YmluamkuZ2l0aHViLmlvL2JpbmpnYi8=", "_REG"],
+		["CAMLBOY <i>(GB)</i>", "bGlub3Njb3BlLmdpdGh1Yi5pby9DQU1MQk9ZLw==", "_REG"],
+		["Cronyii <i>(GB)</i>", "Y3JvbnlpaS5naXRodWIuaW8vZ2FtZWJveS8", "_REG"],
+		["Iodine <i>(GBA)</i>", "dGFpc2VsLmdpdGh1Yi5pby9Jb2RpbmVHQkEv", "_REG"],
+		["It Failed Emulator <i>(GBA)</i>", "aXRmYWlsZWRlbXVsYXRvci5naXRodWIuaW8v", "_REG"],
+		["JS2 <i>(GBA)</i>", "YW5keWNoYXNlLm1lL2diYWpzMi8=", "_REG"],
+		["Node <i>(GB)</i>", "bmFrYXJkby5naXRodWIuaW8vbm9kZS1nYW1lYm95Lw==", "_REG"],
+		["Padme <i>(GBA)</i>", "cGFkbWUuY2Mv", "_REG"],
 		["Sky", "d2ViLnNreWVtdS5hcHAv", "_REG"],
-		["Vercel  <i>(GBA)</i>", "d2ViLWdiYS52ZXJjZWwuYXBwLw==", "_REG"],
-		["WASMboy  <i>(GBA)</i>", "d2FzbWJveS5hcHAv", "_REG"],
+		["Taisel <i>(GB)</i>", "dGFpc2VsLmdpdGh1Yi5pby9HYW1lQm95LU9ubGluZQ==", "_REG"],
+		["Vercel <i>(GBA)</i>", "d2ViLWdiYS52ZXJjZWwuYXBwLw==", "_REG"],
+		["WASMboy <i>(GBA)</i>", "d2FzbWJveS5hcHAv", "_REG"]
 	],
 	emulators_htmlJs: [
 		[
@@ -940,18 +941,7 @@ const games = {
 		],
 		["BS-3", "YnMtMy52ZXJjZWwuYXBwLw==", "_REG"],
 		["PCSX-wasm", "a3hreDUxNTAuZ2l0aHViLmlvL1BDU1gtd2FzbS8=", "_REG"],
-		["WasmPSX", "anMtZW11bGF0b3JzLmdpdGh1Yi5pby93YXNtcHN4Lw==", "_REG"],
-	],
-	emulators_scratch: [
-		[
-			"Games - Emulators",
-			"Scratch",
-			"",
-			"",
-			"",
-			"Links"
-		],
-		["Forkphorus", "Zm9ya3Bob3J1cy5naXRodWIuaW8v", "_REG"]
+		["WasmPSX", "anMtZW11bGF0b3JzLmdpdGh1Yi5pby93YXNtcHN4Lw==", "_REG"]
 	],
 	emulators_roms: [
 		[
@@ -985,6 +975,17 @@ const games = {
 		["PSP", "ZHJpdmUuZ29vZ2xlLmNvbS9kcml2ZS9mb2xkZXJzLzFheU0yR0hTVDZiVFBSWUZWeFhSdE0zb0cxbmJMdGFvRT91c3A9c2hhcmVfbGluaw==", "_EXT"],
 		["Dream Cast", "ZHJpdmUuZ29vZ2xlLmNvbS9kcml2ZS9mb2xkZXJzLzFob0JUWlhiTmFZVXI1WU5uNktONFd2bm9EcENDczV5bT91c3A9c2hhcmVfbGluaw==", "_EXT"]
 	],
+	emulators_scratch: [
+		[
+			"Games - Emulators",
+			"Scratch",
+			"",
+			"",
+			"",
+			"Links"
+		],
+		["Forkphorus", "Zm9ya3Bob3J1cy5naXRodWIuaW8v", "_REG"]
+	],
 	emulators_other: [
 		[
 			"Games - Emulators",
@@ -997,7 +998,7 @@ const games = {
 		["EmulatorJS", "ZW11bGF0b3Jqcy5vcmcv", "_REG"],
 		["Quadplay✜ Fantasy Console", "bW9yZ2FuM2QuZ2l0aHViLmlvL3F1YWRwbGF5L2NvbnNvbGUvcXVhZHBsYXkuaHRtbD9JREU9MQ==", "_REG"],
 		["WAD Commander", "d2FkY21kLmNvbS8=", "_REG"],
-		["WebMSX", "d2VibXN4Lm9yZy8=", "_REG"],
+		["WebMSX", "d2VibXN4Lm9yZy8=", "_REG"]
 	],
 	fighter: [
 		[
@@ -1008,7 +1009,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["Stick Duel: Shadow Fight", "ZGRkYXZpdC5naXRodWIuaW8vaWdyYS1zdGlrLWR1ZWwtYm9qLXMtdGVueXUv", "_REG"],
+		["Stick Duel: Shadow Fight", "ZGRkYXZpdC5naXRodWIuaW8vaWdyYS1zdGlrLWR1ZWwtYm9qLXMtdGVueXUv", "_REG"]
 	],
 	fnfMods: [
 		[
@@ -1020,13 +1021,13 @@ const games = {
 			"Links & Categories"
 		],
 		["Friday Night Funkin'", "dmFja3l0b24uZ2l0aHViLmlvL3NuaXBlcnNpdGUvd2VlazcvaW5kZXguaHRtbA==", "_REG"],
-		["FNF: Week 7", "U29CbG94c3kvZm5mLXdlZWstNy1jb2RlL2Jsb2IvbWFpbi9zcmMvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF: <i>Week 7</i>", "U29CbG94c3kvZm5mLXdlZWstNy1jb2RlL2Jsb2IvbWFpbi9zcmMvaW5kZXguaHRtbA==", "_GIT"],
 		["Engines", "games.fnfMods_engines", "_CAT"],
 		["Full Weeks", "games.fnfMods_fullWeeks", "_CAT"],
 		["One Offs", "games.fnfMods_oneOffs", "_CAT"],
 		["Remixes / Covers", "games.fnfMods_remixesAndCovers", "_CAT"],
 		["Reskins", "games.fnfMods_reskins", "_CAT"],
-		["Other", "games.fnfMods_other", "_CAT"],
+		["Other", "games.fnfMods_other", "_CAT"]
 	],
 	fnfMods_engines: [
 		[
@@ -1050,21 +1051,33 @@ const games = {
 			"",
 			"Links"
 		],
+		["Arcade Showdown <i>(Vs. Kapi)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIva2FwaS9pbmRleC5odG1s", "_GIT"],
 		["Abandoned Arcade Machine", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9wdXJwbGUtZ3V5LWFiYW5kb25lZC1hcmNhZGUtbWFjaGluZS8xLw==", "_REG"],
 		["Ambion Corrupt Frenzy", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hbWJpb24tY29ycnVwdC1mcmVuenkvMS8=", "_REG"],
 		["Arwen Great Kiscadee", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9iZW0tdGUtdmktYXJ3ZW4tZ3JlYXQta2lzY2FkZWUvMS8=", "_REG"],
 		["Back Alley Blitz V1 <i>(Vs. Whitty)</i>", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy93aGl0dHkvNS8=", "_REG"],
+		//["Back Alley Blitz V1 <i>(Vs. Whitty)</i>", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vd2hpdHR5L2luZGV4Lmh0bWw=", "_GIT"],
+		["Back Alley Blitz V1.5 <i>(Vs. Whitty)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvd2hpdG1hbi9pbmRleC5odG1s", "_GIT"],
 		["Back Alley Blitz V2 <i>(Vs. Whitty)</i>", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi93aGl0bWFuL2luZGV4Lmh0bWw=", "_GIT"],
 		["Beach Time Blowout", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9iZWFjaC10aW1lLWJsb3dvdXQvMS8=", "_GIT"],
 		["Bikini Bottom Funkin'", "bWVtZWVlMzEwL0Jpa2luaS1Cb3R0b20tRnVua2luLVdlYi9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
 		["Crypto Crackdown", "bWVtZWVlMzEwL0ZORi1DcnlwdG8tQ3JhY2tkb3duLVdlYi9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
 		["Dave & Bambi Damnation", "U3BvbmdleWJvaS9mbmYtZGF2ZS13ZWIvYmxvYi9tYXN0ZXIvaW5kZXguaHRtbA==", "_GIT"],
+		["Deep-Sea Date V1", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvZGVlcHNlYWRhdGUvaW5kZXguaHRtbA==", "_GIT"],
 		["Doki Doki Takeover!", "bWVtZWVlMzEwL0ZORi1Eb2tpLURva2ktVGFrZW92ZXItV2ViL2Jsb2IvbWFpbi9pbmRleC5odG1s", "_GIT"],
 		["Dusttale: Remastered", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9kdXN0dGFsZS1yZW1hc3RlcmVkLzEuMS8=", "_REG"],
+		["Dusttale: Remastered <i>(High-end Devices)</i>", "SuperTeamXx/FNF-DUSTTALE-Web-High-End-Device/blob/main/index.html", "_GIT"],
+		["Dusttale: Remastered <i>(Low-end Devices)</i>", "SuperTeamXx/FNF-DUSTTALE-Web-Low-End-Device/blob/main/index.html", "_GIT"],
+		["Dusttale: Remastered <i>(Potatoe Devices)</i>", "SuperTeamXx/FNF-DUSTTALE-Web-Potato-Device/blob/main/index.html", "_GIT"],
+		["Everywhere at the End of Funk", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvZXZlcnl3aGVyZWF0dGhlZW5kb2ZmdW5rL2luZGV4Lmh0bWw=", "_GIT"],
 		["Feathery Fight", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy91bmlxdWVnZWVzZS8xLw==", "_REG"],
 		["Flip-Side", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9mbGlwLXNpZGUvMS8=", "_REG"],
-		["FNF: Online", "TEVWSVhERExNQU8vRk5GX09ubGluZV9WU19wc3ljaC9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
-		["FNF x Camellia", "dHdhc3RpbmZnLmdpdGh1Yi5pby9GTkYtT25saW5lLTIzL2NhbWVsbGlhLw==", "_REG"],
+		["FNF: <i>Online</i>", "TEVWSVhERExNQU8vRk5GX09ubGluZV9WU19wc3ljaC9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
+		["FNF X Atsuover <i>(Vs. Annie)</i>", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9hbm4vaW5kZXguaHRtbA==", "_GIT"],
+		//["FNF X Atsuover <i>(Vs. Annie)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvYW5uL2luZGV4Lmh0bWw=", "_GIT"],
+		["FNF X Camellia", "dHdhc3RpbmZnLmdpdGh1Yi5pby9GTkYtT25saW5lLTIzL2NhbWVsbGlhLw==", "_REG"],
+		//["FNF X Camellia", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvY2FtZWxsaWEvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF X Miku", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vbWlrdS9pbmRleC5odG1s", "_GIT"],
 		["Friday at Treasure Island", "bWVtZWVlMzEwL0ZyaWRheS1BdC1UcmVhc3VyZS1Jc2xhbmQtV2ViL2Jsb2IvbWFpbi9pbmRleC5odG1s", "_GIT"],
 		["Friday Night Divorcin'", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9kaXZvcmNpbi8zLw==", "_REG"],
 		["Friday Night Incident", "bWVtZWVlMzEwL1ZzLU1yLnRyb2xsb2xvLXdlZWstMi13ZWIvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
@@ -1073,31 +1086,49 @@ const games = {
 		["HoloNight Funkin'", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9ob2xvbmlnaHRmdW5raW4vaW5kZXguaHRtbA==", "_GIT"],
 		["Hotline 024", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9uaWtrdS1ob3RsaW5lLTAyNC8xLw==", "_REG"],
 		["Hypno's Lullaby", "bWVtZWVlMzEwL0h5cG5vcy1MdWxsYWJ5LVdlYi9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
+		["Monika Full Week Rebooted!", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvbW9uaWthL2luZGV4Lmh0bWw=", "_GIT"],
 		["Moonlit Melodies", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hbGZpZS81LjUv", "_REG"],
 		["MordeTwi Magic", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy90d2lsaWdodC1zcGFya2xlLWFuZC1tb3JkZWNhaS8xLjEv", "_REG"],
 		["Pico's School", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9waWNvLXNjaG9vbC8yLjEv", "_REG"],
+		["QT Mod", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvcXQvaW5kZXguaHRtbA==", "_GIT"],
+		["Salty's Sunday Night V1", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9zYWx0eXNzdW5kYXluaWdodC9pbmRleC5odG1s", "_GIT"],
+		//["Salty's Sunday Night V1", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2FsdHlzc3VuZGF5bmlnaHQvaW5kZXguaHRtbA==", "_GIT"],
+		["Salty's Sunday Night V2", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2FsdHlzc3VuZGF5bmlnaHQvaW5kZXguaHRtbA==", "_GIT"],
+		["Sarvente's Mid-Fight Masses V1", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vc2FydmVudGVzL2luZGV4Lmh0bWw=", "_GIT"],
+		["Shaggy X Matt", "SnVhcmV6MjAxMC9mbmYtb2xkL2Jsb2IvbWFpbi9zaGFnZ3ltYXR0L2luZGV4Lmh0bWw=", "_GIT"],
+		//["Shaggy X Matt", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2hhZ2d5bWF0dC9pbmRleC5odG1s", "_GIT"],
 		["Skalloween Spectracle", "d293dGJjLm5ldC91cGxvYWRzL2dhbWVzL2FsZmllLXZzLWZpbGlwLXNrYWxsb3dlZW4tc3BlY3RyYWNsZS8xLw==", "_REG"],
 		["Slaughter Me Funkin'", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zbGF1Z2h0ZXItbWUtZnVua2luLzEuMTIv", "_REG"],
+		["Smoke 'Em Out Struggle <i>(Vs. Garcello)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc21va2VlbW91dHN0cnVnZ2xlL2luZGV4Lmh0bWw=", "_GIT"],
 		["Tails Gets Trolled", "aS5nYW1lc2dvLm5ldC91cGxvYWRzL2dhbWUvaHRtbDUvNjMwNC8=", "_REG"],
+		["The Shaggyverse", "UmFuZG9tTWFrZXJBbGYvRk5GLVZTLVRIRS1TSEFHR1lWRVJTRS1IVE1MNS9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
+		["The Tricky Mod V1", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vdHJpY2t5L2luZGV4Lmh0bWw=", "_GIT"],
 		["The Tricky Mod V2", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy90cmlja3kyLzQv", "_REG"],
 		["Undertale: <i>The Ruins</i>", "U3VwZXJUZWFtWHgvRk5GLVVuZGVydGFsZS1XZWIvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
+		["The X-Event V1", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4veC1ldmVudC9pbmRleC5odG1s", "_GIT"],
+		["Vs. 8-Bit Ryan", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvOGJpdHJ5YW4vaW5kZXguaHRtbA==", "_GIT"],
 		["Vs. Abigail", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hYmlnYWlsLzEv", "_REG"],
 		["Vs. Ace", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hY2UvMS8=", "_REG"],
 		["Vs. Aflac", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hZmxhYy8xLw==", "_REG"],
 		["Vs. A.G.O.T.I.", "YW1ob29tYW4vQWdvdGktd2ViLXBvcnQvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Amp", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hbXAvMS8=", "_REG"],
-		["Vs. Annie <i>(Atsuover)</i>", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9hbm4vaW5kZXguaHRtbA==", "_GIT"],
 		["Vs. Bad Piggies", "ZXh0Lm1pbmlqdWVnb3NncmF0aXMuY29tL2ZyaWRheS1uaWdodC1mdW5raW4tdnMtYmFkLXBpZ2dpZXMvaW5kZXgyLmh0bWw=", "_REG"],
 		["Vs. Ben Drowned", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9iZW4tZHJvd25lZC8xLw==", "_REG"],
 		["Vs. Berdly", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9iZXJkbHkvMS8=", "_REG"],
 		["Vs. Cheeky", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9jaGVla3kvMy4xLw==", "_REG"],
 		["Vs. Eteled", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9ldGVsZWQvMS4yNS8=", "_REG"],
-		["Vs. Ex. <i>(Tabi)</i>", "UmFkb24tR2FtZXMvUmFkb24tR2FtZXMtQXNzZXRzL2Jsb2IvbWFpbi9odG1sL2ZyaWRheS1uaWdodC1mdW5raW4tLXZzLWV4L2luZGV4Lmh0bWw=", "_GIT"],
+		["Vs. Ex. <i>(Vs. Tabi)</i>", "UmFkb24tR2FtZXMvUmFkb24tR2FtZXMtQXNzZXRzL2Jsb2IvbWFpbi9odG1sL2ZyaWRheS1uaWdodC1mdW5raW4tLXZzLWV4L2luZGV4Lmh0bWw=", "_GIT"],
+		//["Vs. Ex. <i>(Vs. Tabi)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvdGFiaS9pbmRleC5odG1s", "_GIT"],
 		["Vs. Girlfriend", "aS5nYW1lc2dvLm5ldC8vdXBsb2Fkcy9nYW1lL2h0bWw1L2Z1bmtpbi92c2dpcmxmcmllbmQvaW5kZXguaHRtbA==", "_REG"],
+		["Vs. Gvbvdxx", "amFzb25nbGVuZXZhbnMvZm5mLXZzLWd2YnZkeHhIVE1MNVBvcnQvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Henry Stickman", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9oZW5yeS9pbmRleC5odG1s", "_GIT"],
-		["Vs. Hex", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9oZXgvaW5kZXguaHRtbA==", "_GIT"],
+		//["Vs. Henry Stickman", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvaGVucnkvaW5kZXguaHRtbA==", "_GIT"],
+		//["Vs. Hex", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9oZXgvaW5kZXguaHRtbA==", "_GIT"],
+		["Vs. Hex Mod V1", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vaGV4L2luZGV4Lmh0bWw=", "_GIT"],
+		["Vs. Hex Mod V2", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvaGV4L2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Imposter V1", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9zdXNzeTIvaW5kZXguaHRtbA==", "_GIT"],
 		["Vs. Imposter V3", "Z2dsMjIuZ2l0aHViLmlvL2ltcG9zdG9yLXYzLw==", "_REG"],
+		//["Vs. Imposter V3", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvaW1wb3N0b3ItdjMvaW5kZXguaHRtbA==", "_GIT"],
 		["Vs. John", "U3BvbmdleWJvaS9mbmYtam9obi13ZWItcHN5Y2gvYmxvYi9tYXN0ZXIvaW5kZXguaHRtbA==", "_GIT"],
 		["Vs. Kapi", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9rYXBpLzYuMS8=", "_REG"],
 		["Vs. Kirb", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9LaXJiLzEv", "_REG"],
@@ -1110,19 +1141,27 @@ const games = {
 		["Vs. Omori", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9vbW9yaS0yLzEuMTM0Lw==", "_REG"],
 		["Vs. Pac-man", "d293dGJjLm5ldC9iaW4v", "_REG"],
 		["Vs. Retrospector", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9yZXRyb3NwZWN0b3IvMS8=", "_REG"],
+		["Vs. Sans", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2Fucy9pbmRleC5odG1s", "_GIT"],
 		["Vs. Sanx", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zYW54LzEv", "_REG"],
 		["Vs. Sayori", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zYXlvcmktZGRsYy8xLjEv", "_REG"],
-		["Vs. Shaggy", "bWVtZWVlMzEwL0ZORi1WUy1TaGFnZ3ktV2ViL2Jsb2IvbWFpbi9pbmRleC5odG1s", "_GIT"],
-		["Vs. Shaggy x Velma", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zaGFnZ3kteC12ZWxtYS8xLw==", "_REG"],
-		["Vs. Shaggy x Matt", "SnVhcmV6MjAxMC9mbmYtb2xkL2Jsb2IvbWFpbi9zaGFnZ3ltYXR0L2luZGV4Lmh0bWw=", "_GIT"],
+		["Vs. Shaggy V1", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2hhZ2d5L2luZGV4Lmh0bWw=", "_GIT"],
+		["Vs. Shaggy V2", "bWVtZWVlMzEwL0ZORi1WUy1TaGFnZ3ktV2ViL2Jsb2IvbWFpbi9pbmRleC5odG1s", "_GIT"],
+		["Vs. Shaggy X Velma", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zaGFnZ3kteC12ZWxtYS8xLw==", "_REG"],
+		["Vs. Sky", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vc2t5L2luZGV4Lmh0bWw=", "_GIT"],
+		["Vs. Slender", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvc2xlbmRlcm1hbi9pbmRleC5odG1s", "_GIT"],
 		["Vs. Sonic.exe V1", "Z2dsMjIuZ2l0aHViLmlvL3NvbmljLWV4ZS8=", "_REG"],
+		//["Vs. Sonic.exe V1", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvc29uaWMtZXhlL2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Sonic.exe V2", "TEVWSVhERExNQU8vU29uaWMuZXhlSFRNTDUvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Spinel", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zcGluZWwtZnVsbC13ZWVrLzEv", "_REG"],
 		["Vs. Stickman", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zdGlja21hbi8xLw==", "_REG"],
 		["Vs. Tord", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi90b3JkL2luZGV4Lmh0bWw=", "_GIT"],
+		//["Vs. Tord", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvdG9yZC9pbmRleC5odG1s", "_GIT"],
 		["Vs. Twitter", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy90d2l0dGVyLzEv", "_REG"],
 		["Vs. Violastro", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy92aW9sYXN0cm8vMi8=", "_REG"],
-		["Vs. Withered Bonnie", "d3d3Lndvd3RiYy5uZXQvZ2FtZXMvYm9ubmllLzEv", "_REG"]
+		["Vs. Void", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvdm9pZC9pbmRleC5odG1s", "_GIT"],
+		["Vs. Xe", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvWEUvaW5kZXguaHRtbA==", "_GIT"],
+		["Vs. Withered Bonnie", "d3d3Lndvd3RiYy5uZXQvZ2FtZXMvYm9ubmllLzEv", "_REG"],
+		["Wii Funkin' <i>(Vs. Matt)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvbWF0dC9pbmRleC5odG1s", "_GIT"]
 	],
 	fnfMods_oneOffs: [
 		[
@@ -1135,16 +1174,21 @@ const games = {
 		],
 		["Accelerant Hank", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9oYW5rLWFjY2VsZXJhbnQvMy8=", "_REG"],
 		["Campy's Jam", "aGRib3llL2ZuZm1vZHMvYmxvYi9tYXN0ZXIvY2FtcHkvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF Deathmatch Project [Corrupted]", "TEVWSVhERExNQU8vRGVhdGhNYXRjaF9GTkZfSFRNTC9ibG9iL21haW4vaW5kZXguaHRtbA==", "_GIT"],
 		["Golf Minigame", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9nb2xmL2luZGV4Lmh0bWw=", "_GIT"],
+		["Michael Jackson's Rose Criminal", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvcm9zZWNyaW1pbmFsL2luZGV4Lmh0bWw=", "_GIT"],
 		["Potassium Queen", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9wb3Rhc3NpdW0tcXVlZW4vMS8=", "_REG"],
 		["Spongy Dehydration", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9zcG9uZ2Vib2ItdnMtd2F0ZXItc3Bvbmd5LWRlaHlkcmF0aW9uLzEv", "_REG"],
 		["Test", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi90ZXN0L2luZGV4Lmh0bWw=", "_GIT"],
 		["Ugh High Effort", "MXp1L2ZuZi9ibG9iL21haW4vdWdoL2luZGV4Lmh0bWw=", "_GIT"],
+		//["Ugh High Effort", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vdWdoL2luZGV4Lmh0bWw=", "_GIT"],
+		["Vs. Chara <i>(Megalo Strikes Back)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvdnNjaGFyYS9pbmRleC5odG1s", "_GIT"],
 		["Vs. Gacha Life", "bWVtZWVlMzEwL0ZORi1WUy1HYXRjaGEtTGlmZS1XZWIvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Goku", "d293dGJjLm5ldC91cGxvYWRzL2dhbWVzL2dva3UvMS8=", "_REG"],
 		["Vs. Me3p Gaming", "TW9zdE9yaWdpbmFsSUdOL3ZzbWUzcGdnYW1pbmcvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
 		["Vs. Skippa", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9za2lwcGVyLXNraXBwYS8xLjEv", "_REG"],
-		["Vs. Zardy", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi96YXJkeS9pbmRleC5odG1s", "_GIT"]
+		["Vs. Zardy", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi96YXJkeS9pbmRleC5odG1s", "_GIT"],
+		["Vs. Zardy </i>(Foolhardy)<i>", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vemFyZHkvaW5kZXguaHRtbA==", "_GIT"]
 	],
 	fnfMods_remixesAndCovers: [
 		[
@@ -1155,24 +1199,31 @@ const games = {
 			"",
 			"Links"
 		],
-		//["Another Friday Night", "", "_GIT"],
+		["Another Friday Night", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvYW5vdGhlcmZyaWRheW5pZ2h0L2luZGV4Lmh0bWw=", "_GIT"],
 		["Arrow Funkin'", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hcnJvdy1mdW5raW4vMS8=", "_REG"],
 		["Bob's B-Side Onslaught", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9ib2ItYi1zaWRlLzEv", "_REG"],
 		["Cursed Crying Emoji Sings Expurgation", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9jcnlpbmctY3Vyc2VkLWVtb2ppLzEuMjUv", "_REG"],
-		//["FNF B3 Remixed <i>(V3.5)</i>", "", "_GIT"],
-		//["FNF Broken Moon", "", "_GIT"],
-		["FNF B-Sides", "cGVyc29ud2hvd2FudHNlZ2dzL2Z1bmtpbi1iLXNpZGUvYmxvYi9tYXN0ZXIvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF B3 Remixed <i>(V3.5)</i>", "U3VzaGk4NzU2L0ZuRi1CMy1SZW1peGVkLTMuNS1IVE1MLVBvcnQvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
+		["FNF Broken Moon", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvdG91aG91L2luZGV4Lmh0bWw=", "_GIT"],
+		["FNF B-Sides Remixes", "cGVyc29ud2hvd2FudHNlZ2dzL2Z1bmtpbi1iLXNpZGUvYmxvYi9tYXN0ZXIvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF B-Sides Remixes <i>(Week 5+6 Update)</i>", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvYnNpZGVzL2luZGV4Lmh0bWw=", "_GIT"],
 		["FNF D-Sides", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9kLXNpZGVzLzIv", "_REG"],
 		["FNF Erect", "TEVWSVhERExNQU8vRk5GX0VyZWN0X2h0bWwvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
+		["FNF Flipside", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvZmxpcHNpZGUvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF Hellbeat", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvaDNsbGJlYXRzL2luZGV4Lmh0bWw=", "_GIT"],
+		["FNF Minus", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvbWludXMvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF Neo", "SnVpY2VLaWRkL2Z1bmtpbi9ibG9iL21haW4vbmVvL2luZGV4Lmh0bWw=", "_GIT"],
 		["FNF Soft Mod", "Z2dsMjIuZ2l0aHViLmlvL2ZuZi1zb2Z0Lw==", "_REG"],
+		//["FNF Soft Mod", "Tm90QW4xMjcvRk5GLU1vZHMtV2ViL2Jsb2IvZ2gtcGFnZXMvZm5mLXNvZnQvaW5kZXguaHRtbA==", "_GIT"],
 		["FNF Starcatcher", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9zdGFyY2F0Y2hlci9pbmRleC5odG1s", "_GIT"],
+		//["FNF Starcatcher", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc3RhcmNhdGNoZXIvaW5kZXguaHRtbA==", "_GIT"],
+		["FNF Upside", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvdXBzaWRlL2luZGV4Lmh0bWw=", "_GIT"],
+		["FNF X", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIveC1zaWRlcy9pbmRleC5odG1s", "_GIT"],
 		["Impossible Trio", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9pbXBvc3NpYmxlLXRyaW8vMS4xLw==", "_REG"],
 		["Ok Friday with CG5", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9vay1mcmlkYXkvMS8=", "_REG"],
 		["Pump Wants to Chug Jug with You", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9wdW1wLXdhbnRzLXRvLWNodWctanVnLXdpdGgteW91LzEv", "_REG"],
 		["Roses Remix BETADCIU", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9ldmVyeW9uZS1zaW5ncy1yb3Nlcy1yZW1peC8xLjEv", "_REG"],
 		["Ruv vs. Tricky <i>(Zavodila Cover)</i>", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9ydXYtdnMtdHJpY2t5LzEuMS8=", "_REG"],
-		["Salty's Sunday Night V1", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9zYWx0eXNzdW5kYXluaWdodC9pbmRleC5odG1s", "_GIT"],
-		["Salty's Sunday Night V2", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2FsdHlzc3VuZGF5bmlnaHQvaW5kZXguaHRtbA==", "_GIT"],
 		["Sonic.exe Sings You Can't Run", "d293dGJjLm5ldC91cGxvYWRzL2dhbWVzL3NvbmljLWV4ZS1zaW5ncy15b3UtY2FudC1ydW4vMS8=", "_REG"],
 		["Ugh High Effort <i>(Sus Remix)</i>", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi91Z2glMjBzdXNzeS9pbmRleC5odG1s", "_GIT"],
 		["Vs. Matt Neo", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9tYXR0LW5lby8zLw==", "_REG"],
@@ -1193,7 +1244,8 @@ const games = {
 		["FNF HD", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9IRC85Lw==", "_REG"],
 		["FNF Minus", "RDNNT05TTEFZM1IxMDEvRk5GYXRTY2hvb2wxL2Jsb2IvbWFpbi9taW51cy9pbmRleC5odG1s", "_GIT"],
 		["FNF Reanimated", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9yZWFuaW1hdGVkLzEv", "_REG"],
-		["Vs. Annie Minus", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hbm5pZS1taW51cy8xLw==", "_REG"]
+		["Vs. Annie Minus", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy9hbm5pZS1taW51cy8xLw==", "_REG"],
+		["Vs. ShaggyHD", "ZnVua3ltb2RzL2Z1bmt5bW9kcy5naXRodWIuaW8vYmxvYi9tYXN0ZXIvc2hhZ2d5aGQvaW5kZXguaHRtbA==", "_GIT"]
 	],
 	fnfMods_other: [
 		[
@@ -1204,6 +1256,7 @@ const games = {
 			"",
 			"Links"
 		],
+		["FNF Megapack", "cmVhbER1bmtpbi9mbmZtZWdhcGFjay1odG1sNS9ibG9iL21haW4vcmVsZWFzZS9pbmRleC5odG1s", "_GIT"],
 		["The Less I Know, the Better", "d3d3Lndvd3RiYy5uZXQvdXBsb2Fkcy9nYW1lcy90aGUtbGVzcy1pLWtub3ctdGhlLWJldHRlci8xLw==", "_REG"]
 	],
 	googleDoodles: [
@@ -1257,7 +1310,7 @@ const games = {
 		["Idle Startup Tycoon", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvaWRsZS1zdGFydHVwLXR5Y29vbi9pbmRleC5odG1s", "_GIT"],
 		["Monkey Mart", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvbW9ua2V5LW1hcnQvaW5kZXguaHRtbA==", "_GIT"],
 		["Trimps", "QmluQmFzaEJhbmFuYS9nZmlsZXMvYmxvYi9tYXN0ZXIvZ2ZpbGVzL2h0bWw1L3RyaW1wcy9pbmRleC5odG1s", "_GIT"],
-		["Universal Paperclips", "d2hvcy1ldmFuL2thendpcmUvYmxvYi92Mi4wL3N0YXRpYy9nYW1lL3N0YXRpYy91bml2ZXJzYWwtcGFwZXJjbGlwcy9pbmRleC5odG1s", "_GIT"],
+		["Universal Paperclips", "d2hvcy1ldmFuL2thendpcmUvYmxvYi92Mi4wL3N0YXRpYy9nYW1lL3N0YXRpYy91bml2ZXJzYWwtcGFwZXJjbGlwcy9pbmRleC5odG1s", "_GIT"]
 	],
 	minecraftPorts: [
 		[
@@ -1268,30 +1321,7 @@ const games = {
 			"",
 			"",
 			"",
-			"Links",
-`
-	MINECR		  RAFTMI  CRAFTM  ECRAFT	CRAFTM	ECRAFTMINECR				
-	INECRA		  AFTMIN  RAFTMI  CRAFTM	RAFTMI	CRAFTMINECRA				
-	NECRAFTM	RAFTMINE  AFTMIN  RAFTMINE	AFTMIN	RAFTMI						
-	ECRAFTMINECRAFTMINEC  FTMINE  AFTMINEC	FTMINE	AFTMIN						
-	CRAFTMINECRAFTMINECR  TMINEC  FTMINECRAFTMINEC	FTMINECRAFTM				
-	RAFTMI	CRAF  INECRA  MINECR  TMINECRAFTMINECR	TMINECRAFTMI				
-	AFTMIN	RAFT  NECRAF  INECRA  MINECR  TMINECRA	MINECR						
-	FTMINE		  ECRAFT  NECRAF  INECRA  MINECRAF	INECRA						
-	TMINEC		  CRAFTM  ECRAFT  NECRAF	ECRAFT	NECRAFTMINEC				
-	MINECR		  RAFTMI  CRAFTM  ECRAFT	CRAFTM	ECRAFTMINECR				
-
-	TMINECRAFTMI  CRAFTMINECRAFT  NECRAFTMINECRA  TMINECRAFTMI	CRAFTMINECRAFT	
-	MINECRAFTMIN  RAFTMINECRAFTM  ECRAFTMINECRAF  MINECRAFTMIN	RAFTMINECRAFTM	
-	INECRA		  AFTMIN  RAFTMI  CRAF	IN	RAFT  INECRA			INECRA		
-	NECRAF		  FTMINE  AFTMIN  RAFTMI  CRAFTM  NECRAF			NECRAF		
-	ECRAFT		  TMINECRAFTMI	  AFTM		FTMI  ECRAFTMINECR		ECRAFT		
-	CRAFTM		  MINECR  TMINEC  FTMI	CR	TMIN  CRAFTMINECRA		CRAFTM		
-	RAFTMI		  INECRA  MINECR  TMINECRAFTMINE  RAFTMI			RAFTMI		
-	AFTMIN		  NECRAF  INECRA  MINECR  TMINEC  AFTMIN			AFTMIN		
-	FTMINECRAFTM  ECRAFT  NECRAF  INECRA  MINECR  FTMINE			FTMINE		
-	TMINECRAFTMI  CRAFTM  ECRAFT  NECRAF  INECRA  TMINEC			TMINEC		
-`
+			"Links"
 		],
 		["JS Edition", "QmluQmFzaEJhbmFuYS9nZmlsZXMvYmxvYi9tYXN0ZXIvZ2ZpbGVzL2h0bWw1L21pbmVjcmFmdC9pbmRleC5odG1s", "_GIT"],
 		["v1.3 <i>(Eaglercraft)<i>", "", "_GIT"],
@@ -1335,7 +1365,7 @@ const games = {
 		["Vex 3", "d2hpdGVzcGlkZXItZGV2L3doaXRlc3BpZGVyL2Jsb2IvTWFpbi9yLzk4MzYzZTQ3LWExMzEtNDZlYi1hNWI5LTAwY2QyMmQzYTM1My9pbmRleC5odG1s", "_GIT"],
 		["Vex 4", "d2hpdGVzcGlkZXItZGV2L3doaXRlc3BpZGVyL2Jsb2IvTWFpbi9yLzBlNTM2MTQwLTU1M2ItNDJiNS04NTQ0LTU5ZGY4ZWM2MjYxMS9pbmRleC5odG1s", "_GIT"],
 		["Vex 5", "d2hpdGVzcGlkZXItZGV2L3doaXRlc3BpZGVyL2Jsb2IvTWFpbi9yLzc1YzNkYTVhLTEwOTQtNDZiMi1iZjdjLTM2MzQ4NGNlM2U5Mi9pbmRleC5odG1s", "_GIT"],
-		["Vex 7", "aGlsZmlnM3IuZ2l0aHViLmlvL3ZleC83Lw==", "_REG"],
+		["Vex 7", "aGlsZmlnM3IuZ2l0aHViLmlvL3ZleC83Lw==", "_REG"]
 	],
 	pointAndClick: [
 		[
@@ -1346,7 +1376,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["Stealing the Diamond", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9zdGVhbGluZ3RoZWRpYW1vbmQvaW5kZXguaHRtbA==", "_REG"],
+		["Stealing the Diamond", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9zdGVhbGluZ3RoZWRpYW1vbmQvaW5kZXguaHRtbA==", "_REG"]
 	],
 	puzzle: [
 		[
@@ -1377,7 +1407,7 @@ const games = {
 		["Rocket Buddy", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvcm9ja2V0LWJ1ZGR5L2luZGV4Lmh0bWw=", "_GIT"],
 		["The Impossible Quiz", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9pbXBvc3NpYmxlcXVpei9pbmRleC5odG1s", "_REG"],
 		["Up Left Out", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS91cGxlZnRvdXQvaW5kZXguaHRtbA==", "_GIT"],
-		["Wordle", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy93b3JkbGUvaW5kZXguaHRtbA==", "_REG"],
+		["Wordle", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy93b3JkbGUvaW5kZXguaHRtbA==", "_REG"]
 	],
 	racing: [
 		[
@@ -1402,9 +1432,9 @@ const games = {
 		["Merge Round Racers", "UGFyY29pbC9uYXRpdmVnYW1lcy5uZXQtdjEvYmxvYi9tYWluL3BsYXkvbWVyZ2Utcm91bmQtcmFjZXJzL2luZGV4Lmh0bWw=", "_GIT"],
 		["Moto X3M", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtL2luZGV4Lmh0bWw=", "_REG"],
 		["Moto X3M 2", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtMi9pbmRleC5odG1s", "_REG"],
-		["Moto X3M: Pool Party", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtLXBvb2wvaW5kZXguaHRtbA==", "_REG"],
-		["Moto X3M: Spooky Land", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtLXNwb29reS9pbmRleC5odG1s", "_REG"],
-		["Moto X3M: Winter", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtLXdpbnRlci9pbmRleC5odG1s", "_REG"],
+		["Moto X3M: <i>Pool Party</i>", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtLXBvb2wvaW5kZXguaHRtbA==", "_REG"],
+		["Moto X3M: <i>Spooky Land</i>", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtLXNwb29reS9pbmRleC5odG1s", "_REG"],
+		["Moto X3M: <i>Winter</i>", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9tb3RveDNtLXdpbnRlci9pbmRleC5odG1s", "_REG"]
 	],
 	rhythm: [
 		[
@@ -1416,7 +1446,7 @@ const games = {
 			"Links"
 		],
 		["A Dance of Fire and Ice", "UGFyY29pbC9uYXRpdmVnYW1lcy5uZXQtdjEvYmxvYi9tYWluL3BsYXkvYWRvZmFpL2luZGV4Lmh0bWw=", "_GIT"],
-		["osu!", "d2ViLW9zdS5naXRodWIuaW8v", "_REG"],
+		["osu!", "d2ViLW9zdS5naXRodWIuaW8v", "_REG"]
 	],
 	rpg: [
 		[
@@ -1427,7 +1457,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["A Dark Room", "ZG91Ymxlc3BlYWtnYW1lcy5naXRodWIuaW8vYWRhcmtyb29tLw==", "_GIT"],
+		["A Dark Room", "ZG91Ymxlc3BlYWtnYW1lcy5naXRodWIuaW8vYWRhcmtyb29tLw==", "_GIT"]
 	],
 	shooter: [
 		[
@@ -1443,7 +1473,7 @@ const games = {
 		["Rooftop Snipers 2", "aGlsZmlnM3IuZ2l0aHViLmlvL1Jvb2Z0b3AtU25pcGVycy0yLw==", "_REG"],
 		["Sniper Reloaded", "YXBwLTk4Njk5LmdhbWVzLnMzLnlhbmRleC5uZXQvOTg2OTkvcmp5dmFnZnI0dGU3NGFldDd3NXNqNnBlb2cyN3QweXQvaW5kZXguaHRtbA==", "_REG"],
 		["SUPERHOT Demo", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS9zdXBlcmhvdHByb3RvdHlwZS9pbmRleC5odG1s", "_GIT"],
-		["The Chroma Incident", "QmluQmFzaEJhbmFuYS9nZmlsZXMvYmxvYi9tYXN0ZXIvZ2ZpbGVzL2h0bWw1L2Nocm9tYWluY2lkZW50L2luZGV4Lmh0bWw=", "_GIT"],
+		["The Chroma Incident", "QmluQmFzaEJhbmFuYS9nZmlsZXMvYmxvYi9tYXN0ZXIvZ2ZpbGVzL2h0bWw1L2Nocm9tYWluY2lkZW50L2luZGV4Lmh0bWw=", "_GIT"]
 	],
 	simulator: [
 		[
@@ -1456,7 +1486,7 @@ const games = {
 		],
 		["Bitlife", "bGlveHJ5dC9saW94cnl0LWFzc2V0cy9ibG9iL21haW4vb3RoZXIvYml0bGlmZS9pbmRleC5odG1s", "_GIT"],
 		["Microsoft Flight Simulator 1.0", "bWF0aGFkdmVudHVyZTEvbXNmc21hdGgvYmxvYi9tYWluL2luZGV4Lmh0bWw=", "_GIT"],
-		["Teacher Simulator", "ZGRkYXZpdC5naXRodWIuaW8vdGVhY2hlci8=", "_REG"],
+		["Teacher Simulator", "ZGRkYXZpdC5naXRodWIuaW8vdGVhY2hlci8=", "_REG"]
 	],
 	sports: [
 		[
@@ -1478,7 +1508,7 @@ const games = {
 		["Kopanito All-Star Soccer", "d2hvcy1ldmFuL2thendpcmUvYmxvYi92Mi4wL3N0YXRpYy9nYW1lL3N0YXRpYy9rb3Bhbml0by1hbGwtc3RhcnMtc29jY2VyL2luZGV4Lmh0bWw=", "_GIT"],
 		["Skifree", "bW9ua2V5M3RocmVlL3VuYmxvY2tlZDg4LmdpdGh1Yi5pby9ibG9iL2doLXBhZ2VzL2dhbWVzL3NraWZyZWUuanMtbWFzdGVyL3NraWZyZWUuanMtbWFzdGVyL2luZGV4Lmh0bWw=", "_GIT"],
 		["Tennis Masters", "aGlsZmlnM3IuZ2l0aHViLmlvL3Rlbm5pc21hc3RlcnMv", "_REG"],
-		["Tennis Physics", "ZGRkYXZpdC5naXRodWIuaW8vdGVubmlzLXBoeXNpY3Mv", "_REG"],
+		["Tennis Physics", "ZGRkYXZpdC5naXRodWIuaW8vdGVubmlzLXBoeXNpY3Mv", "_REG"]
 	],
 	strategy: [
 		[
@@ -1491,7 +1521,7 @@ const games = {
 		],
 		["Deal or No Deal", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9kZWFsLW9yLW5vLWRlYWwvaW5kZXguaHRtbA==", "_REG"],
 		["KONNEKT", "VGFjb2dhbWVybWFuL1N3b3JkLUdhbWVzL2Jsb2IvbWFpbi9Lb25la3QuaHRtbA==", "_GIT"],
-		["Stack Tower", "d2hvcy1ldmFuL2thendpcmUvYmxvYi92Mi4wL3N0YXRpYy9nYW1lL3N0YXRpYy9zdGFjay9pbmRleC5odG1s", "_GIT"],
+		["Stack Tower", "d2hvcy1ldmFuL2thendpcmUvYmxvYi92Mi4wL3N0YXRpYy9nYW1lL3N0YXRpYy9zdGFjay9pbmRleC5odG1s", "_GIT"]
 	],
 	survival: [
 		[
@@ -1508,8 +1538,8 @@ const games = {
 		["FNAF 2", "c3Vzc3lnYW1lZGV2ZWxvcGVyLmdpdGh1Yi5pby9GTkFGMi8=", "_REG"],
 		["FNAF 3", "UGFyY29pbC9uYXRpdmVnYW1lcy5uZXQtdjEvYmxvYi9tYWluL3BsYXkvRk5BRjMvaW5kZXguaHRtbA==", "_GIT"],
 		["FNAF 4", "UGFyY29pbC9uYXRpdmVnYW1lcy5uZXQtdjEvYmxvYi9tYWluL3BsYXkvRk5BRjQvaW5kZXguaHRtbA==", "_GIT"],
-		["FNAF: Ultimate Custom Night", "c3Vzc3lnYW1lZGV2ZWxvcGVyLmdpdGh1Yi5pby9VQ04tSFRNTDUv", "_REG"],
-		["Sans Fight Simulator", "Z290b2FuZGRpZS5naXRodWIuaW8vYzItc2Fucy1maWdodC8=", "_REG"],
+		["FNAF: <i>Ultimate Custom Night</i>", "c3Vzc3lnYW1lZGV2ZWxvcGVyLmdpdGh1Yi5pby9VQ04tSFRNTDUv", "_REG"],
+		["Sans Fight Simulator", "Z290b2FuZGRpZS5naXRodWIuaW8vYzItc2Fucy1maWdodC8=", "_REG"]
 	],
 	tabletop: [
 		[
@@ -1527,7 +1557,7 @@ const games = {
 		["Master Checkers", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvbWFzdGVyLWNoZWNrZXJzL2luZGV4Lmh0bWw=", "_GIT"],
 		["Master Chess", "bHV4cmF5Z3RhZy9wbGF0Zm9ybWVyLmlvL2Jsb2IvbWFpbi9hc3NldHMvbWFzdGVyLWNoZXNzL2luZGV4Lmh0bWw=", "_GIT"],
 		["Solitaire", "d2hpdGVzcGlkZXItZGV2L3doaXRlc3BpZGVyL2Jsb2IvTWFpbi9yLzM1YjFmNDE3LTQxM2YtNDc1NS05M2ZlLTVkMWRmYWUxNGUwMC9pbmRleC5odG1s", "_GIT"],
-		["Tic-tac-toe", "U2lkaGFhbnRBbmFuZC9XZWItR2FtZXMvYmxvYi9tYXN0ZXIvdGljdGFjdG9lLmh0bWw=", "_GIT"],
+		["Tic-tac-toe", "U2lkaGFhbnRBbmFuZC9XZWItR2FtZXMvYmxvYi9tYXN0ZXIvdGljdGFjdG9lLmh0bWw=", "_GIT"]
 	],
 	towerDefense: [
 		[
@@ -1540,7 +1570,7 @@ const games = {
 		],
 		["Bloons TD", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9ibG9vbnN0ZC9pbmRleC5odG1s", "_REG"],
 		["Bloons TD 2", "bWF0aGxvdmVyMS5naXRodWIuaW8vbXNnd2ViLWFzc2V0cy9ibG9vbnN0ZDIvaW5kZXguaHRtbA==", "_REG"],
-		["Bloons TD 4", "bW91bnRhaW42NTgvbW91bnRhaW42NTguZ2l0aHViLmlvL2Jsb2IvbWFpbi9nL2J0ZDQvaW5kZXguaHRtbA==", "_GIT"],
+		["Bloons TD 4", "bW91bnRhaW42NTgvbW91bnRhaW42NTguZ2l0aHViLmlvL2Jsb2IvbWFpbi9nL2J0ZDQvaW5kZXguaHRtbA==", "_GIT"]
 	],
 	trivia: [
 		[
@@ -1551,7 +1581,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["Google Feud", "bWF0dGJnb2xkL2dvb2dsZS1mZXVkL2Jsb2IvbWFzdGVyL2luZGV4Lmh0bWw=", "_GIT"],
+		["Google Feud", "bWF0dGJnb2xkL2dvb2dsZS1mZXVkL2Jsb2IvbWFzdGVyL2luZGV4Lmh0bWw=", "_GIT"]
 	],
 	visualNovel: [
 		[
@@ -1562,7 +1592,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["Adventures with Anxiety", "UmFpbGluR2FtZXMvZmlsZXMvYmxvYi9tYWluL0FkZXZlbnR1cmVzV2l0aEFueGlldHkvaW5kZXguaHRtbA==", "_GIT"],
+		["Adventures with Anxiety", "UmFpbGluR2FtZXMvZmlsZXMvYmxvYi9tYWluL0FkZXZlbnR1cmVzV2l0aEFueGlldHkvaW5kZXguaHRtbA==", "_GIT"]
 	],
 	other: [
 		[
@@ -1573,7 +1603,7 @@ const games = {
 			"",
 			"Links"
 		],
-		["Pokémon Smash or Pass", "d3d3LnBva2Vtb24tc21hc2gtb3ItcGFzcy5jb20v", "_REG"],
+		["Pokémon Smash or Pass", "d3d3LnBva2Vtb24tc21hc2gtb3ItcGFzcy5jb20v", "_REG"]
 	]
 };
 
@@ -1716,7 +1746,7 @@ const literature = {
 		["Number the Stars", "Ym9va3MtbGlicmFyeS5uZXQvZmlsZXMvYm9va3MtbGlicmFyeS5vbmxpbmUtMTIyNzIyMDFLdjlXOC5wZGY=", "_REG"],
 		["The Leopard", "Ym9va3MtbGlicmFyeS5uZXQvZmlsZXMvYm9va3MtbGlicmFyeS5vbmxpbmUtMDEwOTAwMTlBdDJRMC5wZGY=", "_REG"],
 		["The Pillars of the Earth", "Ym9va3MtbGlicmFyeS5uZXQvZmlsZXMvYm9va3MtbGlicmFyeS5vbmxpbmUtMTIyOTAwMDBOZzlROC5wZGY=", "_REG"],
-		["Things Fall Apart", "Ym9va3MtbGlicmFyeS5uZXQvZmlsZXMvYm9va3MtbGlicmFyeS5vbmxpbmUtMTIyNzA4MDdUdzZaMi5wZGY=", "_REG"],
+		["Things Fall Apart", "Ym9va3MtbGlicmFyeS5uZXQvZmlsZXMvYm9va3MtbGlicmFyeS5vbmxpbmUtMTIyNzA4MDdUdzZaMi5wZGY=", "_REG"]
 	],
 	humorAndComedy: [
 		[
@@ -2006,6 +2036,7 @@ const school = {
 		["Khan Academy", "d3d3LmtoYW5hY2FkZW15Lm9yZw==", "_EXT"],
 		["myOn", "d3d3Lm15b24uY29tL2xvZ2luL2luZGV4Lmh0bWw=", "_EXT"],
 		["NoRedInk!", "d3d3Lm5vcmVkaW5rLmNvbQ==", "_EXT"],
+		["Omni Calculator", "d3d3Lm9tbmljYWxjdWxhdG9yLmNvbQ==", "_EXT"],
 		["Pearson SuccessNet", "d3d3LnBlYXJzb25zdWNjZXNzbmV0LmNvbQ==", "_EXT"],
 		["ProgressBook", "cGEub21lcmVzYS5uZXQ=", "_REG"],
 		["Quia", "d3d3LnF1aWEuY29tL3dlYg==", "_EXT"],
@@ -2240,6 +2271,8 @@ const school = {
 			"",
 			"Links"
 		],
+		["Evolution Labs <i>(Nova)</i>", "d3d3LnBicy5vcmcvd2diaC9ub3ZhL2xhYnMvbGFiL2V2b2x1dGlvbg==", "_REG"],
+		["Tinkercad", "d3d3LnRpbmtlcmNhZC5jb20vZGFzaGJvYXJk", "_EXT"],
 		["Understanding Evolution", "ZXZvbHV0aW9uLmJlcmtlbGV5LmVkdQ==", "_EXT"]
 	],
 	staffResources: [
@@ -2329,7 +2362,7 @@ const school = {
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
 /*	VIDEO  */
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
-const video = {
+const videos = {
 	adultSwim: [
 		[
 			"Video",
@@ -2340,7 +2373,7 @@ const video = {
 			"Shows"
 		],
 		["Smiling Friends", "video.adultSwim_smilingFriends", "_VID"],
-		["Superjail!", "video.adultSwim_superjail", "_VID"],
+		["Superjail!", "video.adultSwim_superjail", "_VID"]
 	],
 	cartoonNetwork: [
 		[
@@ -2365,7 +2398,7 @@ const video = {
 		],
 		["Amphibia", "video.disneyChannel_amphibia", "_VID"],
 		["Gravity Falls", "video.disneyChannel_gravityFalls", "_VID"],
-		["The Owl House", "video.disneyChannel_theOwlHouse", "_VID"],
+		["The Owl House", "video.disneyChannel_theOwlHouse", "_VID"]
 	],
 	nickelodeon: [
 		[
@@ -2396,7 +2429,7 @@ const video = {
 			"",
 			"Shows"
 		],
-		["Resident Alien", "video.syfy_residentAlien", "_VID"],
+		["Resident Alien", "video.syfy_residentAlien", "_VID"]
 	],
 	movies: [
 		[
@@ -2852,7 +2885,7 @@ const other = {
 		["QuickView Exploit", "cXVpY2t2aWV3LWV4cGxvaXQucGFnZXMuZGV2", "_REG"],
 		["Shimboot", "c2hpbWJvb3QuYWRpbmcuZGV2", "_REG"],
 		["SH1MMER.me", "c2gxbW1lci5tZQ==", "_REG"],
-		["SKIOVOX", "ZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXRsOGVQMjZNRlJlakhPMzhINUh3TUxsMlZhUXJ0bjBaL3ByZXZpZXc=", "_REG"],
+		["SKIOVOX", "ZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXRsOGVQMjZNRlJlakhPMzhINUh3TUxsMlZhUXJ0bjBaL3ByZXZpZXc=", "_REG"]
 	],
 	unblockers_fracital: [
 		[
@@ -2883,7 +2916,7 @@ const other = {
 		["Science with Floppa", "c2NpZW5jZXdpdGhmbG9wcGEuY29tLw==", "_REG"],
 		["Store Facts", "c3RvcmVmYWN0cy5vcmcv", "_REG"],
 		["The T fr", "dGhlLXQtZnIuY29tLw==", "_REG"],
-		["X-Ray Physics", "eC1yYXlwaHlzaWNzLm5ldC8=", "_REG"],
+		["X-Ray Physics", "eC1yYXlwaHlzaWNzLm5ldC8=", "_REG"]
 	],
 	unblockers_generalMathematics: [
 		[
@@ -2942,7 +2975,7 @@ const other = {
 		["We Do School Stuff", "d2Vkb3NjaG9vbHN0dWZmLnh5ei8=", "_REG"],
 		["W <i>(FC5821)</i>", "dy5mb290Y2hlZXNlNTgyMS5yZXBsLmNv", "_REG"],
 		["W <i>(Quart2629)</i>", "dy5xdWFydDI2MjkucmVwbC5jbw==", "_REG"],,
-		["Why does Lessh1greater Twerklessh1greater always Cuss Lol? <i>(FC58)</i>", "d2h5LWRvZXMtbGVzc2gxZ3JlYXRlci10d2Vya2xlc3NoMWdyZWF0ZXItYWx3YXlzLWN1c3MtbG9sLmZvb3RjaGVlc2U1OC5yZXBsLmNvLw==", "_REG"],
+		["Why does Lessh1greater Twerklessh1greater always Cuss Lol? <i>(FC58)</i>", "d2h5LWRvZXMtbGVzc2gxZ3JlYXRlci10d2Vya2xlc3NoMWdyZWF0ZXItYWx3YXlzLWN1c3MtbG9sLmZvb3RjaGVlc2U1OC5yZXBsLmNvLw==", "_REG"]
 	],
 	unblockers_holyUnblocker: [
 		[
@@ -3157,7 +3190,7 @@ const other = {
 		["Start TIW", "c3RhdGljLnN0YXJ0dGl3Lm9yZy9zdGF0aWMv", "_REG"],
 		["Sureee", "c3VyZWVlLnZlcmNlbC5hcHAv", "_REG"],
 		["TIW School", "dGl3c2Nob29sLnZlcmNlbC5hcHAv", "_REG"],
-		["Ty Again", "dHlhZ2Fpbi52ZXJjZWwuYXBwLw==", "_REG"],
+		["Ty Again", "dHlhZ2Fpbi52ZXJjZWwuYXBwLw==", "_REG"]
 	],
 	unblockers_terbium: [
 		[
@@ -3194,7 +3227,7 @@ const other = {
 		["Summer Plans <i>(.me)</i>", "c3VtbWVycGxhbnMubWUv", "_REG"],
 		["Summer Plans <i>(.xyz)</i>", "c3VtbWVycGxhbnMueHl6Lw==", "_REG"],
 		["The Simple Unblocker <i>(.cf)</i>", "dGhlc2ltcGxldW5ibG9ja2VyLmNmLw==", "_REG"],
-		["The Simple Unblocker <i>(.com)</i>", "dGhlc2ltcGxldW5ibG9ja2VyLmNvbS8=", "_REG"],
+		["The Simple Unblocker <i>(.com)</i>", "dGhlc2ltcGxldW5ibG9ja2VyLmNvbS8=", "_REG"]
 	],
 	unblockers_ultamon: [
 		[
@@ -3313,7 +3346,7 @@ const other = {
 		["MacOS", "other.virtualMachines_macos", "_CAT"],
 		//["Ubuntu", "other.virtualMachines_ubuntu", "_CAT"],
 		["Windows", "other.virtualMachines_windows", "_CAT"],
-		["Other", "other.virtualMachines_other", "_CAT"],
+		["Other", "other.virtualMachines_other", "_CAT"]
 	],
 	/*virtualMachines_android: [
 		[
@@ -3457,7 +3490,7 @@ const other = {
 			"Yeah",
 			"Links"
 		],
-		//["im so sorry", "bGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BRDUtV0NrOWhvNUtDY1ZQSFFfU0Yyc1hIX1dfOHJ6VWtCMWhXWkFnOXAtT1lXWWl1T2YzMGJwdm5LZVdfV3ZvVk5qVm92YTdzUUNwN0tFM2hBeWxFMDg1aXROY3JabHBzSDgyZ0hpTmRobVRILVRjM0dZZDlXMUdLOVFWVkZ1R0w2M0JpQlY5c3FRZXVRYWJMS3FpS1ZQQXB2RXFsRGQ1Q05NTVUzNk1kWVp1MWtWbEJNaWpXeGY5YVRHdGJteTMwTm1IT0t0dEotdDZkZ0lTTXZDU29jdTdzSXJ2c2k0UVdzTXdtaW5RVU5MR05JeWtPZFNSQjVpU3hLWWtOLUw0YWNNR3lGNHNfb0hIdG16bGxGS2VtbUR3Q0htOEpWckE3UTJCR0xWUzZuTWNnUmt4cGFsd2J5Yk9tNWNUUU5VSGtSSDdXLThnN2pXR0tta1VURFJ6OFl6UmFNRy1ZTEVCYjNWUEVmeExGMG5VYXBFbUIwUGJGSlZvUF9TU2JnLUdycndNTVNQZDVocHZmdnNKQTRTdUFUTDR3M2VjWTFxTEczOHZCZUxCbGlURWFCOFdMLUpNdUZCaEQ0VzRlNmxzX0FzZWc4NTZhdTdhUi1oT2EtbWRmUmdVSGJUOHZxZmpzdmo5TTdOSXdpZjEtSFRDcklwWnk2YjFCZm5tbWNqQVg3N1NHcjhqZ2hQM1Q5RTBOWG9ET09PcksxRkRfVV9BT0lncGVKWkdTYTkxWmVPWnRkenFPcGg0TVRNOHFqNkJWSjBiSlBKVVd1VlZWR3E4UVF6cS11d2J6dWhRb3FDN0VxQTdQVW1DNG9kdTFRZ3lHa2J0cjFadC1vRmhHaTNZMzUxRDFTbVNxbUl2UGZBSmF6VlYxSFdQMkprclpCSG91T0d6My0yR2RQSE1tR2wySjZGQ1V5REdkazEyR1JaQjhHQ2RpX3d5LTRYX2w3YVFlS1U1VnY0OFNINm0ya013bFFyLWdEVXpKbmsxZXBrTkE0X01hVEU1bmlCUGhFZ3hUb3dMM1NHbUNDUWIyRnhTMXlXelRCZUx3ZnJYQWs4bkJudE00VVkzckNIWWpXM1luNVZTcDBCcnpHTlU3eTZ2bXZHSG5EVXZUYVU4RE5pMkhiX0xTQk9ocU9BalVmdzhiUkZGR25UN1VwWEhVbk1FMW1tQUQtWFVfZUNPaUlYVnQwSFhPSEtTRFFRQk5RU0tPY0YtNnRIUTBsVlN1cTlHS19ZT0JzUUF3azFUbGh6OE5Ebzl0SUszbjlHR2sxTjI9czI1Ni1j", "_REG"],
+		//["im so sorry", "bGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BRDUtV0NrOWhvNUtDY1ZQSFFfU0Yyc1hIX1dfOHJ6VWtCMWhXWkFnOXAtT1lXWWl1T2YzMGJwdm5LZVdfV3ZvVk5qVm92YTdzUUNwN0tFM2hBeWxFMDg1aXROY3JabHBzSDgyZ0hpTmRobVRILVRjM0dZZDlXMUdLOVFWVkZ1R0w2M0JpQlY5c3FRZXVRYWJMS3FpS1ZQQXB2RXFsRGQ1Q05NTVUzNk1kWVp1MWtWbEJNaWpXeGY5YVRHdGJteTMwTm1IT0t0dEotdDZkZ0lTTXZDU29jdTdzSXJ2c2k0UVdzTXdtaW5RVU5MR05JeWtPZFNSQjVpU3hLWWtOLUw0YWNNR3lGNHNfb0hIdG16bGxGS2VtbUR3Q0htOEpWckE3UTJCR0xWUzZuTWNnUmt4cGFsd2J5Yk9tNWNUUU5VSGtSSDdXLThnN2pXR0tta1VURFJ6OFl6UmFNRy1ZTEVCYjNWUEVmeExGMG5VYXBFbUIwUGJGSlZvUF9TU2JnLUdycndNTVNQZDVocHZmdnNKQTRTdUFUTDR3M2VjWTFxTEczOHZCZUxCbGlURWFCOFdMLUpNdUZCaEQ0VzRlNmxzX0FzZWc4NTZhdTdhUi1oT2EtbWRmUmdVSGJUOHZxZmpzdmo5TTdOSXdpZjEtSFRDcklwWnk2YjFCZm5tbWNqQVg3N1NHcjhqZ2hQM1Q5RTBOWG9ET09PcksxRkRfVV9BT0lncGVKWkdTYTkxWmVPWnRkenFPcGg0TVRNOHFqNkJWSjBiSlBKVVd1VlZWR3E4UVF6cS11d2J6dWhRb3FDN0VxQTdQVW1DNG9kdTFRZ3lHa2J0cjFadC1vRmhHaTNZMzUxRDFTbVNxbUl2UGZBSmF6VlYxSFdQMkprclpCSG91T0d6My0yR2RQSE1tR2wySjZGQ1V5REdkazEyR1JaQjhHQ2RpX3d5LTRYX2w3YVFlS1U1VnY0OFNINm0ya013bFFyLWdEVXpKbmsxZXBrTkE0X01hVEU1bmlCUGhFZ3hUb3dMM1NHbUNDUWIyRnhTMXlXelRCZUx3ZnJYQWs4bkJudE00VVkzckNIWWpXM1luNVZTcDBCcnpHTlU3eTZ2bXZHSG5EVXZUYVU4RE5pMkhiX0xTQk9ocU9BalVmdzhiUkZGR25UN1VwWEhVbk1FMW1tQUQtWFVfZUNPaUlYVnQwSFhPSEtTRFFRQk5RU0tPY0YtNnRIUTBsVlN1cTlHS19ZT0JzUUF3azFUbGh6OE5Ebzl0SUszbjlHR2sxTjI9czI1Ni1j", "_REG"]
 	],
 	weirdWebsites: [
 		[
@@ -3543,13 +3576,13 @@ const general = {
 		["Arcade", "games.arcade", "_CAT"],
 		["Bootleg", "games.bootleg", "_CAT"],
 		["Casual", "games.casual", "_CAT"],
-	//	["Downloadable", "games.downloadable", "_CAT"],
+		["Downloadable", "games.downloadable", "_CAT"],
 		["Emulators", "games.emulators", "_CAT"],
 		["Fighter", "games.fighter", "_CAT"],
 		["FNF Mods", "games.fnfMods", "_CAT"],
 		["Google Doodles", "games.googleDoodles", "_CAT"],
 		["Idle / Management", "games.idleManagement", "_CAT"],
-	//	["Minecraft Ports", "games.minecraftPorts", "_CAT"],
+		["Minecraft Ports", "games.minecraftPorts", "_CAT"],
 		["Platformer", "games.platformer", "_CAT"],
 		["Point & Click", "games.pointAndClick", "_CAT"],
 		["Puzzle", "games.puzzle", "_CAT"],
@@ -3579,7 +3612,7 @@ const general = {
 		],
 		["Arabic", "literature.arabic", "_CAT"],
 		["Children's", "literature.childrens", "_CAT"],
-	//	["Dictionaries", "literature.dictionaries", "_CAT"],
+		["Dictionaries", "literature.dictionaries", "_CAT"],
 		["Fantasy & Adventure", "literature.fantasyAndAdventure", "_CAT"],
 		["Fiction", "literature.fiction", "_CAT"],
 		["Guides, Manuals, & Practicals", "literature.guidesManualsAndPractical", "_CAT"],
@@ -3589,11 +3622,11 @@ const general = {
 		["Magical Realism", "literature.magicalRealism", "_CAT"],
 		["Mystery & Crime Fiction", "literature.mysteryAndCrimeFiction", "_CAT"],
 		["Novellas", "literature.novellas", "_CAT"],
-		//["NSFW", "literature.nsfw", "_CAT"],
+		["NSFW", "literature.nsfw", "_CAT"],
 		["Plays & Scripts", "literature.playsAndScripts", "_CAT"],
 		["Poetry", "literature.poetry", "_CAT"],
 		["Psycological Fiction", "literature.psycologicalFiction", "_CAT"],
-	//	["Religious", "literature.religious", "_CAT"],
+		["Religious", "literature.religious", "_CAT"],
 		["Romance", "literature.romance", "_CAT"],
 		["Satire", "literature.satire", "_CAT"],
 		["Science Fiction", "literature.scienceFiction", "_CAT"],
@@ -3602,7 +3635,7 @@ const general = {
 		["Thriller", "literature.thriller", "_CAT"],
 		["Unknown", "literature.unknown", "_CAT"],
 		["War & Political", "literature.warAndPolitical", "_CAT"],
-	//	["Web Comics", "literature.webComics", "_CAT"],
+		["Web Comics", "literature.webComics", "_CAT"],
 		["Young Adult", "literature.youngAdult", "_CAT"],
 		["Other", "literature.other", "_CAT"]
 	],
@@ -3647,7 +3680,7 @@ const general = {
 		["PBS Kids", "video.pbsKids", "_CAT"],
 		["SYFY", "video.syfy", "_CAT"],
 		["Movies", "video.movies", "_CAT"],
-		["Other", "video.other", "_CAT"],
+		["Other", "video.other", "_CAT"]
 	],
 	other: [
 		[
@@ -3677,7 +3710,13 @@ const general = {
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
 const secret = {
 	secret: [
-		["Hi", "You shouldn't be here.", "Stop looking in the code.", "It takes away the fun.", "It really does."],
+		[
+			"Hi",
+			"You shouldn't be here.",
+			"Stop looking in the code.",
+			"It takes away the fun.",
+			"It really does."
+		],
 		["RATS v4!", "onRatsV4 ", "_EGG", "click me"]
 	]
 }
@@ -3685,163 +3724,154 @@ const secret = {
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
 /*	SEARCH BAR  */
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
+const sliceAndSpread = (categories) => {
+	return categories.flatMap(category => category.slice(1));
+};
+
 const allArrays = [
-	...bookmarklets.development,
-	...bookmarklets.fun,
-	...bookmarklets.games,
-	...bookmarklets.image,
-	...bookmarklets.mathematics,
-	...bookmarklets.page,
-	...bookmarklets.school,
-	...bookmarklets.text,
-	...bookmarklets.tools,
-	...bookmarklets.video,
-	...bookmarklets.other,
+	...sliceAndSpread([
+		bookmarklets.development,
+		bookmarklets.fun,
+		bookmarklets.games,
+		bookmarklets.image,
+		bookmarklets.mathematics,
+		bookmarklets.page,
+		bookmarklets.school,
+		bookmarklets.text,
+		bookmarklets.tools,
+		bookmarklets.video,
+		bookmarklets.other,
 
-	...editors._3dModeling,
-	//...editors.animation,
-	//...editors.archiving,
-	...editors.artAndGraphicDesign,
-	//...editors.calendars,
-	...editors.coding,
-	//...editors.communityPolls,
-	...editors.gameDevelopment,
-	//...editors.game_modding,
-	...editors.musicComposition,
-	...editors.pastebins,
-	...editors.pixelArt,
-	...editors.textEditors,
-	...editors.videoProduction,
-	//...editors.vpns,
-	//...editors.webCreation,
-	...editors.webHosting,
-	//...editors.writingAndStorytelling,
-	//...editors.other,
+		editors._3dModeling,
+		editors.artAndGraphicDesign,
+		editors.coding,
+		editors.gameDevelopment,
+		editors.musicComposition,
+		editors.pastebins,
+		editors.pixelArt,
+		editors.textEditors,
+		editors.videoProduction,
+		editors.webHosting,
 
-	...games.arcade,
-	...games.arcade_subwaySurfers,
-	...games.bootleg,
-	...games.downloadable,
-	...games.emulators,
-	...games.emulators_amiga,
-	...games.emulators_atari,
-	...games.emulators_flash,
-	...games.emulators_gameboyGbaGbc,
-	...games.emulators_htmlJs,
-	...games.emulators_nes,
-	...games.emulators_nintendo64,
-	...games.emulators_playstation1,
-	...games.emulators_scratch,
-	...games.emulators_other,
-	...games.fnfMods,
-	...games.fnfMods_engines,
-	...games.fnfMods_fullWeeks,
-	...games.fnfMods_oneOffs,
-	...games.fnfMods_remixesAndCovers,
-	...games.fnfMods_reskins,
-	...games.fnfMods_other,
-	...games.idleManagement,
-	...games.minecraftPorts,
-	...games.puzzle,
-	...games.other,
+		games.action,
+		games.arcade,
+		games.arcade_subwaySurfers,
+		games.bootleg,
+		games.casual,
+		games.downloadable,
+		games.emulators,
+		games.emulators_amiga,
+		games.emulators_atari,
+		games.emulators_flash,
+		games.emulators_gameboyGbaGbc,
+		games.emulators_htmlJs,
+		games.emulators_nes,
+		games.emulators_nintendo64,
+		games.emulators_playstation1,
+		games.emulators_roms,
+		games.emulators_scratch,
+		games.emulators_other,
+		games.fighter,
+		games.fnfMods,
+		games.googleDoodles,
+		games.idleManagement,
+		games.minecraftPorts,
+		games.platformer,
+		games.pointAndClick,
+		games.puzzle,
+		games.racing,
+		games.rhythm,
+		games.rpg,
+		games.shooter,
+		games.simulator,
+		games.sports,
+		games.strategy,
+		games.survival,
+		games.tabletop,
+		games.towerDefense,
+		games.trivia,
+		games.visualNovel,
+		games.other,
 
-	...literature.arabic,
-	...literature.childrens,
-	...literature.dictionaries,
-	...literature.fantasyAndAdventure,
-	...literature.fiction,
-	...literature.guidesManualsAndPractical,
-	...literature.historicalAndFactual,
-	...literature.historicalFiction,
-	...literature.humorAndComedy,
-	...literature.magicalRealism,
-	...literature.mysteryAndCrimeFiction,
-	...literature.novellas,
-	...literature.nsfw,
-	...literature.playsAndScripts,
-	...literature.poetry,
-	...literature.psycologicalFiction,
-	...literature.religious,
-	...literature.romance,
-	...literature.satire,
-	...literature.scienceFiction,
-	...literature.selfHelp,
-	...literature.textbooks,
-	...literature.thriller,
-	...literature.unknown,
-	...literature.warAndPolitical,
-	...literature.webComics,
-	...literature.youngAdult,
-	...literature.other,
+		literature.arabic,
+		literature.childrens,
+		literature.fantasyAndAdventure,
+		literature.fiction,
+		literature.guidesManualsAndPractical,
+		literature.historicalAndFactual,
+		literature.historicalFiction,
+		literature.humorAndComedy,
+		literature.magicalRealism,
+		literature.mysteryAndCrimeFiction,
+		literature.novellas,
+		literature.playsAndScripts,
+		literature.poetry,
+		literature.psycologicalFiction,
+		literature.romance,
+		literature.satire,
+		literature.scienceFiction,
+		literature.selfHelp,
+		literature.textbooks,
+		literature.thriller,
+		literature.unknown,
+		literature.warAndPolitical,
+		literature.youngAdult,
+		literature.other,
 
-	...school.educationalApps,
-	...school.extensions,
-	...school.gamingSites,
-	...school.googleApps,
-	...school.historyAndSocialStudies,
-	...school.languageArts,
-	...school.libraries,
-	...school.mathematics,
-	...school.parentalResources,
-	...school.playStoreApps,
-	...school.sciences,
-	...school.staffResources,
-	...school.standardizedTestPrep,
-	...school.typingCourses,
-	...school.other,
+		school.educationalApps,
+		school.extensions,
+		school.gamingSites,
+		school.googleApps,
+		school.historyAndSocialStudies,
+		school.languageArts,
+		school.libraries,
+		school.mathematics,
+		school.parentalResources,
+		school.playStoreApps,
+		school.sciences,
+		school.staffResources,
+		school.standardizedTestPrep,
+		school.typingCourses,
+		school.other,
 
-	...video.adultSwim,
-	...video.cartoonNetwork,
-	...video.disneyChannel,
-	...video.nickelodeon,
-	...video.pbsKids,
-	...video.syfy,
-	...video.movies,
-	...video.other,
+		other.bots,
+		other.chromeUrls,
+		other.deviceCrashers,
+		other.fileCorrupters,
+		other.ratsVersions,
+		other.searchEngines,
+		other.unblockers,
+		other.unblockers_extRemover,
+		other.unblockers_fracital,
+		other.unblockers_generalMathematics,
+		other.unblockers_holyUnblocker,
+		other.unblockers_incognito,
+		other.unblockers_interstellar,
+		other.unblockers_nebula,
+		other.unblockers_pBlocker,
+		other.unblockers_rammerhead,
+		other.unblockers_ripple,
+		other.unblockers_ruby,
+		other.unblockers_static,
+		other.unblockers_terbium,
+		other.unblockers_theSimpleUnblocker,
+		other.unblockers_ultamon,
+		other.unblockers_ultraviolet,
+		other.unblockers_void,
+		other.unblockers_womginx,
+		other.unblockers_other,
+		other.virtualMachines,
+		other.virtualMachines_apple,
+		other.virtualMachines_macos,
+		other.virtualMachines_windows,
+		other.virtualMachines_other,
+		other.virusesAndMalware,
+		other.weirdWebsites,
 
-	...other.bots,
-	...other.chromeUrls,
-	...other.deviceCrashers,
-	...other.fileCorrupters,
-//	...other.funWebsites,
-	...other.ratsVersions,
-	...other.searchEngines,
-//	...other.socialMedia,
-	...other.unblockers,
-	...other.unblockers_extRemover,
-	...other.unblockers_fracital,
-	...other.unblockers_generalMathematics,
-	...other.unblockers_holyUnblocker,
-	...other.virusesAndMalware,
-	...other.unblockers_incognito,
-	...other.unblockers_interstellar,
-	...other.unblockers_nebula,
-	...other.unblockers_pBlocker,
-	...other.unblockers_rammerhead,
-	...other.unblockers_ripple,
-	...other.unblockers_ruby,
-	...other.unblockers_static,
-	...other.unblockers_terbium,
-	...other.unblockers_theSimpleUnblocker,
-	...other.unblockers_ultamon,
-	...other.unblockers_ultraviolet,
-	...other.unblockers_void,
-	...other.unblockers_womginx,
-	...other.unblockers_other,
-	...other.virtualMachines,
-//	...other.virtualMachines_android,
-	...other.virtualMachines_apple,
-//	...other.virtualMachines_chromeos,
-//	...other.virtualMachines_ios,
-//	...other.virtualMachines_linux,
-	...other.virtualMachines_macos,
-//	...other.virtualMachines_ubuntu,
-	...other.virtualMachines_windows,
-	...other.virtualMachines_other,
-	...other.weirdWebsites,
-
-	...secret.secret
+		secret.secret,
+	])
 ];
+
 allArrays.sort((a, b) => a[0].localeCompare(b[0]));
 function onSearchAutocomplete(input, suggestions) {
 	let currentFocus = -1;
@@ -3851,18 +3881,18 @@ function onSearchAutocomplete(input, suggestions) {
 		let list, item, value = this.value;
 		onSearchClose();
 		if (!value) return;
-		list = document.createElement("DIV");
-		list.setAttribute("id", this.id + "autofillList");
+		list = document.createElement("div");
+		list.setAttribute("id", `${this.id}autofillList`);
 		list.setAttribute("class", "autofillItems");
 		this.parentNode.appendChild(list);
 		let displayedCount = 0;
 
 		suggestions.forEach(([name, base64, type, desc]) => { // Autofill Stuffs
-			if (displayedCount >= 30) return;
+			if ((displayedCount >= 30) || (type === "_CAT")) return;
 			if (name.toUpperCase().startsWith(value.toUpperCase())) {
 				item = document.createElement("DIV");
 				item.innerHTML = `<strong>${name.substr(0, value.length)}</strong>${name.substr(value.length)}`;
-				item.innerHTML += `<input type='hidden' value='${base64}'>`;
+				item.innerHTML += `<input type="hidden" value="${base64}">`;
 				if (desc) {
 					item.title = desc;
 				}
@@ -3880,7 +3910,7 @@ function onSearchAutocomplete(input, suggestions) {
 	});
 
 	input.addEventListener("keydown", function (e) {
-		let list = document.getElementById(this.id + "autofillList");
+		let list = document.getElementById(`${this.id}autofillList`);
 		if (list) list = list.getElementsByTagName("div");
 		if (e.keyCode === 40) {
 			currentFocus++;
@@ -3894,9 +3924,9 @@ function onSearchAutocomplete(input, suggestions) {
 				if (list) list[currentFocus].click();
 			} else if (selectedLink) {
 				let decodedLink = atob(selectedLink);
-				window.open(decodedLink, '_blank');
+				window.open(decodedLink, "_blank");
 			} else {
-				console.log('No link selected');
+				console.log("No link selected");
 			}
 		}
 	});
@@ -3928,4 +3958,6 @@ function onSearchAutocomplete(input, suggestions) {
 		onSearchClose(e.target);
 	});
 }
-onSearchAutocomplete(document.getElementById("search-bar-input"), allArrays);
+window.onload = function() {
+	onSearchAutocomplete(document.getElementById("search-bar-input"), allArrays);
+}

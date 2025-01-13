@@ -1,7 +1,7 @@
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
 /*	GENERAL  */
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
-if (Math.random() < 0.01 || (Math.random() < 0.05 && this.localStorage.rats_pageTheme == "spinetingler")) {
+if (Math.random() < .01 || (Math.random() < .05 && this.localStorage.rats_pageTheme == "spinetingler")) {
 	jumpscare = document.createElement("img");
 	jumpscare.src = "./assets/images/secret/FNAF2OldFoxyJumpscare.gif";
 	jumpscare.id = "SPOOK";
@@ -11,13 +11,10 @@ if (Math.random() < 0.01 || (Math.random() < 0.05 && this.localStorage.rats_page
 function onCutscene(toggle, timeTilScroll) {
 	if (toggle === true) {
 		setTimeout(() => {
-			window.scrollTo({
-				top: 0,
-				behavior: "smooth"
-			});
+			window.scrollTo({top: 0, behavior: "smooth"});
 		}, timeTilScroll * 1000);
 		document.querySelectorAll("#cutsceneBar").forEach(element => {
-			element.className = element.className + " active";
+			element.className = `${element.className} active`;
 		});
 	}
 }
@@ -45,7 +42,7 @@ function onLogoClickLoop() {
 function onRaidenClassic() {
 	raiden = document.getElementById("raidenTheRat");
 	raiden.src = "./assets/ratDoodle.svg";
-	if (Math.random() < 0.021) {
+	if (Math.random() < .021) {
 		raiden.src = "./assets/images/secret/raidenClassic.png";
 	}
 }
@@ -75,28 +72,28 @@ const idArray = ["mainBody", "sunnySky", "funkyTitleSmall", "funkyTitleSplash"];
 function onRatClick() {
 	const newWindow = window.open("about:blank", "test", `scrollbars=yes, width=${w}, height=${h}, top=${winTop}, left=${left}`);
 	if (newWindow) {
-	  // Wait for the new window to load
-	  newWindow.document.write(`
+		// Wait for the new window to load
+		newWindow.document.write(`
 		<!DOCTYPE html>
 		<html id="popup">
-		<head>
-		  <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>come along with me</title>
-		<link rel="shortcut icon" type="image/png" href="./../images/branding/embed/ratify.png">
-		<link href="./../css/other/ratified.css" rel="stylesheet" type="text/css" id="styles"/>
-		<script src="./../js/easterEggs.js"></script>
-		  <style>
-			body, html { margin: 0; padding: 0; overflow: hidden; }
-			iframe { border: none; width: 100vw; height: 100vh; }
-		  </style>
-		</head>
-		<body onload="onPopupHover();">
-		  <iframe src="./assets/embeds/ratify.html"></iframe>
-		</body>
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>come along with me</title>
+				<link rel="shortcut icon" type="image/png" href="./../images/branding/embed/ratify.png">
+				<link href="./../css/other/ratified.css" rel="stylesheet" type="text/css" id="styles"/>
+				<script src="./../js/easterEggs.js"></script>
+				<style>
+					body, html { margin: 0; padding: 0; overflow: hidden; }
+					iframe { border: none; width: 100vw; height: 100vh; }
+				</style>
+			</head>
+			<body onload="onPopupHover();">
+				<iframe src="./assets/embeds/ratify.html"></iframe>
+			</body>
 		</html>
-	  `);
-	  newWindow.document.close();
+	`);
+	newWindow.document.close();
 	}	onPopupHover();
 	document.title = "ㅤ";
 	document.querySelector("link[rel~='icon']").href = "./assets/images/transparent.png";
@@ -109,14 +106,14 @@ function onRatClick() {
 	}
 
 	document.getElementsByTagName("*")[0].id = "ratified";
-	document.getElementById("funkyTitleLarge").innerHTML = '<a onclick="window.location.reload();">ʞɔeq w,ᴉ</a>';
+	document.getElementById("funkyTitleLarge").innerHTML = "<a onclick=\"window.location.reload();\">ʞɔeq w,ᴉ</a>";
 	console.warn("fool");
 }
 
 	// Make Pop-up Move Up & Down
 function onPopupHover() {
 	xPos = left;
-	yPos = winTop + (-10 * Math.sin((performance.now() / 100) * 0.025) * Math.PI);
+	yPos = winTop + (-10 * Math.sin((performance.now() / 100) * .025) * Math.PI);
 	window.moveTo(xPos, yPos);
 	setTimeout("onPopupHover()", 1);
 }
@@ -139,7 +136,7 @@ numClicked = 0;
 function onSupClick() {
 	numClicked = numClicked + 1;
 	if (numClicked < 15) {
-		settings_homeh2.innerHTML = settings_homeh2.innerHTML + " " + settings_homeh2.innerHTML;
+		settings_homeh2.innerHTML = `${settings_homeh2.innerHTML} ${settings_homeh2.innerHTML}`;
 	} else {
 		onAwardTrophy("sup");
 	}
@@ -170,7 +167,7 @@ const targetNode = document.getElementById("funkyTitleLarge");
 const config = { childList: true, subtree: true };
 const callback = mutationsList => {
 	for (const mutation of mutationsList) {
-		if (mutation.type === "childList" && targetNode.innerHTML === "Minecraft Ports" && Math.random() < 0.1) {
+		if (mutation.type === "childList" && targetNode.innerHTML === "Minecraft Ports" && Math.random() < .1) {
 			targetNode.innerHTML = "Minceraft";
 			break;
 		}

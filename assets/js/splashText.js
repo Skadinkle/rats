@@ -16,12 +16,13 @@ const splashes = {
 		"For Meme Club Memes",
 		"HAHAHHAHAHHAHAHAHHAHAHAAHHAHAHAHAHAHAHAHAHAHSHAHAHAHAHAHAHAHAHAHAHHAHAHA",
 		"i got bored: the threequel",
-		'<img id="zim" src="./assets/other/zimfinite.svg">',
+		"I'm in the Splash Zone",
+		"<img id=\"zim\" src=\"./assets/images/secret/zimfinite.svg\">",
 		"Inside Your Walls",
 		"Little Track, Big World",
 		"NEEDS FIX",
 		"No More Fanfiction",
-		'<a href="https://sites.google.com/hhcsdstudents.org/o-efwvrpxafiiiiiiiiiiiiiiiiiii/home" target="_EXT">o-efwvrpxafiiiiiiiiiiiiiiiiiii</a>',
+		"<a href=\"https://sites.google.com/hhcsdstudents.org/o-efwvrpxafiiiiiiiiiiiiiiiiiii/home\" target=\"_blank\">o-efwvrpxafiiiiiiiiiiiiiiiiiii</a>",
 		"only work no games",
 		"or are we?",
 		"Over 3000+ Sites (yay)",
@@ -101,7 +102,7 @@ const splashes = {
 		"(y/N)",
 
 			// Coding
-		"(" + window.innerWidth + "x" + window.innerHeight + ")",
+		`(${window.innerWidth}x${window.innerHeight})`,
 		"64-Bit",
 		"An error occured.",
 		"at main",
@@ -1290,15 +1291,14 @@ const specialDays = [
 ];
 
 const funky_title_splash = document.getElementById("funkyTitleSplash");
-function onSplashText(splashArray) {
-	if (!splashArray || splashArray.length === 0) {
-		splashArray = splashes.splashesGeneral;
-	}
+function displaySplash(splashArray) {
+	if (!splashArray || splashArray.length === 0) splashArray = splashes.splashesGeneral;
 	const randomIndex = Math.floor(Math.random() * splashArray.length);
 	const randomText = splashArray[randomIndex];
 	funky_title_splash.innerHTML = randomText;
 }
-function onDetermineSplash(ignoreSpecialDays) {
+
+function loadSplash(ignoreSpecialDays) {
 	const now = new Date();
 	const monthIndex = now.getMonth();
 	const day = now.getDate();
@@ -1319,19 +1319,11 @@ function onDetermineSplash(ignoreSpecialDays) {
 				}
 			}
 			if (!isSpecialDay) {
-				if (splashes.hasOwnProperty(monthKey)) {
-					onSplashText(splashes[monthKey]);
-				} else {
-					onSplashText(splashes.splashesGeneral);
-				}
+				splashes.hasOwnProperty(monthKey) ? displaySplash(splashes[monthKey]) : displaySplash(splashes.splashesGeneral);
 			}
 		} else {
-			if (splashes.hasOwnProperty(monthKey) && Math.random() < 0.4) {
-				onSplashText(splashes[monthKey]);
-			} else {
-				onSplashText(splashes.splashesGeneral);
-			}
+			Math.random() < 0.4 && splashes.hasOwnProperty(monthKey) ? displaySplash(splashes[monthKey]) : displaySplash(splashes.splashesGeneral);
 		}
 	}
 }
-window.onload = function() {onDetermineSplash(false);};
+document.getElementById("funkyTitleSplash").onload = loadSplash(false);

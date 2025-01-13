@@ -9,7 +9,7 @@ newContent.innerHTML = `
 	<canvas id="stageCanvas" style="filter: url(#bendInward)"></canvas>
 	<svg width="0" height="0">
 		<filter id="bendInwards">
-			<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="turbulence" />
+			<feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="3" result="turbulence" />
 			<feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" />
 		</filter>
 	</svg>
@@ -22,12 +22,12 @@ targetImg.parentNode.insertBefore(newContent, targetImg);
 /*	MUSIC  */
 /*	--------------------------------------------------------------------------------------------------------------------------------  */
 function onPlaySong(songName, looping, loopPoint) {
-	const audio = new Audio("./assets/music/" + songName);
+	const audio = new Audio(`./assets/music/${songName}`);
 	audio.currentTime = loopPoint;
-	audio.addEventListener('timeupdate', () => {
-		if (audio.currentTime >= audio.duration - 0.3) {
-			audio.currentTime = loopPoint; // Reset to loop point
-			audio.play(); // Restart playback
+	audio.addEventListener("timeupdate", () => {
+		if (audio.currentTime >= audio.duration - .3) {
+			audio.currentTime = loopPoint;
+			audio.play();
 		}
 	});
 	audio.play();
@@ -148,7 +148,7 @@ const camera = {
 };
 const worldWidth = stage01[0].length * stage01[0].length * assetSize;
 const worldHeight = stage01.length * assetSize;
-const CAMERA_SMOOTHING = 0.125;
+const CAMERA_SMOOTHING = .125;
 function updateCamera() {
 	const targetX = Math.max(0, Math.min(playerX - camera.width / 4, worldWidth - camera.width));
 	const targetY = Math.max(-100, Math.min(playerY - camera.height / 2, (worldHeight * 1.125) - camera.height) * .8);
@@ -240,41 +240,41 @@ function getTileType(x, y, bg) {
 		const bottomEmpty = bottom !== "M" && bottom !== "R";
 		const leftEmpty = left !== "M" && left !== "R";
 		const rightEmpty = right !== "M" && right !== "R";
-        if (bottomEmpty && rightEmpty) return "rampSingleTopLeft";
-        if (bottomEmpty && leftEmpty) return "rampSingleTopRight";
-        if (topEmpty && rightEmpty) return "rampSingleBottomLeft";
-        if (topEmpty && leftEmpty) return "rampSingleBottomRight";
-    }
+		if (bottomEmpty && rightEmpty) return "rampSingleTopLeft";
+		if (bottomEmpty && leftEmpty) return "rampSingleTopRight";
+		if (topEmpty && rightEmpty) return "rampSingleBottomLeft";
+		if (topEmpty && leftEmpty) return "rampSingleBottomRight";
+	}
 	if (tile === "s") return "spikes";
 	if (tile === "P") return "spawn";
 	if (tile === "E") return "enemy";
 	return null;
 }
 function drawBackground() {
-    stage01bg.forEach((row, y) => {
-        [...row].forEach((char, x) => {
-            const tileType = getBackgroundTileType(x, y);
-            if (tileType) {
-                drawTile(tileType, x, y, tilesetbg); // Use tilesetbg for background
-            }
-        });
-    });
+	stage01bg.forEach((row, y) => {
+		[...row].forEach((char, x) => {
+			const tileType = getBackgroundTileType(x, y);
+			if (tileType) {
+				drawTile(tileType, x, y, tilesetbg); // Use tilesetbg for background
+			}
+		});
+	});
 }
 
 function drawStage() {
-    drawBackground(); // Draw the background first
-    stage01.forEach((row, y) => {
-        [...row].forEach((char, x) => {
-            const tileType = getTileType(x, y, false);
-            if (tileType) {
-                drawTile(tileType, x, y, tileset); // Pass the main tileset here
-            }
-        });
-    });
+	drawBackground(); // Draw the background first
+	stage01.forEach((row, y) => {
+		[...row].forEach((char, x) => {
+			const tileType = getTileType(x, y, false);
+			if (tileType) {
+				drawTile(tileType, x, y, tileset); // Pass the main tileset here
+			}
+		});
+	});
 }
 
 const tilesImage = new Image();
-tilesImage.src = "./assets/images/bobsAdventure/tileset.png";
+tilesImage.src = "./assets/images/secret/bobsAdventure/tileset.png";
 tilesImage.onload = () => {
 	resizeCanvas();
 	drawStage();
@@ -304,7 +304,7 @@ let playerY = 19 * assetSize;
 let playerVelocityX = 0;
 let playerVelocityY = 0;
 const playerSpeed = 1.33 * camZoom;
-const playerGravity = 0.25 * camZoom;
+const playerGravity = .25 * camZoom;
 const playerJumpPower = -6 * camZoom;
 let isJumping = false;
 let isDead = false;
@@ -315,7 +315,7 @@ let animFrameTimer = 0;
 const animFramerate = 24;
 let playerFlipped = false;
 const playerImage = new Image();
-playerImage.src = "./assets/images/bobsAdventure/player.png";
+playerImage.src = "./assets/images/secret/bobsAdventure/player.png";
 function drawPlayer() {
 	if (isDead) {
 		playerCurAnim = "die";

@@ -1,29 +1,23 @@
-# :bulb: RATS - Future Visions & Additions
-This page catalogs any additional features for rats.<br>
-More may be added/rejected.
-> [!NOTE]
-> Don't expect these any time soon.<br>
-> They take a while to implement in a semi-working state, let alone fully-functional & polished.
+# :calendar: RATS - _Future Visions & Additions_
+Below are a list of several features planned for **RATS**. _(Eventually...)_<br>
+**More will be added in the future.**
+| Status             | Item / Feature                             | Additional Notes                      | Version Added |
+| ------------------ | ------------------------------------------ | ------------------------------------- | ------------- |
+|                    | :trophy: Achievements                      |                                       | `3.1`         |
+|                    | :musical_note: Background Music            | Toggled with Music Player             |               |
+|                    | :video_game: Hidden Games                  |                                       |               |
+|                    | :musical_keyboard: Local Music Player      | Allows up to 10 user-uploaded songs.  |               |
+| :white_check_mark: | :space_invader: RatDev+                    | Press 0 to Enable<br>Difficult to Use | `3.1`         |
+| :white_check_mark: | :gear: Settings                            | Reimplemented from version 2.0        | `3.1`         |
+| :white_check_mark: | :mag_right: Search Bar                     |                                       | `3.0`         |
+|                    | :scroll: Video / Music Subtitles           |                                       |               |
+|                    | :floppy_disk: Toggleable Retro Backgrounds |                                       |               |
+|                    | :sound: UI Sound Effects                   |                                       | `3.1`         |
+|                    | :unlock: Unlockable Themes                 |                                       |               |
 
-## :bookmark_tabs: To-Do
-These will eventually be implemented on RATS _(either fully or modified.)_
-- [ ] :trophy: Achievements
-- [ ] :space_invader: Better Debugger
-- [ ] :musical_note: Background Music
-- [ ] :video_game: Hidden Games
-- [ ] :musical_keyboard: Music Player (+ Custom Playlists)
-- [ ] :gear: Reimplement Settings
-- [x] :mag_right: Search Bar
-- [ ] :sound: Sound Effects
-- [ ] :floppy_disk: Toggleable Retro Backgrounds
-- [ ] :unlock: Unlockable Themes
+---
 
-## :envelope: Potential
-These may or not be added in the future.
-- [ ] :warning: Swear Filter
-
-## :no_entry_sign: Rejected
-These are several banned, rejected, or bad features that have been suggested.
-| Name | Rejection Reason | Additional Info |
-| - | - | - |
-| :bar_chart: Leaderboards | Hard to Implement<br>Cheatable / Falsifiable |
+### :no_entry_sign: Rejected Content
+| Item / Feature           | Rejection Reason                             | Additional Notes |
+| ------------------------ | -------------------------------------------- | ---------------- |
+| :bar_chart: Leaderboards | Hard to Implement<br>Cheatable / Falsifiable |                  |
