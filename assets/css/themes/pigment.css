@@ -1,51 +1,44 @@
 :root {
 		/* General */
-	--g-bodyMain: #000000;
-	--g-cardMain: #000000;
-	--g-cardMain-hover: #000000;
-	--g-textLight: #ffffff;
-	--g-textEmphasis: #ffffff;
-	--g-textEmphasis-border: #000000;
-	--g-textDim: #ffffff;
-
-		/* Title Card */
-	--t-skyUpper: #ffffff;
-	--t-skyLower: #ffffff;
-
-		/* Shadows */
+	--g-bodyMain: #000;
+	--g-cardMain: #000;
+	--g-cardMain-hover: #000;
+	--g-textLight: #fff;
+	--g-textEmphasis: #fff;
+	--g-textEmphasis-border: #000;
+	--g-textDim: #fff;
 	--s-cardMain: #00000075;
-	--s-cardMain-hover: #00000080;
+	--s-cardMain-hover: #0008;
+	--t-skyUpper: #fff;
+	--t-skyLower: #fff;
 }
 
 header {
 	background: #000000bf;
 }
-section img#sunnyClouds {
-	filter: grayscale() opacity(50%);
+#sunnyClouds {
+	filter: grayscale() opacity(.5);
 }
-section img#hills {
-	filter: grayscale() opacity(90%);
-	mix-blend-mode: multiply;
-}
-section img#sunnyGround {
-	filter: grayscale() brightness(120%) contrast(500%);
+#sunnyGround {
+	filter: grayscale() brightness(1.2) contrast(5) opacity(.5);
 	mix-blend-mode: soft-light;
 }
-section img#overlay {
+#overlay {
 	visibility: hidden;
 }
 #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash {
-	filter: brightness(50%);
+	filter: brightness(.5);
 	text-shadow: 0 0 10px var(--s-cardMain);
 }
 #funkyTitleSplash {
-	opacity: 90%;
+	filter: opacity(.9);
 }
-#mainBody h2, #mainBody #subtitle, a#descNotice, p#descNotice, #infoBox h2, footer a#footer-padding, #video-menu ul li, #video-menu ul li:hover, #settings_title, #settings_bar ul h2, #settings_bar ul li a:hover, #settings_achievements a, #settings_achievements a:hover {
-	filter: brightness(50%);
+#mainBody h2, #mainBody #subtitle,
+a#descNotice, p#descNotice, #infoBox h2 {
+	filter: brightness(.5);
 }
 #pageOptions a#item:hover {
-	rotate: 0deg;
+	transform: rotate(0deg);
 }
 #pageOptions img {
 	filter: grayscale();

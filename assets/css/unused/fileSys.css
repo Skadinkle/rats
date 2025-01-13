@@ -1,5 +1,3 @@
-@import url("./../settings/antialiasing.css"); /* Imports */
-
 body {
 	background: linear-gradient(to top left, var(--g-bodyMain), var(--g-cardMain))!important;
 	min-height: 200vh;
@@ -50,7 +48,7 @@ h1 {
 }
 
 #parentDirLinkBox a, div a { /* Files & Folders */
-	opacity: 90%;
+	filter: opacity(.9);
 	padding-inline-start: 24px;
 	text-decoration: none;
 	user-select: auto;

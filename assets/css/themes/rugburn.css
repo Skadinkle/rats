@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script");
 :root {
 		/* General */
+	--f-fontMain: "Fira Sans";
+	--f-fontAlt: "Nanum Pen Script";
 	--g-bodyMain: #592e45;
 	--g-cardMain: #803333;
 	--g-cardMain-hover: #a7473b;
@@ -9,23 +11,14 @@
 	--g-textEmphasis: #fcdd95;
 	--g-textEmphasis-border: #a7473b;
 	--g-textDim: #ffd19d;
-
-		/* Title Card */
-	--t-skyUpper: #eb6868;
-	--t-skyLower: #f8f3be;
-
-		/* Shadows */
 	--s-cardMain: #3f243175;
 	--s-cardMain-hover: #3f243180;
+	--t-skyUpper: #eb6868;
+	--t-skyLower: #f8f3be;
 }
 
 body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 75vh, var(--t-skyUpper) 100vh);
-	font-family: "Fira Sans", sans-serif;
-}
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Nanum Pen Script";
-	font-weight: 900;
+	background: linear-gradient(var(--t-skyUpper) 0, var(--t-skyLower) 75vh, var(--t-skyUpper) 100vh);
 }
 header #headerLogo {
 	font-size: 31px;
@@ -36,25 +29,22 @@ header ul li {
 header ul li a {
 	font-size: 17px;
 }
-section img#sunnySky {
-	filter: sepia(50%) hue-rotate(-60deg) saturate(200%) contrast(125%);
+#sunnySky {
+	filter: sepia(.5) hue-rotate(-60deg) saturate(2) contrast(1.25);
 	mix-blend-mode: multiply;
 }
-section img#hills {
-	filter: opacity(90%) sepia(50%) hue-rotate(-37.5deg);
+#sunnyGround {
+	filter: sepia(.5) hue-rotate(-60deg) saturate(.8);
 }
-section img#sunnyGround {
-	filter: sepia(50%) hue-rotate(-60deg) saturate(80%);
-}
-section img#overlay {
-	filter: saturate(200%);
+#overlay {
+	filter: saturate(2);
 	mix-blend-mode: color-burn;
 }
 #infoBox p {
 	font-size: 12px;
 }
 #pageOptions img {
-	filter: sepia() hue-rotate(-45deg) saturate(150%);
+	filter: sepia() hue-rotate(-45deg) saturate(1.5);
 }
 #pageOptions img#svg, #raidenTheRat {
 	filter: none;

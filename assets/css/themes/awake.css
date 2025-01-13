@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik+Maps");
 :root {
 		/* General */
+	--f-fontMain: "Acme";
+	--f-fontAlt: "Rubik Maps";
 	--g-bodyMain: #74569b;
 	--g-cardMain: #9366b1;
 	--g-cardMain-hover: #be74ac;
@@ -9,72 +11,40 @@
 	--g-textEmphasis: #96fbc7;
 	--g-textEmphasis-border: #74569b;
 	--g-textDim: #d8bfd8;
-
-		/* Title Card */
-	--t-skyUpper: #6cfff8;
-	--t-skyLower: #f0db7f;
-
-		/* Shadows */
 	--s-cardMain: #423e7d75;
 	--s-cardMain-hover: #423e7d80;
+	--t-skyUpper: #6cfff8;
+	--t-skyLower: #f0db7f;
 }
 
-body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 100vh);
-	font-family: "Acme";
-}
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Rubik Maps";
-	font-weight: 200;
-}
-header #headerLogo {
-	font-size: 21px;
-}
-header ul li {
-	margin-left: 12.5px;
+#headerLogo {
+	font-weight: 500;
 }
 header ul li a {
-	font-size: 12px;
+	font-family: var(--f-fontMain);
 }
-section img#sunnyClouds {
-	-webkit-filter: opacity(75%);
-	filter: opacity(75%);
+#sunnyClouds {
+	filter: opacity(.75);
 }
-section img#hills {
-	-webkit-filter: opacity(90%) sepia(50%) hue-rotate(105deg) brightness(125%);
-	filter: opacity(90%) sepia(50%) hue-rotate(105deg) brightness(125%);
+#sunnyGround {
+	filter: sepia(.5) hue-rotate(90deg) brightness(1.5) contrast(2) opacity(.75);
 }
-section img#sunnyGround {
-	-webkit-filter: sepia(50%) hue-rotate(90deg) brightness(150%) contrast(200%) opacity(75%);
-	filter: sepia(50%) hue-rotate(90deg) brightness(150%) contrast(200%) opacity(75%);
-}
-section img#overlay {
+#overlay {
 	mix-blend-mode: color-burn;
 }
-section #funkyTitleLarge {
-	font-size: 90px;
-}
-#pageOptions a#item, .credits-options a#item {
-	border-color: var(--g-textEmphasis);
-	border-style: solid;
-	border-width: 1px;
+#pageOptions a#item {
+	border: 1px solid var(--g-textEmphasis);
 }
 #pageOptions img {
-	-webkit-filter: sepia() hue-rotate(-150deg) saturate(200%);
-	filter: sepia() hue-rotate(-150deg) saturate(200%);
+	filter: sepia() hue-rotate(-150deg) saturate(2);
 }
 #pageOptions img#svg, #raidenTheRat {
-	-webkit-filter: none;
 	filter: none;
 	mix-blend-mode: lighten;
 }
-#settings_optiondesc {
-	font-size: 15px;
+#sunnyFooterImg {
+	filter: brightness(2) hue-rotate(-90deg) saturate(1.5);
 }
-#settings_credits a img, #settings_creditsmember img {
-	-webkit-filter: sepia(25%) hue-rotate(-37.5deg);
-	filter: sepia(25%) hue-rotate(-37.5deg);
-}
-footer a {
-	font-size: 12.5px;
+#setMenuRight::before {
+	filter: saturate(.25) hue-rotate(-90deg) drop-shadow(-5px -50px 1px var(--s-shadow25));
 }

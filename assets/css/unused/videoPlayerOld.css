@@ -22,10 +22,10 @@ body { /* Base Properties */
 	position: fixed;
 }
 #video-player {
-	background-color: #00000080;
+	background-color: #0008;
 	border-radius: 10px;
 	border-style: none;
-	filter: drop-shadow(0 0 10px #00000080);
+	filter: drop-shadow(0 0 10px #0008);
 	height: 80vh;
 	position: absolute;
 	width: 66.666vw;
@@ -62,24 +62,20 @@ h2#video-player {
 	padding-bottom: 30px;
 }
 #video-menu ul li {
-	border-color: transparent;
 	border-radius: 5px;
-	border-style: dotted;
-	border-width: 1px;
+	border: 1px dotted transparent;
 	color: var(--s-text-dim);
 	cursor: pointer;
 	font-size: 10px;
 	font-weight: 500;
-	line-height: 0.6px;
+	line-height: 6px;
 	list-style-image: url("./../../transparent.png");
 	padding: 10px;
-	transition: font-weight 0.2s, border-radius 0.3s;
+	transition: font-weight 2s, border-radius 3s;
 }
 #video-menu ul li:hover {
-	border-color: var(--s-text-dim);
 	border-radius: 10px;
-	border-style: dotted;
-	border-width: 1px;
+	border: 1px dotten var(--s-textDim);
 	filter: brightness(1.5);
 	font-weight: 700;
 	text-decoration: underline;

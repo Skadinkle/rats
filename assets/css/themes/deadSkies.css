@@ -1,0 +1,35 @@
+/* PALETTE: https://lospec.com/palette-list/menacing-sky */
+@import url("https://fonts.googleapis.com/css?family=Rubik+Vinyl");
+@import url("https://fonts.googleapis.com/css?family=Macondo");
+:root {
+		/* General */
+	--f-fontMain: "Macondo";
+	--f-fontAlt: "Rubik Vinyl";
+	--g-bodyMain: #22161b;
+	--g-cardMain: #3b262a;
+	--g-cardMain-hover: #3f2324;
+	--g-textLight: #ddc4c4;
+	--g-textEmphasis: #ae7b6d;
+	--g-textEmphasis-border: #5d3f3b;
+	--g-textDim: #81776a;
+	--s-cardMain: #120a0c75;
+	--s-cardMain-hover: #120a0c80;
+	--t-skyUpper: #453e4a;
+	--t-skyLower: #585c61;
+}
+#sunnySky {
+	filter: saturate(.25) opacity(.5);
+	mix-blend-mode: multiply;
+}
+#sunnyGround {
+	filter: saturate(.25) brightness(.75);
+}
+#sunnyFooterImg {
+	filter: brightness(.5) saturate(.8) hue-rotate(45deg);
+}
+#setOverlay::before {
+	filter: hue-rotate(165deg) opacity(.25) saturate(.25);
+}
+#setOverlay::before {
+	filter: opacity(.25) saturate(0);
+}

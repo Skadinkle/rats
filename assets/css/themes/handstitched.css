@@ -2,67 +2,39 @@
 @import url("https://fonts.googleapis.com/css?family=Shantell+Sans");
 :root {
 		/* General */
+	--f-fontMain: "DynaPuff";
+	--f-fontAlt: "Shantell Sans";
 	--g-bodyMain: #773d24;
 	--g-cardMain: #ae3528;
 	--g-cardMain-hover: #ce4747;
-	--g-textLight: #ffffff;
+	--g-textLight: #fff;
 	--g-textEmphasis: #ffc767;
 	--g-textEmphasis-border: #b96f1f;
 	--g-textDim: #f3e1c3;
-
-		/* Title Card */
-	--t-skyUpper: #c9eaff;
-	--t-skyLower: #fff7c0;
-
-		/* Shadows */
 	--s-cardMain: #41260f75;
 	--s-cardMain-hover: #41260f80;
+	--t-skyUpper: #90d4ff;
+	--t-skyLower: #fff193;
 }
 
-body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 75vh, var(--t-skyUpper) 100vh);
-	font-family: "DynaPuff", sans-serif;
+#sunnySky {
+	filter: sepia(.5) hue-rotate(45deg) saturate(1.5) blur(.25px) opacity(.5);
 }
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Shantell Sans";
-}
-header #headerLogo {
-	font-size: 23px;
-}
-header ul li {
-	margin-left: 15px;
-}
-header ul li a {
-	font-size: 13px;
-}
-section img#sunnySky {
-	filter: sepia(50%) hue-rotate(45deg) saturate(200%) blur(0.25px);
-	mix-blend-mode: multiply;
-}
-section img#sunnyClouds {
-	filter: opacity(75%);
+#sunnyClouds {
+	filter: opacity(.5);
 	mix-blend-mode: normal;
 }
-section img#hills {
-	filter: saturate(125%) opacity(80%) hue-rotate(22.5deg);
+#sunnyGround {
+	filter: saturate(1.25) opacity(.9);
 }
-section img#sunnyGround {
-	filter: saturate(125%) opacity(90%);
-}
-section img#overlay {
+#overlay {
 	mix-blend-mode: color-burn;
 }
-#infoBox p {
-	font-size: 11px;
-	font-weight: 100;
-}
 #pageOptions a#item {
-	border-color: var(--g-textEmphasis);
-	border-style: dashed;
-	border-width: 2px;
+	border: 2px dashed var(--g-textEmphasis);
 }
 #pageOptions img {
-	filter: sepia(90%) saturate(200%);
+	filter: sepia(.9) saturate(2);
 }
 #pageOptions img#svg, #raidenTheRat {
 	filter: none;
@@ -71,16 +43,7 @@ section img#overlay {
 #pageOptions p {
 	font-size: 11px;
 }
-#settings_title, #settings_bar h2 {
-	font-size: 27px;
-}
-#settings_credits a {
-	background: linear-gradient(var(--g-bodyMain) 75px, transparent);
-}
-.menu_buttons a:hover, #settings_creditsmember ul li a {
-	border-style: dashed;
-}
 footer a {
 	font-size: 13px;
-	letter-spacing: 0.1px;
+	letter-spacing: .1px;
 }

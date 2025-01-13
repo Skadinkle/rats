@@ -13,6 +13,5 @@
 }
 
 section img#sunnyGround {
-	-webkit-filter: saturate(50%) hue-rotate(-30deg);
-	filter: saturate(50%) hue-rotate(-30deg);
+	filter: saturate(.5) hue-rotate(-30deg);
 }

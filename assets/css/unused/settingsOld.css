@@ -29,7 +29,7 @@ body { /* Base Properties */
 	border-radius: 10px;
 	height: 10px;
 	margin: 10px;
-	opacity: 75%;
+	filter: opacity(.75);
 }
 #settings_main {
 	padding-top: 20px;
@@ -103,7 +103,7 @@ body { /* Base Properties */
 	line-height: 5px;
 	padding: 10px;
 	position: absolute;
-	transition: border-radius 0.3s, background-color 0.1s, font-size 0.2s;
+	transition: border-radius .3s, background-color .1s, font-size .2s;
 }
 #settings_bar ul li a:hover {
 	background-color: var(--g-textDim);
@@ -113,11 +113,10 @@ body { /* Base Properties */
 }
 #settings_scrollbg {
 	animation: slide 1s linear infinite;
-	background: url("./../../images/grid.png");
-	background-repeat: repeat;
+	background: url("./../../images/grid.png") repeat;
 	height: 200%;
 	image-rendering: pixelated;
-	opacity: 10%;
+	filter: opacity(.1);
 	pointer-events: none;
 	position: static;
 	scale: 2;
@@ -196,10 +195,8 @@ body { /* Base Properties */
 }
 .menu_buttons a, #settings_credits a {
 	background-color: var(--g-textLight);
-	border-color: transparent;
 	border-radius: 30px;
-	border-style: solid;
-	border-width: 1px;
+	border: 1px solid transparent;
 	color: var(--g-bodyMain);
 	cursor: pointer;
 	font-size: 11px;
@@ -209,15 +206,13 @@ body { /* Base Properties */
 	margin-right: 10px;
 	padding: 9px;
 	padding-bottom: 27px;
-	transition: background-color 0.1s, font-size 0.2s, border-radius 0.225s;
+	transition: background-color .1s, font-size .2s, border-radius .225s;
 	width: 145px;
 }
 .menu_buttons a:hover {
 	background-color: transparent;
-	border-color: var(--g-textLight);
 	border-radius: 15.25px;
-	border-style: solid;
-	border-width: 1px;
+	border: 1px solid var(--g-textLight);
 	color: var(--g-textLight);
 	font-size: 12px;
 }
@@ -249,7 +244,7 @@ body { /* Base Properties */
 	display: none;
 }
 #settings_profile img {
-	background: #00000080;
+	background: #0008;
 	border-radius: 100%;
 	height: 200px;
 	margin-bottom: 20px;
@@ -257,7 +252,7 @@ body { /* Base Properties */
 	width: 200px;
 }
 #settings_profile img.placeholder {
-	opacity: 50%;
+	filter: opacity(.5);
 }
 #settings_profile input {
 	color: transparent;
@@ -272,7 +267,6 @@ body { /* Base Properties */
 }
 
 #settings_achievements { /* Achievement Section */
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	display: none;
 	grid-template-rows: repeat(4, 1fr);
@@ -283,14 +277,11 @@ body { /* Base Properties */
 #settings_achievements a {
 	background-color: transparent;
 	border-radius: 0;
-	border-style: dashed;
-	border-width: 1px;
-	border-color: var(--g-textDim);
+	border: 1px dashed var(--g-textDim);
 	color: var(--g-textLight);
 	cursor: default;
 	display: flex;
-	-webkit-filter: brightness(50%);
-	filter: brightness(50%);
+	filter: brightness(.5);
 	font-size: 11px;
 	height: 72px;
 	line-height: 20px;
@@ -298,7 +289,7 @@ body { /* Base Properties */
 	margin-bottom: 5px;
 	padding: 10px;
 	text-align: left;
-	transition: opacity 0.1s, scale 0.2s ease-in-out;
+	transition: filter .1s, scale .2s ease-in-out;
 	width: 310px;
 }
 #settings_achievements a.unlocked {
@@ -307,25 +298,21 @@ body { /* Base Properties */
 #settings_achievements a.unlocked:hover {
 	border-color: var(--g-textLight);
 	color: var(--g-textDim);
-	opacity: 90%;
-	scale: 97.5%;
+	filter: opacity(.9);
+	transform: scale(.975);
 }
 #settings_achievements a img, #settings_achievements a p {
 	pointer-events: none;
 }
 #settings_achievements a img {
-	border: solid;
-	border-color: var(--g-textLight);
-	border-width: 2px;
-	filter: grayscale();
+	border: 2px solid var(--g-textLight);
+	filter: grayscale() opacity(.5);
 	height: 50px;
 	image-rendering: pixelated;
-	opacity: 50%;
 	width: 50px;
 }
 #settings_achievements a.unlocked img {
-	filter: none;
-	opacity: 100%;
+	filter: opacity(1);
 }
 #settings_achievements a p#trophy-name {
 	font-weight: 700;
@@ -354,11 +341,11 @@ body { /* Base Properties */
 #settings_credits a {
 	background: linear-gradient(var(--g-bodyMain) 75px, transparent);
 	border-radius: 20px 20px 0 0;
-	border-width: 0;
+	border: 0;
 	color: var(--g-textLight);
 	height: 150px;
 	padding-bottom: 10px;
-	transition: scale 0.3s, filter 0.2s, mix-blend-mode 0.1s ease-in, margin-top 0.2s ease;
+	transition: scale .3s, filter .2s, mix-blend-mode .1s ease-in, margin-top .2s ease;
 	width: 130px;
 }
 #settings_credits a:hover {
@@ -381,22 +368,19 @@ body { /* Base Properties */
 }
 #settings_creditsmember img {
 	background-color: var(--g-bodyMain);
-	border-color: var(--g-bodyMain);
 	border-radius: 100%;
-	border-style: solid;
-	border-width: 1px;
+	border: 1px solid var(--g-bodyMain);
 	filter: drop-shadow(0 0 10px var(--g-bodyMain));
 	position: absolute;
 	right: 70px;
 	top: 185px;
 	width: 250px;
-	transition: filter 0.15s ease, scale 0.15s ease, rotate 0.2s ease;
+	transition: filter .15s ease, scale .15s ease, rotate .2s ease;
 }
 #settings_creditsmember img:hover {
 	cursor: pointer;
 	filter: drop-shadow(0 5px 10px var(--g-bodyMain));
-	rotate: -5deg;
-	scale: 95%;
+	transform: rotate(-5deg) scale(.95);
 }
 #settings_creditsmember p {
 	margin-left: 35px;
@@ -428,13 +412,12 @@ body { /* Base Properties */
 	margin-left: 17.5px;
 	padding: 10px;
 	text-decoration: none;
-	transition: background-color 0.1s, font-size 0.2s, border-radius 0.225s;
+	transition: background .1s, font-size .2s, border-radius .225s;
 }
 #settings_creditsmember ul li a:hover {
-	background-color: transparent;
+	background: transparent;
 	border-radius: 40px;
-	border-style: solid;
-	border-width: 1px;
+	border: 1px solid;
 	color: var(--g-textLight);
 }
 
@@ -453,7 +436,7 @@ body { /* Base Properties */
 	font-size: 15px;
 	line-height: 20px;
 	margin: 10px 0 10px 0;
-	transition: 0.2s ease-out;
+	transition: .2s ease-out;
 	width: fit-content;
 }
 #settings_resources li:hover {
@@ -461,8 +444,8 @@ body { /* Base Properties */
 }
 #settings_resources ul li a {
 	color: var(--g-textLight);
-	transition: 0.1s;
+	transition: .1s;
 }
 #settings_resources ul li a:hover {
-	text-shadow: -0.25px -0.25px 0 var(--g-textEmphasis), 0.25px -0.25px 0 var(--g-textEmphasis), -0.25px 0.25px 0 var(--g-textEmphasis), 0.25px 0.25px 0 var(--g-textEmphasis);
+	text-shadow: -.25px -.25px 0 var(--g-textEmphasis), .25px -.25px 0 var(--g-textEmphasis), -.25px .25px 0 var(--g-textEmphasis), .25px .25px 0 var(--g-textEmphasis);
 }

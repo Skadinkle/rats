@@ -1,35 +1,27 @@
 :root {
 		/* General */
-	--g-bodyMain: #ffffff;
+	--f-fontMain: Arial, Helvetica;
+	--f-fontAlt: Arial, Helvetica;
+	--g-bodyMain: #fff;
 	--g-cardMain: #ffb470;
 	--g-cardMain-hover: #ffb470;
-	--g-textLight: #000000;
+	--g-textLight: #000;
 	--g-textEmphasis: #ffe91d;
 	--g-textEmphasis-border: #ffe91d;
-	--g-textDim: #000000;
-
-		/* Title Card */
-	--t-skyUpper: #e6e6e6;
-	--t-skyLower: #ffffff;
-
-		/* Shadows */
+	--g-textDim: #000;
 	--s-cardMain: #00000075;
-	--s-cardMain-hover: #00000080;
+	--s-cardMain-hover: #0008;
+	--t-skyUpper: #e6e6e6;
+	--t-skyLower: #fff;
 
 		/* Special */
-	--x-link: #0000ff;
+	--x-link: #00f;
 	--x-tile: url("./../../images/themes/projectB_tile.png");
 	--x-warning: #bb3737;
 }
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
-}
 header {
 	background: var(--g-textEmphasis-border);
-}
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: Arial, Helvetica, sans-serif;
 }
 header #headerLogo {
 	font-size: 22px;
@@ -37,24 +29,21 @@ header #headerLogo {
 header ul li a {
 	font-size: 12px;
 }
-section img#sunnySky {
+#sunnySky {
 	background: var(--x-tile);
 	content: url("./../../images/transparent.png");
 	mix-blend-mode: normal;
 	scale: 100%;
 	width: 100vw;
 }
-section img#sunnyClouds {
-	filter: brightness(200%) opacity(50%);
+#sunnyClouds {
+	filter: brightness(2) opacity(.5);
 }
-section img#hills {
-	filter: opacity(50%) sepia() hue-rotate(10deg) saturate(500%) contrast(90%);
+#sunnyGround {
+	filter: sepia() hue-rotate(10deg) saturate(5) contrast(.9);
 }
-section img#sunnyGround {
-	filter: sepia() hue-rotate(10deg) saturate(500%) contrast(90%);
-}
-section img#overlay {
-	opacity: 10%;
+#overlay {
+	filter: opacity(.1);
 }
 #funkyTitleSplash {
 	color: var(--g-textDim);
@@ -80,17 +69,17 @@ a#warning, p#warning {
 	font-size: 12px;
 }
 #pageOptions img {
-	filter: sepia() hue-rotate(10deg) saturate(500%);
+	filter: sepia() hue-rotate(10deg) saturate(5);
 }
 #pageOptions img#svg, #raidenTheRat {
-	filter: invert() opacity(80%);
+	filter: invert() opacity(.8);
 	mix-blend-mode: darken;
 }
 #pageOptions p {
 	color: var(--x-link);
 	font-size: 11px;
 }
-#pageOptions a:link img, #pageOptions a:visited img, img.squishable {
+#pageOptions a:link img, #pageOptions a:visited img, .squishable {
 	filter: invert();
 }
 footer {
@@ -104,5 +93,5 @@ footer a:link, footer a:visited {
 	text-decoration: none;
 }
 footer a:link:hover, footer a:visited:hover {
-	text-shadow: -0.25px -0.25px 0 var(--x-link), 0.25px -0.25px 0 var(--x-link), -0.25px 0.25px 0 var(--x-link), 0.25px 0.25px 0 var(--x-link);
+	text-shadow: -.25px -.25px 0 var(--x-link), .25px -.25px 0 var(--x-link), -.25px .25px 0 var(--x-link), .25px .25px 0 var(--x-link);
 }

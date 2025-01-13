@@ -2,69 +2,37 @@
 @import url("https://fonts.googleapis.com/css?family=Patrick+Hand");
 :root {
 		/* General */
+	--f-fontMain: "M PLUS Rounded 1c";
+	--f-fontAlt: "Patrick Hand";
 	--g-bodyMain: #c22222;
 	--g-cardMain: #d74030;
 	--g-cardMain-hover: #eb6d47;
-	--g-textLight: #f2e5e8;
-	--g-textEmphasis: #ed9e9e;
-	--g-textEmphasis-border: #c44e4e;
-	--g-textDim: #d3d0cd;
-
-		/* Title Card */
-	--t-skyUpper: #71ca4b;
-	--t-skyLower: #dff59d;
-
-		/* Shadows */
+	--g-textLight: #e5f2e5;
+	--g-textEmphasis: #aaed9e;
+	--g-textEmphasis-border: #7ba245;
+	--g-textDim: #b7c7ad;
 	--s-cardMain: #14121275;
 	--s-cardMain-hover: #14121280;
+	--t-skyUpper: #71ca4b;
+	--t-skyLower: #dff59d;
 }
 
-body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 50vh);
-	font-family: "M PLUS Rounded 1c", sans-serif;
-}
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Patrick Hand";
-	font-weight: bolder;
-}
-header #headerLogo {
-	font-size: 30px;
-}
-header ul li {
-	margin-left: 18px;
-}
-header ul li a {
-	letter-spacing: 1px;
-}
-section img#sunnySky {
+#sunnySky {
 	mix-blend-mode: multiply;
 }
-section img#hills {
-	filter: opacity(90%) brightness(75%) sepia() hue-rotate(-45deg) saturate(200%);
+#sunnyMountains {
+	filter: hue-rotate(-90deg) opacity(.5) blur(.5px);
 }
-section img#sunnyGround {
-	filter: sepia() hue-rotate(-45deg) saturate(300%);
-}
-#infoBox p {
-	font-size: 12px;
+#sunnyGround {
+	filter: sepia() hue-rotate(-45deg) brightness(.75) saturate(3);
 }
 #pageOptions img {
-	filter: sepia() hue-rotate(-60deg) saturate(150%);
+	filter: sepia() hue-rotate(-60deg) saturate(1.5);
 }
 #pageOptions img#svg, #raidenTheRat {
 	filter: none;
 	mix-blend-mode: lighten;
 }
-#pageOptions p {
-	font-size: 12.5px;
-}
-#settings_title, #settings_bar h2 {
-	font-size: 32px;
-}
-footer {
-	line-height: 20px;
-}
-footer a {
-	font-size: 14px;
-	letter-spacing: 1.5px;
+#sunnyFooterImg {
+	filter: sepia(.75) hue-rotate(45deg) saturate(3);
 }

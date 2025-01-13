@@ -7,38 +7,29 @@
 	--g-textEmphasis: #beed9e;
 	--g-textEmphasis-border: #96c44e;
 	--g-textDim: #b9b5b7;
-
-		/* Title Card */
-	--t-skyUpper: #9db4f5;
-	--t-skyLower: #754bca;
-
-		/* Shadows */
 	--s-cardMain: #13121475;
 	--s-cardMain-hover: #13121480;
+	--t-skyUpper: #9db4f5;
+	--t-skyLower: #754bca;
 }
 
 body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 150vh);
+	background: linear-gradient(var(--t-skyUpper) 0, var(--t-skyLower) 150vh);
 }
 header #headerLogo, #funkyTitleLarge {
-	scale: -100%;
+	scale: -1;
 }
-section img#sunnySky {
-	filter: blur(5px) sepia(50%) grayscale(50%) hue-rotate(45deg);
+#sunnySky {
+	filter: blur(5px) sepia(.5) grayscale(.5) hue-rotate(45deg) opacity(.25);
 }
-section img#sunnyClouds {
-	filter: blur(0.5px) sepia(50%) grayscale(50%) hue-rotate(45deg) opacity(50%);
+#sunnyClouds {
+	filter: blur(.5px) sepia(.5) grayscale(.5) hue-rotate(45deg) opacity(.5);
 }
-section img#hills {
-	filter: blur(0.25px) sepia(50%) grayscale(50%) hue-rotate(67.5deg) opacity(90%);
-	margin-top: 150px;
-}
-section img#sunnyGround {
-	filter: sepia(50%) grayscale(50%) hue-rotate(45deg);
+#sunnyGround {
+	filter: sepia(.5) grayscale(.5) hue-rotate(45deg);
 }
 img {
-	rotate: 180deg;
-	transform: scaleX(-100%);
+	scale: -1;
 }
 #mainBody {
 	filter: hue-rotate(45deg);
@@ -47,27 +38,20 @@ img {
 	filter: invert() grayscale();
 }
 #pageOptions img#svg, #raidenTheRat {
-	-webkit-filter: none;
 	filter: none;
 }
-img.squishable:hover {
-	rotate: 182deg;
-	transform: scale(-105%, 95%);
+.squishable:hover {
+	transform: scale(-1.05, .95) rotate(182deg);
 }
-img.squishable:active {
-	rotate: 183deg;
-	transform: scale(-110%, 90%);
-}
-#settings_achievements a.unlocked img, #settings_credits a img {
-	filter: hue-rotate(-33.75deg);
-}
-#settings_creditsmember img {
-	filter: hue-rotate(-33.75deg) drop-shadow(0 0 10px var(--g-bodyMain));
-}
-#settings_creditsmember img:hover {
-	filter: hue-rotate(-33.75deg) drop-shadow(0 5px 10px var(--g-bodyMain));
-	rotate: 185deg;
+.squishable:active {
+	transform: scale(-1.1, .9) rotate(183deg);
 }
 footer {
-	transform: scale(100%, -100%);
+	transform: scale(1, -1);
+}
+#sunnyFooterImg {
+	scale: none;
+}
+#setMenuRight::before {
+	filter: saturate(.1) hue-rotate(-105deg) drop-shadow(-5px -50px 1px var(--s-shadow25));
 }

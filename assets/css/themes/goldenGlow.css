@@ -1,0 +1,42 @@
+/* PALETTE: https://lospec.com/palette-list/ice-cream-gb */
+@import url("https://fonts.googleapis.com/css?family=Sriracha");
+@import url("https://fonts.googleapis.com/css?family=Edu+SA+Beginner");
+:root {
+		/* General */
+	--f-fontMain: "Sriracha";
+	--f-fontAlt: "Edu SA Beginner";
+	--g-bodyMain: #7c3f58;
+	--g-cardMain: #7c3f58;
+	--g-cardMain-hover: #7c3f58;
+	--g-textLight: #fff6d3;
+	--g-textEmphasis: #f9a875;
+	--g-textEmphasis-border: #eb6b6f;
+	--g-textDim: #eb6b6f;
+	--s-cardMain: #00000075;
+	--s-cardMain-hover: #0008;
+	--t-skyUpper: #f9a875;
+	--t-skyLower: #fff6d3;
+}
+
+body {
+	background: linear-gradient(var(--t-skyUpper) 0, var(--t-skyLower) 50vh);
+}
+#sunnySky {
+	filter: opacity(.25);
+}
+#sunnyClouds {
+	filter: opacity(.5) blur(2px);
+}
+#sunnyMountains {
+	filter: hue-rotate(90deg) opacity(.5) blur(.5px);
+}
+#sunnyGround {
+	filter: sepia(.75) hue-rotate(-50deg) saturate(3) drop-shadow(0 0 10px var(--t-skyUpper));
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: none;
+	mix-blend-mode: lighten;
+}
+#sunnyFooterImg {
+	filter: sepia(.75) hue-rotate(-50deg) saturate(4);
+}

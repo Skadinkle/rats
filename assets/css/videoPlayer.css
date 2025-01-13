@@ -1,0 +1,151 @@
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	VIDEO CONTAINER  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#videoShell {
+	position: fixed;
+	contain: content;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	transform: translateX(100%);
+	will-change: transform;
+}
+#videoShell.active {
+	animation: videoShellSlideIn .5s ease-in-out forwards;
+}
+#videoShell.deactive {
+	animation: videoShellSlideOut .5s ease-in-out forwards;
+}
+@keyframes videoShellSlideIn {
+	from {transform: translateX(100%);}
+	to {transform: translateX(0);};
+}
+@keyframes videoShellSlideOut {
+	from {transform: translateX(0);};
+	to {transform: translateX(100%);}
+}
+
+#videoBox {
+	position: fixed;
+	width: 800px;
+	margin: 20px auto;
+	left: 50px;
+	top: 60px;
+	height: 450px;
+	background: var(--s-shadow75);
+	border-radius: 10px;
+}
+video {
+	display: block;
+	margin: auto;
+	height: 100%;
+	width: auto;
+}
+.controls {
+	position: absolute;
+	bottom: 10px;
+	width: calc(100% - 20px);
+	display: flex;
+	font-size: 10px;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	background: var(--s-shadow50);
+	color: #fff;
+}
+.control-group {
+	display: flex;
+	align-items: center;
+}
+.control-group label {
+	margin-right: 5px;
+}
+.control-group input {
+	margin-right: 15px;
+}
+.fullscreen-btn {
+	background: none;
+	padding: 2px 5px;
+	border: none;
+	cursor: pointer;
+	width: 25px;
+}
+.source-select {
+	display: none; /* Initially hide the source selection */
+}
+
+#videoList {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 25vw;
+	height: 100vh;
+	background: #000c;
+	color: var(--g-textLight);
+}
+#videoListInner {
+	background: #000;
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	padding-top: 5%;
+	overflow-y: auto;
+}
+#videoListInner:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	pointer-events: none;
+	background: linear-gradient(to bottom, #0000 85%, #000 90%);
+	width: 90%;
+	height: 100vh;
+}
+#videoList h2 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#videoList h2:not(:first-child):before {
+	content: "";
+	display: block;
+	width: 90%; 
+	height: 4px;
+	background: #fff4;
+	margin: 0 auto 10px;
+	border-radius: 100%;
+}
+#videoListInner ul {
+	padding-left: 25px;
+}
+#videoListInner ul li {
+	list-style: none;
+	font-size: 15px;
+	height: fit-content;
+	padding: 3px 0;
+	margin: 0;
+	display: flex;
+
+}
+#videoSeason {
+	display: block;
+	overflow-wrap: break-word;
+	font-weight: 500;
+	width: 75px;
+	pointer-events: none;
+}
+#videoName:not(:empty):before {
+	content: "-";
+	right: 10px;
+	opacity: .5;
+	font-weight: 900;
+	position: relative;
+}
+#videoName {
+	pointer-events: none;
+	display: block;
+	width: 14vw;
+}

@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Hubballi");
 :root {
 		/* General */
+	--f-fontMain: "Hubballi";
+	--f-fontAlt: "Mynerve";
 	--g-bodyMain: #202020;
 	--g-cardMain: #303030;
 	--g-cardMain-hover: #2c3930;
@@ -9,49 +11,34 @@
 	--g-textEmphasis: #b6f0d9;
 	--g-textEmphasis-border: #438651;
 	--g-textDim: #90aa97;
-
-		/* Title Card */
+	--s-cardMain: #00000075;
+	--s-cardMain-hover: #0008;
 	--t-skyUpper: #57ba6b;
 	--t-skyLower: #b6f0d9;
-
-		/* Shadows */
-	--s-cardMain: #00000075;
-	--s-cardMain-hover: #00000080;
 }
 
 body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 50vh, var(--g-textEmphasis-border) 100vh);
-	font-family: "Hubballi", sans-serif;
+	background: linear-gradient(var(--t-skyUpper) 0, var(--t-skyLower) 50vh, var(--g-textEmphasis-border) 100vh);
 }
-header ul li {
-	margin-left: 20px;
+#sunnyClouds {
+	filter: opacity(.5) grayscale();
 }
-header ul li a {
-	font-size: 13px;
+#sunnyMountains {
+	filter: hue-rotate(-90deg) opacity(.5) blur(.5px);
 }
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Mynerve";
+#sunnyGround {
+	filter: brightness(.5) grayscale() contrast(1.25);
 }
-section img#sunnyClouds {
-	filter: opacity(50%) grayscale();
-}
-section img#hills {
-	filter: opacity(90%) saturate(200%) sepia() hue-rotate(90deg) brightness(50%) grayscale(75%);
-}
-section img#sunnyGround {
-	filter: brightness(50%) grayscale();
-}
-section img#overlay {
+#overlay {
 	mix-blend-mode: darken;
-	opacity: 15%;
+	filter: opacity(.15);
 }
 #pageOptions img {
 	filter: sepia() hue-rotate(90deg);
 }
-footer {
-	line-height: 20px;
+#sunnyFooterImg {
+	filter: sepia() hue-rotate(90deg) saturate(1.5);
 }
-footer a {
-	font-size: 14px;
-	letter-spacing: 0.5px;
+#setOverlay::before {
+	filter: hue-rotate(170deg) opacity(.25) saturate(.5);
 }

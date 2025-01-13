@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Klee+One");
 :root {
 		/* General */
+	--f-fontMain: "Klee One";
+	--f-fontAlt: "Gaegu";
 	--g-bodyMain: #00440b;
 	--g-cardMain: #115419;
 	--g-cardMain-hover: #176326;
@@ -9,58 +11,32 @@
 	--g-textEmphasis: #f4ff9d;
 	--g-textEmphasis-border: #accd5a;
 	--g-textDim: #bdeb94;
-
-		/* Title Card */
-	--t-skyUpper: #5aa7a1;
-	--t-skyLower: #c0ffd5;
-
-		/* Shadows */
 	--s-cardMain: #00320075;
 	--s-cardMain-hover: #00320080;
+	--t-skyUpper: #5aa7a1;
+	--t-skyLower: #c0ffd5;
 }
 
-body {
-	font-family: "Klee One", sans-serif;
+#sunnySky {
+	filter: sepia() hue-rotate(90deg) opacity(.5);
 }
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Gaegu";
+#sunnyMountains {
+	filter: hue-rotate(-90deg) opacity(.5) blur(.5px);
 }
-header #headerLogo {
-	font-size: 28px;
+#sunnyGround {
+	filter: sepia(.75) hue-rotate(60deg) saturate(1.25);
 }
-header ul li {
-	margin-left: 17.5px;
-}
-header ul li a {
-	font-size: 15px;
-	line-height: 37px;
-}
-section img#sunnySky {
-	filter: saturate(100%);
-}
-section img#sunnyGround {
-	filter: sepia(75%) hue-rotate(60deg) saturate(125%);
-}
-section img#overlay {
-	filter: sepia() hue-rotate(45deg);
+#overlay {
+	filter: sepia() hue-rotate(45deg) opacity(.2);
 	mix-blend-mode: multiply;
 }
-#infoBox p {
-	font-size: 12px;
-}
 #pageOptions img {
-	filter: sepia() hue-rotate(105deg) saturate(200%);
+	filter: sepia() hue-rotate(105deg) saturate(2);
 }
 #pageOptions img#svg, #raidenTheRat {
 	filter: none;
 	mix-blend-mode: lighten;
 }
-#pageOptions p {
-	font-size: 12px;
-}
-footer {
-	line-height: 15px;
-}
-footer a {
-	font-size: 14px;
+#sunnyFooterImg {
+	filter: hue-rotate(-45deg);
 }

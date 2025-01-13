@@ -1,96 +1,395 @@
-html#setActive {
-	animation: filtered 0.5s forwards;
-}
-@keyframes filtered {
-	to {
-		filter: contrast(1.5) grayscale(.5) saturate(1.5);
-	}
-}
-html#setActive body {
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	BASE PAGE STUFF  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+html.setActive {
+	animation: dimStuffs .5s forwards;
 	overflow: hidden;
 }
+@keyframes dimStuffs {
+	to {filter: contrast(1.5) grayscale(.5) saturate(1.5);}
+}
 
-html#setActive #setOverlay {
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	SETTINGS BASE & OVERLAY  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#settingsMenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+	z-index: 2;
+}
+
+#setOverlay {
 	position: fixed;
 	top: 0;
 	filter: opacity(0);
+	display: none;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 0;
-	background-color: var(--s-shadow25); /* Dark overlay */
-	pointer-events: auto; /* Enable pointer events for overlay */
-	animation: fadeIn 0.5s forwards; /* Fade-in animation */
+	z-index: 1;
+	background: var(--s-shadow25);
+	pointer-events: auto;
+	will-change: filter;
 }
-@keyframes fadeIn {
-	to {
-		filter: opacity(1);
-	}
+.setActive #setOverlay {
+	display: block;
+	animation: fadeIn .5s forwards;
 }
-
-html#setActive #setTabs {
+#setOverlay::before {
 	position: fixed;
-	top: 20vh;
-	right: calc((100vw / 3) - 8.25vw);
+	top: 0;
+	left: 0;
+	content: "";
+	background: url("./../images/settings/grid.svg") repeat center/120px;
+	filter: hue-rotate(180deg) opacity(.25);
+	width: 150vw;
+	height: 150vh;
+	transform: translate(0, 0);
+	will-change: transform;
+}
+.setActive #setOverlay::before {
+	animation: gridSlide 5s linear infinite;
+}
+@keyframes fadeIn {to {filter: opacity(1);}}
+@keyframes gridSlide {to {transform: translate(-120px, -120px);}}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	TABS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#setTabs {
+	position: fixed;
+	top: 100px;
+	right: 310px;
 	z-index: -2;
 	color: var(--g-textLight);
 }
 #setTabs ul li {
 	background: var(--g-bodyMain);
 	border-radius: 100px 0 0 100px;
+	font-weight: 900;
 	padding: 7.5px;
 	margin: 10px;
-	image-rendering: pixelated;
 	list-style: url("./../images/transparent.png");
-	width: 10vw;
+	width: 150px;
+	height: 20px;
 	cursor: pointer;
+	transform: translateX(0);
+	will-change: transform;
+	transition: .1s ease-out;
+	color: transparent;
+	will-change: transform, color;
 }
 #setTabs ul li:hover {
 	transform: translateX(-100px);
+	color: var(--g-textLight);
 }
 #setTabs ul li img {
-	width: 20px;
-	height: 20px;
+	background: url("./../images/settings/tabs.svg") no-repeat center/171px;
+	width: 19px;
+	height: 19px;
 	position: fixed;
+	will-change: transform;
+}
+#setTabs ul li:hover img {
+	animation: tabIcoOscillate .5s infinite;
+}
+@keyframes tabIcoOscillate {
+	from, to {transform: rotate(-5deg);}
+	50% {transform: rotate(-10deg);}
 }
 #setTabs ul li a {
-	font-weight: 900;
 	padding-left: 30px;
 }
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	BASE MENU STUFF  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
 #setMenuRight {
+	pointer-events: auto;
 	position: fixed;
-	top: 0;
-	left: calc((100vw / 3) * 2);
 	height: 100vh;
-	width: calc(100vw / 3);
+	width: 450px;
+	top: 0;
+	right: 0;
+	will-change: transform;
+	color: var(--g-textLight);
+}
+#setMenuRight {
+	transform: translateX(200%) skewX(-30deg);
 	z-index: 1;
-	padding: 20px;
-	transform: translateX(200%) skewX(-30deg); /* Start off-screen to the right */
-	animation: slideIn 0.5s forwards ease-out;
 }
-@keyframes slideIn {
-	to {
-		transform: translateX(0) skewX(0deg); /* Slide to its original position */
-	}
+.setActive #setMenuRight {
+	animation: slideIn .5s forwards ease-in-out;
 }
-html#setActive #setMenuRight::before {
+@keyframes slideIn {to {transform: translateX(0) skewX(0deg);}}
+#setMenuRight::before {
 	content: "";
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	height: 100vh;
-	background: url("./../images/frames/setMenuRight.svg") no-repeat center;
-	background-size: 100%;
-	filter: saturate(.1) hue-rotate(-90deg) brightness(1);
+	background: url("./../images/settings/setMenuRight.svg") center;
+	filter: saturate(.1) hue-rotate(-90deg) drop-shadow(-5px -50px 1px var(--s-shadow25));
 	z-index: -1;
-	transform: scaleY(1.2);
+	will-change: filter, mix-blend-mode;
 }
 #setMenuRight h2, #setMenuRight p {
 	color: var(--g-textLight);
 }
-html:not(#setActive) #setMenuRight {
-	animation: skewOut 0.5s;
+
+#setMenu::-webkit-scrollbar, #setMenu ul::-webkit-scrollbar, #setMenu div::-webkit-scrollbar {
+	display: none;
+}
+#setMenu {
+	contain: content;
+	height: 100%;
+}
+
+#setMenuSub {
+	position: absolute;
+	width: 415px;
+	top: 0;
+	right: 0;
+	will-change: transform, overflow-y;
+	overflow-y: auto;
+	height: 95vh;
+	padding: 20px;
+	margin: 0;
+	transition: .25s ease-in-out;
+}
+@keyframes setMenuSubSlideIn {
+	from {transform: translateX(1000px);}
+	to {transform: none;}
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	INITIAL PAGE  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+.initialPage i {
+	color: var(--g-textDim);
+}
+.initialPage i::before {
+	content: "NOTE: ";
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	PAGE THEMES  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+.setPageThemes {
+	overflow-y: hidden;
+}
+.setPageThemes ul {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(4, 100px);
+	grid-auto-rows: 130px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+.setPageThemes ul li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--g-textLight);
+	height: fit-content;
+	margin-top: 20px;
+	font-size: 15px;
+	border-radius: 8px;
+	position: relative;
+	will-change: transform;
+}
+.setPageThemes ul li:hover {
+	transform: scale(.9);
+}
+.setPageThemes ul li div {
+	width: 100px;
+	height: 100px;
+	pointer-events: none;
+	scale: .9;
+}
+.setPageThemes ul li div #image {
+	background: url("./../images/settings/themeIconAssets.svg") no-repeat center/1600px;
+	image-rendering: pixelated;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+.setPageThemes ul li div::after {
+	content: url("./../images/settings/themeFrame.svg");
+	position: absolute;
+	z-index: 100000; 
+	display: block;
+	width: 110px;
+	top: -5px;
+	left: -5px;
+	filter: drop-shadow(5px 5px 5px var(--s-shadow50));
+}
+.setPageThemes ul li:last-child {
+	padding-bottom: 60px;
+}
+.setPageThemes #themeDesc {
+	background: linear-gradient(to left, var(--g-textLight) 80%, transparent);
+	color: var(--g-bodyMain);
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	width: 400px;
+	bottom: 20px;
+	right: -400px;
+	height: 30px;
+	padding-right: 10px;
+	will-change: transform;
+}
+@keyframes themeDescScoot {
+	from {transform: translateX(0) skewX(-90deg);}
+	to {transform: translateX(-400px) skewX(0deg);}
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	SITE BRANDING  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+.setSiteBranding li {
+	list-style: none;
+	margin-bottom: 3px;
+}
+.setSiteBranding ul li #brandName {
+	display: inline-block;
+	width: 175px;
+	position: relative;
+}
+.setSiteBranding ul li button {
+	background: linear-gradient(var(--g-cardMain), var(--g-cardMain-hover));
+	border: 2px solid transparent;
+	filter: brightness(2);
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	margin: 0 40px;
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	DEV. CREDITS  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+#memberFolder {
+	height: 50px;
+	background: var(--g-cardMain-hover);
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	will-change: height;
+}
+#memberFolder:hover {
+	height: auto;
+}
+#memberDivSub {
+	height: 50px;
+	display: inline-block;
+	pointer-events: none;
+}
+#memberFolder img {
+	height: 50px;
+	border-radius: 10px;
+	float: left;
+	pointer-events: none;
+}
+#memberName {
+	font-weight: 700;
+}
+#memberSubtitle {
+	font-size: 13px;
+	color: var(--g-textDim)!important;
+}
+#memberFolder p {
+	padding: 0;
+	overflow: auto;
+	pointer-events: none;
+	margin: 2px;
+}
+#memberDivSub p {
+	margin-left: 60px;
+	display: block;
+}
+#memberDesc, #memberDesc p, #memberDesc p a {
+	margin-top: 10px;
+	pointer-events: all!important;
+}
+#memberLinks, #memberLink, #memberLink a {
+	color: var(--g-textEmphasis)!important;
+	pointer-events: all!important;
+}
+#memberLinks h2 {
+	font-size: 15px;
+}
+#memberLink a:visited {
+	color: var(--g-textEmphasis-border)!important;
+}
+
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+/*	Resources  */
+/*	--------------------------------------------------------------------------------------------------------------------------------  */
+.setResources h1 {
+	margin: 10px;
+	padding: 0;
+	font-size: 25px;
+	font-weight: 900;
+	text-align: center;
+	text-decoration: underline;
+}
+.setResources h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+.setResources div p {
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	will-change: filter, font-weight;
+}
+.setResources div p a:hover {
+	font-weight: 500;
+	filter: brightness(1.5);
+}
+.setResources div p a::before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: var(--g-textEmphasis-border);
+	filter: opacity(.5);
+	border-radius: 100%;
+	justify-content: center;
+	display: flex;
+	vertical-align: middle;
+	margin: 8px 3px;
+}
+.setResources a:link, .setResources a i {
+	padding-left: 15px;
+	color: var(--g-textEmphasis);
+	will-change: color;
+}
+.setResources a i {
+	padding-left: 0;
+}
+.setResources div p a:visited {
+	color: var(--g-textEmphasis-border);
 }

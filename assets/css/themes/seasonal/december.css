@@ -12,17 +12,10 @@
 	--s-card-shadow-hover: #12121480;
 }
 
-section img#sunnySky {
-	-webkit-filter: saturate(50%) hue-rotate(-30deg);
-	filter: saturate(50%) hue-rotate(-30deg);
+#sunnySky {
+	filter: saturate(.5) hue-rotate(-30deg) opacity(.5);
 	mix-blend-mode: soft-light;
-	opacity: 50%;
 }
-section img#hills {
-	-webkit-filter: opacity(90%) saturate(50%) hue-rotate(112.5deg) saturate(50%) brightness(75%);
-	filter: opacity(90%) saturate(50%) hue-rotate(112.5deg) saturate(50%) brightness(75%);
-}
-section img#sunnyGround {
-	-webkit-filter: saturate(50%) hue-rotate(90deg) saturate(50%) brightness(75%);
-	filter: saturate(50%) hue-rotate(90deg) saturate(50%) brightness(75%);
+#sunnyGround {
+	filter: saturate(.5) hue-rotate(90deg) saturate(.5) brightness(.75);
 }

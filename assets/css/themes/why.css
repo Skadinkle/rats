@@ -1,20 +1,16 @@
 :root {
 		/* General */
-	--g-bodyMain: #000000;
-	--g-cardMain: #000000;
-	--g-cardMain-hover: #000000;
-	--g-textLight: #ffffff;
-	--g-textEmphasis: #ff0000;
-	--g-textEmphasis-border: #000000;
-	--g-textDim: #ff0000;
-
-		/* Title Card */
-	--t-skyUpper: #000000;
-	--t-skyLower: #000000;
-
-		/* Shadows */
+	--g-bodyMain: #000;
+	--g-cardMain: #000;
+	--g-cardMain-hover: #000;
+	--g-textLight: #fff;
+	--g-textEmphasis: #f00;
+	--g-textEmphasis-border: #000;
+	--g-textDim: #f00;
 	--s-cardMain: #00000075;
-	--s-cardMain-hover: #00000080;
+	--s-cardMain-hover: #0008;
+	--t-skyUpper: #000;
+	--t-skyLower: #000;
 
 	--x-goop: url("./../../images/themes/why_goop.jpg");
 	--x-vein: url("./../../images/themes/why_vein.jpg");
@@ -23,40 +19,31 @@
 body {
 	background: var(--t-skyUpper);
 }
-section img#sunnySky {
+#sunnySky {
 	content: var(--x-goop);
-	filter: sepia() hue-rotate(-30deg) contrast(10000%) opacity(25%) blur(5px) brightness(500%);
+	filter: sepia() hue-rotate(-30deg) contrast(100) opacity(.25) blur(5px) brightness(5) opacity(1);
 	mix-blend-mode: normal;
-	opacity: 100%;
 }
-section img#hills {
-	background-image: var(--x-goop);
-	filter: sepia() brightness(50%) contrast(5000%) opacity(40%);
+#sunnyGround {
+	background: var(--x-vein);
+	filter: sepia() contrast(50) opacity(.9);
 	mix-blend-mode: screen;
 	transform: scaleX(-100%);
 }
-section img#sunnyGround {
-	background-image: var(--x-vein);
-	filter: sepia() contrast(5000%) opacity(90%);
-	mix-blend-mode: screen;
-	transform: scaleX(-100%);
-}
-section img#overlay {
+#overlay {
 	visibility: hidden;
 }
 #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash {
-	filter: sepia() brightness(75%) contrast(5000%);
+	filter: sepia() brightness(.75) contrast(50);
 }
 #funkyTitleSplash {
 	filter: none;
 }
 #pageOptions a#item {
-	border-color: var(--g-textEmphasis);
-	border-style: solid;
-	border-width: 1px;
+	border: 1px solid var(--g-textEmphasis);
 }
 #pageOptions img {
-	filter: sepia() contrast(5000%);
+	filter: sepia() contrast(50);
 }
 footer {
 	width: 560px;

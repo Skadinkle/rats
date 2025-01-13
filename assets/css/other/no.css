@@ -7,7 +7,7 @@ p, li, h1, h2, h3, header, #headerLogo, #funkyTitleSmall, #funkyTitleLarge, #fun
 }
 
 #pageError {
-	background: linear-gradient(#00000080, #000000bf 100vh);
+	background: linear-gradient(#0008, #000000bf 100vh);
 	font-family: "Dosis", sans-serif;
 	font-weight: 500;
 	height: 100vh;
@@ -26,12 +26,12 @@ p, li, h1, h2, h3, header, #headerLogo, #funkyTitleSmall, #funkyTitleLarge, #fun
 	margin-bottom: 50px;
 }
 #pageError p, h2 {
-	color: #ffffff;
+	color: #fff;
 	font-weight: 900;
-	letter-spacing: 0.5px;
+	letter-spacing: .5px;
 }
 #pageError p a:link, p a:visited {
-	color: #00ffff;
+	color: #0ff;
 	font-weight: 900;
 	padding: 0;
 }

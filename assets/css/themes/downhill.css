@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Tilt+Neon");
 :root {
 		/* General */
+	--f-fontMain: "Stick No Bills";
+	--f-fontAlt: "Tilt Neon";
 	--g-bodyMain: #085956;
 	--g-cardMain: #2e7e6e;
 	--g-cardMain-hover: #408a6a;
@@ -9,61 +11,32 @@
 	--g-textEmphasis: #d3dca8;
 	--g-textEmphasis-border: #4b7a5f;
 	--g-textDim: #cce6a7;
-
-		/* Title Card */
-	--t-skyUpper: #9c9c7b;
-	--t-skyLower: #f9ffba;
-
-		/* Shadows */
 	--s-cardMain: #00484d75;
 	--s-cardMain-hover: #00484d80;
+	--t-skyUpper: #9c9c7b;
+	--t-skyLower: #f9ffba;
 }
 
-body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--s-sky-lower) 50vh, var(--t-skyUpper) 100vh);
-	font-family: "Stick No Bills", sans-serif;
-	font-weight: 100;
-}
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Tilt Neon";
-}
-header #headerLogo {
-	font-size: 25px;
-}
-header ul li {
-	margin-left: 18px;
-}
-header ul li a {
-	font-size: 13px;
-}
-section img#sunnySky {
-	-webkit-filter: sepia(50%) hue-rotate(90deg) saturate(200%);
-	filter: sepia(50%) hue-rotate(90deg) saturate(200%);
+#sunnySky {
+	filter: sepia(.5) hue-rotate(90deg) saturate(.5) opacity(.5);
 	mix-blend-mode: multiply;
 }
-section img#sunnyClouds {
-	-webkit-filter: opacity(50%) hue-rotate(135deg);
-	filter: opacity(50%) hue-rotate(135deg);
+#sunnyClouds {
+	filter: opacity(.5) hue-rotate(135deg);
 	mix-blend-mode: lighten;
 }
-section img#hills {
-	filter: opacity(90%) hue-rotate(-22.5deg) saturate(50%);
+#sunnyMountains {
+	filter: hue-rotate(-45deg) opacity(.5) blur(.5px);
 }
-section img#sunnyGround {
-	-webkit-filter: sepia(50%) hue-rotate(45deg) grayscale(50%);
-	filter: sepia(50%) hue-rotate(45deg) grayscale(50%);
+#sunnyGround {
+	filter: sepia(.5) hue-rotate(45deg) grayscale(.5);
 }
 #pageOptions img {
-	-webkit-filter: grayscale();
 	filter: grayscale();
 }
 #pageOptions img#svg, #raidenTheRat {
 	mix-blend-mode: lighten;
 }
-#pageOptions p {
-	font-size: 15px;
-}
-footer a {
-	font-size: 14px;
-	letter-spacing: 0.5px;
+#sunnyFooterImg {
+	filter: hue-rotate(-45deg);
 }

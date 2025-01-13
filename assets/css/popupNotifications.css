@@ -29,9 +29,7 @@
 #trophy img {
 	animation: trophyGetImg 3.5s ease;
 	background: var(--s-shadow50);
-	border: solid;
-	border-color: var(--g-textLight);
-	border-width: 3px;
+	border: 3px solid var(--g-textLight);
 	height: 100px;
 	image-rendering: pixelated;
 	margin: 15px;
@@ -55,7 +53,7 @@
 	padding-bottom: 5px;
 }
 @keyframes trophyGet {
-	0%, 100% {
+	from, to {
 		right: -500px;
 		filter: opacity(0);
 	}
@@ -71,17 +69,17 @@
 	from, 5% {
 		margin-right: 0;
 		filter: opacity(0);
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	5% {
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	15%, 85% {
 		margin-right: 15px;
 		filter: opacity(1);
 	}
 	20%, 95% {
-		rotate: -5deg;
+		transform: rotate(-5deg);;
 	}
 	95%, to {
 		margin-right: -15vw;

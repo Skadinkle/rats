@@ -1,20 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Pixelify+Sans");
 :root {
 		/* General */
-	--g-bodyMain: #000000;
-	--g-cardMain: #000000;
-	--g-cardMain-hover: #000000;
-	--g-textLight: #00ff00;
-	--g-textEmphasis: #00ff00;
+	--f-fontMain: "Pixelify Sans";
+	--f-fontAlt: "Pixelify Sans";
+	--g-bodyMain: #000;
+	--g-cardMain: #000;
+	--g-cardMain-hover: #000;
+	--g-textLight: #0f0;
+	--g-textEmphasis: #0f0;
 	--g-textEmphasis-border: #007f00;
 	--g-textDim: #00a900;
-
-		/* Title Card */
-	--t-skyUpper: #000000;
-	--t-skyLower: #000000;
-
-		/* Shadows */
 	--s-cardMain: #00000075;
-	--s-cardMain-hover: #00000080;
+	--s-cardMain-hover: #0008;
+	--t-skyUpper: #000;
+	--t-skyLower: #000;
 }
 
 body::before, body::after {
@@ -29,46 +28,49 @@ body::before, body::after {
 	z-index: 5000000;
 }
 body::before {
-	background: linear-gradient(#12101000 50%, #00000040 50%), linear-gradient(90deg, #ff00000f, #00ff0005, #0000ff0f);
+	background: linear-gradient(#12101000 50%, #0004 50%), linear-gradient(90deg, #ff00000f, #00ff0005, #0000ff0f);
 	background-size: 100% 2px, 3px 100%;
 }
 body::after {
-	-webkit-animation: flicker 0.15s infinite;
-	animation: flicker 0.15s infinite;
+	animation: flicker .15s infinite;
 	background: #1210101a;
-	opacity: 0%;
-}
-section img#sunnySky {
-	visibility: hidden;
-}
-section img#sunnyClouds {
-	filter: sepia() saturate(150%) hue-rotate(60deg) brightness(50%) contrast(500%) brightness(33.33%) opacity(50%);
-	mix-blend-mode: normal;
-}
-section img#hills {
-	filter: sepia() saturate(150%) hue-rotate(70deg) brightness(50%) contrast(500%) brightness(25%) opacity(90%);
-}
-section img#sunnyGround {
-	filter: sepia() saturate(150%) hue-rotate(60deg) brightness(70%) contrast(500%) brightness(75%);
-}
-section img#overlay {
-	opacity: 10%;
-	filter: sepia() hue-rotate(90deg) brightness(50%) contrast(400%);
-}
-#pageOptions img {
-	filter: sepia() saturate(200%) hue-rotate(50deg);
-}
-#pageOptions img#svg, #raidenTheRat {
-	filter: brightness(50%);
-	mix-blend-mode: lighten;
+	filter: opacity(0);
 }
 @keyframes flicker {
-	0% { opacity: 0.25; }
-	5% { opacity: 0.35; }
-	10% { opacity: 0.23; }
-	15% { opacity: 0.11; }
-	20% { opacity: 0.19; }
-	25% { opacity: 0.11; }
-	30% { opacity: 0.18; }
-	35% { opacity: 0.24; }
+	from { filter: opacity(.25); }
+	5% { filter: opacity(.35); }
+	10% { filter: opacity(.23); }
+	15% { filter: opacity(.11); }
+	20% { filter: opacity(.19); }
+	25% { filter: opacity(.11); }
+	30% { filter: opacity(.18); }
+	35% { filter: opacity(.24); }
+}
+#sunnySky {
+	visibility: hidden;
+}
+#sunnyClouds {
+	filter: brightness(.5) contrast(5) brightness(.333) opacity(.5);
+}
+#sunnyMountains {
+	filter: saturate(5) hue-rotate(-90deg) opacity(.5);
+}
+#sunnyGround {
+	filter: sepia() saturate(1.5) hue-rotate(60deg) brightness(.7) contrast(5) brightness(.75);
+}
+#overlay {
+	filter: sepia() hue-rotate(90deg) brightness(.5) contrast(4) opacity(.1);
+}
+#pageOptions img {
+	filter: sepia() saturate(2) hue-rotate(50deg);
+}
+#pageOptions img#svg, #raidenTheRat {
+	filter: brightness(.5);
+	mix-blend-mode: lighten;
+}
+#sunnyFooterImg {
+	filter: sepia() hue-rotate(90deg) saturate(10) brightness(.75) contrast(5);
+}
+#setOverlay::before {
+	filter: opacity(.25) saturate(0);
 }

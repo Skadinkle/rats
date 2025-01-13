@@ -1,20 +1,18 @@
 :root {
 		/* General */
-	--g-bodyMain: #330033;
-	--g-cardMain: #330066;
-	--g-cardMain-hover: #333399;
-	--g-textLight: #ffffcc;
-	--g-textEmphasis: #ffff00;
-	--g-textEmphasis-border: #ffcc00;
-	--g-textDim: #ccccff;
-
-		/* Title Card */
-	--t-skyUpper: #999999;
-	--t-skyLower: #000000;
-
-		/* Shadows */
-	--s-cardMain: #000000;
-	--s-cardMain-hover: #000000;
+	--f-fontMain: Arial, Helvetica;
+	--f-fontAlt: Arial;
+	--g-bodyMain: #303;
+	--g-cardMain: #306;
+	--g-cardMain-hover: #339;
+	--g-textLight: #ffc;
+	--g-textEmphasis: #ff0;
+	--g-textEmphasis-border: #fc0;
+	--g-textDim: #ccf;
+	--s-cardMain: #000;
+	--s-cardMain-hover: #000;
+	--t-skyUpper: #999;
+	--t-skyLower: #000;
 
 		/* Special */
 	--x-cursor: url("./../../images/themes/webSurfer_cursor.png");
@@ -25,23 +23,19 @@
 	--x-settingmenu: url("./../../images/themes/webSurfer_setMenu.png");
 	--x-settingbar: url("./../../images/themes/webSurfer_setBar.gif");
 	--x-settingbutton: url("./../../images/themes/webSurfer_setButton.png");
-
 }
 
-body, :hover, :link, img.squishable:hover, :active, #pageOptions a#item, #settings_bar ul li a, #settings_branding a, #settings_colorcorrection a, #settings_themes a, #settings_credits a {
+body, :hover, :link, .squishable:hover, :active, #pageOptions a#item {
 	cursor: var(--x-cursor), auto;
 }
 body {
-	background: linear-gradient(#ffffff80, #ffffff80), var(--x-cloud);
-	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(#fff8, #fff8), var(--x-cloud);
 }
 header {
-	background: var(--x-header);
-	background-size: contain;
+	background: var(--x-header) center/contain;
 }
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: Arial;
-	font-weight: 700;
+header::before {
+	display: none;
 }
 header #headerLogo {
 	font-size: 22px;
@@ -55,45 +49,32 @@ header ul li a {
 section::before {
 	background: none;
 }
-section img#sunnySky, section img#sunnyClouds, section img#hills, section img#sunnyGround, section img#overlay {
+#sunnySky, #sunnyClouds, #sunnyGround, #overlay {
 	image-rendering: auto;
 }
-section img#sunnySky {
+#sunnySky {
 	mix-blend-mode: multiply;
 }
-section img#hills {
-	filter: contrast(150%);
+#sunnyGround {
+	filter: contrast(1.5);
 }
-section img#sunnyGround {
-	filter: contrast(150%);
-}
-section img#overlay {
+#overlay {
 	mix-blend-mode: multiply;
 }
 #mainBody {
 	background: linear-gradient(#000000bf, #000000bf), var(--x-body);
 }
 #pageOptions a#item, #infoBox {
-	background: linear-gradient(#00000080, #00000080), var(--x-card);
+	background: linear-gradient(#0008, #0008), var(--x-card);
 }
 #infoBox p {
 	font-size: 12px;
 }
 #pageOptions img {
-	-webkit-filter: saturate(150%);
-	filter: saturate(150%);
+	filter: saturate(1.5);
 }
 #pageOptions p {
 	font-size: 12px;
-}
-#settings_menu {
-	background: linear-gradient(#00000080, #00000080), var(--x-settingmenu);
-}
-#settings_bar {
-	background: linear-gradient(#000000bf, #000000bf), var(--x-settingbar);
-}
-#settings_branding a, #settings_colorcorrection a, #settings_themes a, #settings_credits a {
-	background: var(--x-settingbutton);
 }
 footer {
 	line-height: 20px;

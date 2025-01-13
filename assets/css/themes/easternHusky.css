@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Rokkitt");
 :root {
 		/* General */
+	--f-fontMain: "Rokkitt";
+	--f-fontAlt: Arial, Helvetica;
 	--g-bodyMain: #001854;
 	--g-cardMain: #1e407e;
 	--g-cardMain-hover: #16629b;
@@ -8,22 +10,12 @@
 	--g-textEmphasis: #feba01;
 	--g-textEmphasis-border: #955400;
 	--g-textDim: #e0e0e0;
-
-		/* Title Card */
+	--s-cardMain: #22222275;
+	--s-cardMain-hover: #2228;
 	--t-skyUpper: #5f8dff;
 	--t-skyLower: #001854;
-
-		/* Shadows */
-	--s-cardMain: #22222275;
-	--s-cardMain-hover: #22222280;
 }
 
-body, header ul li a, #funkyTitleSplash, footer a {
-	font-family: "Rokkitt", sans-serif;
-}
-header #headerLogo, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash a, #mainBody h2, #settings_title, #settings_bar h2 {
-	font-family: Arial, Helvetica, sans-serif;
-}
 header #headerLogo {
 	font-size: 22px;
 }
@@ -31,36 +23,31 @@ header ul li {
 	margin-left: 18px;
 }
 body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 100vh);
+	background: linear-gradient(var(--t-skyUpper) 0 var(--t-skyLower) 100vh);
 }
-section img#sunnySky {
+#sunnySky {
 	filter: blur(10px);
 	mix-blend-mode: screen;
 }
-section img#sunnyClouds {
-	filter: opacity(25%);
+#sunnyClouds {
+	filter: opacity(.25);
 	mix-blend-mode: luminosity;
 }
-section img#hills {
-	filter: opacity(90%) grayscale(50%) brightness(50%) hue-rotate(120deg) saturate(500%);
-}
-section img#sunnyGround {
-	filter: sepia() hue-rotate(180deg) saturate(50%);
+#sunnyGround {
+	filter: sepia() hue-rotate(180deg) saturate(.5);
 }
 section img#overlay {
 	mix-blend-mode: multiply;
 }
 #mainBody {
-	background: linear-gradient(var(--g-bodyMain) 0%, var(--t-skyUpper) 300vh);
+	background: linear-gradient(var(--g-bodyMain) 0, var(--t-skyUpper) 300vh);
 }
 #pageOptions a#item {
 	background: linear-gradient(to top, var(--g-cardMain), var(--g-cardMain-hover));
-	border-color: var(--t-skyUpper);
-	border-style: solid;
-	border-width: 3px;
+	border: 3px solid var(--t-skyUpper);
 }
 #pageOptions a#item:hover {
-	opacity: 80%;
+	filter: opacity(.8);
 }
 #pageOptions img#svg, #raidenTheRat {
 	mix-blend-mode: lighten;
@@ -71,4 +58,7 @@ footer {
 footer a {
 	font-size: 14px;
 	letter-spacing: 1px;
+}
+#sunnyFooterImg {
+	filter: sepia() hue-rotate(180deg) saturate(4);
 }

@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 :root {
 		/* General */
+	--f-fontMain: "Merienda";
+	--f-fontAlt: "Creepster";
 	--g-bodyMain: #402e20;
 	--g-cardMain: #6f371b;
 	--g-cardMain-hover: #c6622d;
@@ -9,71 +11,38 @@
 	--g-textEmphasis: #d47dff;
 	--g-textEmphasis-border: #520089;
 	--g-textDim: #ce9262;
-
-		/* Title Card */
-	--t-skyUpper: #413346;
-	--t-skyLower: #5a5261;
-
-		/* Shadows */
 	--s-cardMain: #00000075;
-	--s-cardMain-hover: #00000080;
+	--s-cardMain-hover: #0008;
+	--t-skyUpper: #000000;
+	--t-skyLower: #2c2830;
 
 		/* Special */
-	--x-skyLowest: #564438;
+	--x-skyLowest: #30261f;
 }
 
 body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower) 75vh, var(--x-skyLowest) 100vh);
-	font-family: "Merienda";
+	background: linear-gradient(var(--t-skyUpper) 0, var(--t-skyLower) 75vh, var(--x-skyLowest) 100vh);
 }
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Creepster";
-	font-weight: 100;
+#sunnySky {
+	filter: sepia() hue-rotate(-135deg) opacity(.25);
+	mix-blend-mode: multiply;
 }
-header #headerLogo {
-	font-size: 34px;
+#sunnyClouds {
+	filter: opacity(.1) blur(3px);
 }
-header ul li {
-	margin-left: 18px;
+#sunnyMountains {
+	filter: hue-rotate(180deg) opacity(.5) saturate(.1) blur(.5px);
 }
-section img#sunnySky {
-	filter: sepia() hue-rotate(-135deg);
-	mix-blend-mode: color-burn;
-	opacity: 10%;
+#sunnyGround, #sunnyFooterImg {
+	filter: sepia(.5) hue-rotate(-90deg) saturate(1.5) contrast(.75) brightness(.75);
 }
-section img#sunnyClouds {
-	filter: opacity(0);
-}
-section img#hills {
-	filter: opacity(90%) sepia(50%) hue-rotate(-67.5deg) saturate(125%) contrast(75%) brightness(50%);
-}
-section img#sunnyGround {
-	filter: sepia(50%) hue-rotate(-90deg) saturate(150%) contrast(75%) brightness(75%);
-}
-section img#overlay {
-	mix-blend-mode: color-burn;
-	opacity: 7.5%;
-}
-#infoBox p {
-	font-size: 12px;
+#overlay {
+	filter: opacity(.1);
 }
 #pageOptions img {
-	filter: sepia() hue-rotate(-30deg) saturate(150%);
+	filter: sepia() hue-rotate(-30deg) saturate(1.5);
 }
 #pageOptions img#svg, #raidenTheRat {
 	filter: none;
 	mix-blend-mode: lighten;
-}
-#pageOptions p {
-	font-size: 11.5px;
-}
-#settings_title, #settings_bar h2 {
-	letter-spacing: 1px;
-}
-footer {
-	line-height: 20px;
-}
-footer a {
-	font-size: 15px;
-	letter-spacing: 1px;
 }

@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Iceland");
 :root {
 		/* General */
+	--f-fontMain: "Iceberg";
+	--f-fontAlt: "Iceland";
 	--g-bodyMain: #083978;
 	--g-cardMain: #0f5d9a;
 	--g-cardMain-hover: #1f78bd;
@@ -9,58 +11,33 @@
 	--g-textEmphasis: #dfffff;
 	--g-textEmphasis-border: #7effff;
 	--g-textDim: #a6ffff;
-
-		/* Title Card */
-	--t-skyUpper: #56cfff;
-	--t-skyLower: #ddffff;
-
-		/* Shadows */
 	--s-cardMain: #01094c75;
 	--s-cardMain-hover: #01094c80;
+	--t-skyUpper: #56cfff;
+	--t-skyLower: #a3c8c8;
 }
 
-body {
-	font-family: "Iceberg", sans-serif;
+#sunnyMountains {
+	filter: brightness(3) blur(.5px);
 }
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Iceland";
-	font-weight: bolder;
+#sunnyGround {
+	filter: sepia() hue-rotate(-157.5deg) saturate(3);
 }
-header #headerLogo {
-	font-size: 27.5px;
-}
-header ul li {
-	margin-left: 17px;
-}
-header ul li a {
-	font-size: 15px;
-}
-section img#hills {
-	filter: opacity(90%) sepia(50%) hue-rotate(90deg);
-}
-section img#sunnyGround {
-	filter: saturate(50%) sepia() hue-rotate(180deg);
-}
-section img#overlay {
-	filter: sepia() hue-rotate(180deg);
+#overlay {
+	filter: sepia() hue-rotate(180deg) opacity(.25);
 	mix-blend-mode: multiply;
-	opacity: 50%;
-}
-#infoBox p {
-	font-size: 13px;
 }
 #pageOptions a#item {
-	border-color: linear-gradient(var(--t-skyUpper), var(--t-skyLower));
-	border-style: solid;
-	border-width: 1px;
+	border: 1px solid transparent;
+	border-image: linear-gradient(var(--t-skyUpper), var(--t-skyLower)) 1;
 }
 #pageOptions img {
-	filter: sepia() hue-rotate(180deg) saturate(200%);
+	filter: sepia() hue-rotate(180deg) saturate(2);
 }
 #pageOptions img#svg, #raidenTheRat {
 	filter: none;
 	mix-blend-mode: lighten;
 }
-#settings_title, #settings_bar h2 {
-	font-size: 35px;
+#sunnyFooterImg {
+	filter: sepia() hue-rotate(180deg) saturate(3) brightness(1.25);
 }

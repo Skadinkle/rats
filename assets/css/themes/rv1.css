@@ -1,37 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 :root {
 		/* General */
+	--f-fontMain: "Poppins";
+	--f-fontAlt: "Poppins";
 	--g-bodyMain: #040426;
 	--g-cardMain: #092b38;
 	--g-cardMain-hover: #092b38;
-	--g-textLight: #ffffff;
+	--g-textLight: #fff;
 	--g-textEmphasis: #f1e7a4;
 	--g-textEmphasis-border: #9a9159;
 	--g-textDim: #bfbfbf;
-
-		/* Title Card */
-	--t-skyUpper: #7597de;
-	--t-skyLower: #ffffff;
-
-		/* Shadows */
 	--s-cardMain: #01010e75;
 	--s-cardMain-hover: #01010e80;
+	--t-skyUpper: #7597de;
+	--t-skyLower: #fff;
 }
 
 html#ratified {
 	image-rendering: pixelated;
-	filter: sepia() brightness(50%) hue-rotate(-45deg) contrast(5000%);
-	transform: scale(-100%);
+	filter: sepia() brightness(.5) hue-rotate(-45deg) contrast(50);
+	transform: scale(-1);
 }
 body {
-	background: linear-gradient(var(--t-skyUpper) 0%, var(--t-skyLower));
-	font-family: "Poppins", sans-serif;
+	background: linear-gradient(var(--t-skyUpper) 0, var(--t-skyLower));
 }
 header {
 	background: transparent;
-}
-header #headerLogo, header ul li a, #funkyTitleBox, #funkyTitleSmall, #funkyTitleLarge, #funkyTitleSplash, #funkyTitleSplash a, #mainBody h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
-	font-family: "Poppins";
 }
 header #headerLogo {
 	font-size: 21px;
@@ -45,21 +39,17 @@ header ul li a {
 header ul li a.active, header ul li a#active {
 	text-decoration: underline;
 }
-section img#sunnySky {
-	filter: saturate(50%) hue-rotate(10deg);
+#sunnySky {
+	filter: saturate(.5) hue-rotate(10deg) opacity(.2);
 	mix-blend-mode: normal;
-	opacity: 20%;
 }
-section img#sunnyClouds {
-	filter: opacity(25%);
+#sunnyClouds {
+	filter: opacity(.25);
 }
-section img#hills {
-	filter: opacity(90%) hue-rotate(32.5deg);
+#sunnyGround {
+	filter: saturate(.5) hue-rotate(10deg);
 }
-section img#sunnyGround {
-	filter: saturate(50%) hue-rotate(10deg);
-}
-section img#overlay {
+#overlay {
 	visibility: hidden;
 }
 #mainBody h2 {
@@ -81,14 +71,13 @@ section img#overlay {
 	font-style: italic;
 }
 #pageOptions a#item:hover {
-	transform: scale(90%) rotate(5deg);
-	opacity: 80%;
+	transform: scale(.9) rotate(5deg);
+	filter: opacity(.8);
 }
 #pageOptions img, #pageOptions p {
 	width: 75%;
 }
 #pageOptions img {
-	-webkit-filter: none;
 	filter: none;
 	width: 66.666%;
 }
@@ -103,5 +92,5 @@ footer {
 }
 footer a {
 	font-size: 13px;
-	letter-spacing: 0.1px;
+	letter-spacing: .1px;
 }

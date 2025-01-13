@@ -4,39 +4,37 @@
 	--g-cardMain: #bcbcbc;
 	--g-cardMain-hover: #b2b2b2;
 	--g-textLight: #282828;
-	--g-textEmphasis: #ffffff;
-	--g-textEmphasis-border: #333333;
+	--g-textEmphasis: #fff;
+	--g-textEmphasis-border: #333;
 	--g-textDim: #292929;
-
-		/* Title Card */
-	--t-skyUpper: #ffffff;
-	--t-skyLower: #ffffff;
-
-		/* Shadows */
 	--s-cardMain: #28282875;
 	--s-cardMain-hover: #28282880;
+	--t-skyUpper: #fff;
+	--t-skyLower: #fff;
 }
 
-section img#sunnySky {
-	filter: saturate(200%) grayscale();
+#sunnySky {
+	filter: saturate(2) grayscale() opacity(.25);
 }
-section img#sunnyClouds {
+#sunnyClouds {
 	filter: opacity(0);
 }
-section img#hills {
-	filter: opacity(90%) grayscale() hue-rotate(22.5deg);
-}
-section img#sunnyGround {
-	filter: saturate(80%) grayscale() brightness(150%);
+#sunnyGround {
+	filter: contrast(.75) saturate(.8) grayscale() brightness(1.5);
 	mix-blend-mode: multiply;
 }
-#pageOptions p, #settings_bar h2 {
+#pageOptions p {
 	color: var(--g-textLight);
 }
-img.squishable {
-	filter: invert();
-	opacity: 84%;
+.squishable {
+	filter: invert() opacity(.84);
 }
-#video-main, #settings_menu {
-	background: var(--g-bodyMain);
+#sunnyFooterImg {
+	filter: grayscale() contrast(.5) brightness(1.5);
+}
+#setOverlay::before {
+	filter: grayscale() opacity(.25);
+}
+#setMenuRight::before {
+	filter: grayscale() brightness(3.5) drop-shadow(-5px -50px 1px var(--s-shadow25));
 }
