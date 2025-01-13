@@ -1,0 +1,11 @@
+Credits:
+
+	Online Tutorials
+		- Parallax Scrolling Website Tutorial (WebPage Basis)
+		- https://www.youtube.com/watch?v=1wfeqDyMUx4
+
+	Krazete
+		- 3d Webpage (Used on index.html)
+
+	Corey
+		- He found some stuff ;)

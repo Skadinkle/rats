@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clever | Portal</title>
+		<link rel="shortcut icon" type="image/png" href="./../assets/favicon.ico">
+		<link href="./../assets/css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<a href="./../index.html" class="rats-logo">RATS</a>
+			<ul>
+				<li><a href="./../index.html">Home</a></li>
+				<li><a href="./allowers.html">Allowers</a></li>
+				<li><a href="./editors.html">Editors</a></li>
+				<li><a href="./games.html">Games</a></li>
+				<li><a href="./media.html">Media</a></li>
+				<li><a href="#" class="active">Programs</a></li>
+				<li><a href="./video.html">Video</a></li>
+				<li><a href="./extra.html">Extras</a></li>
+				<li><a href="./resources.html">Resources</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="./../assets/sunnySky.png" id="sky">
+			<h2 id="text">Programs</h2>
+			<img src="./../assets/sunnyGround.png" id="ground">
+			<a href="#sec" id="btn">Options</a>
+			<script src="./../assets/js/titlecard.js"></script>
+		</section>
+		<div class="sec" id="sec">
+			<h2>Categories:</h2>
+			<div class="image-row">
+				<div class="image-column">
+					<a href="./programs/mac.html" target="_self">
+						<img src="../assets/icons/program-mac.png" id="icon">
+						<a class="image-text">Mac</a>
+					</a>
+				</div>
+				<div class="image-column">
+					<a href="./programs/windows.html" target="_self">
+						<img src="../assets/icons/program-windows.png" id="icon">
+						<a class="image-text">Windows</a>
+					</a>
+				</div>
+				<div class="image-column">
+					<a href="./programs/other.html" target="_self">
+						<img src="../assets/icons/other.png" id="icon">
+						<a class="image-text">Other</a>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			let sky = document.getElementById('sky');
+			let text = document.getElementById('text');
+			let ground = document.getElementById('ground');
+			let character = document.getElementById('character');
+			let btn = document.getElementById('btn');
+			let header = document.querySelector('header');
+
+			window.addEventListener('scroll', function(){
+				let value = window.scrollY;
+				sky.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 1 + 'px';
+				text.style.marginTop = value * 0.2 + 'px';
+				ground.style.left = value * 0.2 + 'px';
+				character.style.left = value * 0.2 + 504.1 + 'px';
+				btn.style.marginTop = value * -0.2 + 'px';
+				header.style.top = value + 'px';
+			})
+		</script>
+		<footer>
+			<a>2022: RATS</a>
+		</footer>
+	</body>
+</html>
