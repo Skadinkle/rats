@@ -6,7 +6,7 @@
 }
 body {
 	background-image: url("./bgWhite.png");
-	font-family: arial;
+	font-family: Arial;
 }
 
 .sidebar { /* Side-bar */
@@ -19,7 +19,7 @@ body {
 }
 .sidebar header {
 	font-size: 22px;
-	color: #000000;
+	color: #000;
 	text-align: center;
 	line-height: 70px;
 	background: #ffe91d;
@@ -31,11 +31,11 @@ body {
 	width: 100%;
 	line-height: 65px;
 	font-size: 20px;
-	color: #000000;
+	color: #000;
 	padding-left: 40px;
 	box-sizing: border-box;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #000;
 	transition: 0.4s;
 }
 ul li:hover a {
@@ -52,7 +52,7 @@ label #btn, label #cancel {
 	cursor: pointer;
 	background: #ffe91d;
 	border-radius: 3px;
-	color: #000000;
+	color: #000;
 }
 label #btn {
 	left: 40px;
@@ -74,7 +74,7 @@ label #cancel {
 }
 #check:checked ~ label #btn {
 	left: 250px;
-	opacity: 0;
+	filter: opacity(0);
 	pointer-events: none;
 }
 #check:checked ~ label #cancel {
@@ -82,18 +82,18 @@ label #cancel {
 }
 
 .main { /* Main Body */
-	color: #000000;
+	color: #000;
 	text-align: center;
 }
 .main h1 {
-	font-family: 'arial black', sans-serif;
+	font-family: "arial black", sans-serif;
 }
 .main h2 {
 	font-size: 18pt;
-	font-family: 'book antiqua', palatino, serif;
+	font-family: "book antiqua", palatino, serif;
 }
 .main a {
-	color: #0000ff;
+	color: #00f;
 	cursor: pointer;
 	transition: 0.4s;
 }
@@ -103,5 +103,5 @@ label #cancel {
 }
 .main #notice {
 	background: #bb3737;
-	color: #ffffff;
+	color: #fff;
 }

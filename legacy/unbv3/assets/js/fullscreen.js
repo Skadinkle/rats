@@ -1,3 +1,3 @@
 function onFullscreen() {
-	document.getElementById('window').className = "fullscreen";
+	document.getElementById("window").className = "fullscreen";
 }

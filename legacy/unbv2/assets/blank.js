@@ -8,7 +8,7 @@ function onGetPath(path) {
 		return false;
 	}
 }
-root = onGetPath(document.getElementById("styles").href) + "./../";
+root = `${onGetPath(document.getElementById("styles").href)}./../`;
 
 	// Get Page Data
 blankEmbed = "";
@@ -17,7 +17,7 @@ function onPageOpen(url, name) {
 		// Save Data
 	localStorage.unbv2_url = url;
 	localStorage.unbv2_name = name;
-	window.location = root + "./pages/page.html";
+	window.location = `${root}./pages/page.html`;
 }
 
 	// Add Page Contents
@@ -30,7 +30,7 @@ window.onload = function () {
 		function onAddPage(url, name) {
 			if (weh == false) {
 			document.getElementById("title").innerHTML = name;
-			document.getElementById("iframe").src = "https://" + atob(url);
+			document.getElementById("iframe").src = `https://${atob(url)}`;
 			weh = true;
 		}
 	}
