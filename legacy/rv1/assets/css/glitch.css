@@ -5,12 +5,12 @@
 	left: 0;
 	overflow: hidden;
 	background-color: #050522;
-	color: #ffffff;
+	color: #fff;
 }
 #error .glitched1 {
 	position: relative;
 	margin: 0 auto;
-	color: #ffffff;
+	color: #fff;
 }
 #error .glitched1:before {
 	Left: 10px;
@@ -30,12 +30,12 @@
 	left: 0;
 	overflow: hidden;
 	background-color: #050522;
-	color: #ffffff;
+	color: #fff;
 }
 #error .glitched2 {
 	position: relative;
 	margin: 0 auto;
-	color: #ffffff;
+	color: #fff;
 }
 #error .glitched2:before {
 	Left: 10px;
@@ -51,7 +51,7 @@
 @keyframes effect {
 	0% {
 		clip: rect(55px, 9999px, 30px, 0);
-		opacity: .5;
+		filter: opacity(.5);
 	}
 	5% {
 		clip: rect(49px, 9999px, 99px, 0);
@@ -91,14 +91,14 @@
 	}
 	65% {
 		clip: rect(55px, 9999px, 30px, 0);
-		opacity: .5;
+		filter: opacity(.5);
 	}
 	70% {
 		clip: rect(55px, 9999px, 74px, 0);
 	}
 	75% {
 		clip: rect(55px, 9999px, 30px, 0);
-		opacity: .1;
+		filter: opacity(.1);
 	}
 	80% {
 		clip: rect(89px, 9999px, 30px, 0);
@@ -134,7 +134,7 @@
 	}
 	20% {
 		clip: rect(55px, 9999px, 47px, 0);
-		opacity: .5;
+		filter: opacity(.5);
 	}
 	25% {
 		clip: rect(55px, 9999px, 74px, 0);
@@ -150,7 +150,7 @@
 	}
 	45% {
 		clip: rect(85px, 9999px, 39px, 0);
-		opacity: .1;
+		filter: opacity(.1);
 	}
 	50% {
 		clip: rect(48px, 9999px, 99px, 0);
@@ -181,7 +181,7 @@
 	}
 	95% {
 		clip: rect(55px, 9999px, 30px, 0);
-		opacity: .5;
+		filter: opacity(.5);
 	};
 	100% {
 		clip: rect(55px, 9999px, 1px, 0);

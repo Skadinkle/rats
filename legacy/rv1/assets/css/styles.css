@@ -13,17 +13,17 @@
 *.hehe {
 	image-rendering: pixelated;
 	filter: sepia() brightness(.5) hue-rotate(-45deg) contrast(50);
-	transform: scale(-100%);
+	transform: scale(-1);
 }
 
 	/* Body */
 body, body.tutorial {
 	min-height: 100vh;
 	overflow-x: hidden;
-	background: linear-gradient(#7597de, #ffffff);
+	background: linear-gradient(#7597de, #fff);
 }
 body.tutorial {
-	background: linear-gradient(#ffffff, #8f9ba8);
+	background: linear-gradient(#fff, #8f9ba8);
 }
 
 	/* Header */
@@ -41,18 +41,18 @@ header {
 
 	/* Header - Logo */
 header .rats-logo {
-	color: #ffffff;
+	color: #fff;
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 2em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 6px 15px;
-	border-radius: 0px;
+	border-radius: 0;
 	transition: .1s;
 }
 header .rats-logo:hover {
-	background: #ffffff;
+	background: #fff;
 	color: #040426;
 	border-radius: 20px;
 }
@@ -70,14 +70,14 @@ header ul li {
 header ul li a {
 	text-decoration: none;
 	padding: 6px 15px;
-	color: #ffffff;
+	color: #fff;
 	border-radius: 20px;
 	transition: .1s;
 	border-radius: 20px;
 }
 header ul li a:hover, header ul li a.active {
 	transition: .1s;
-	background: #ffffff;
+	background: #fff;
 	border-radius: 20px;
 	color: #040426;
 }
@@ -122,7 +122,7 @@ section img#sky, section img#ground {
 	object-fit: cover;
 }
 section img#sky {
-	opacity: .2;
+	filter: opacity(.2);
 }
 section img#ground {
 	z-index: 8;
@@ -137,7 +137,7 @@ section img#title {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	color: #ffffff;
+	color: #fff;
 	white-space: nowrap;
 	font-size: 7.5vw;
 	z-index: 9;
@@ -155,7 +155,7 @@ section img#title {
 	position: absolute;
 	padding-top: 30px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 	white-space: nowrap;
 	z-index: 10;
 	pointer-events: none;
@@ -167,7 +167,7 @@ section img#title {
 	display: inline-block;
 	padding: 8px 30px;
 	border-radius: 40px;
-	background: #ffffff;
+	background: #fff;
 	color: #2b1055;
 	font-size: 1.5em;
 	z-index: 9;
@@ -177,7 +177,7 @@ section img#title {
 }
 #btn:hover {
 	text-decoration: underline;
-	color: #ffffff;
+	color: #fff;
 	background: #2b1055;
 }
 
@@ -196,7 +196,7 @@ section img#title {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	opacity: .2;
+	filter: opacity(.2);
 }
 
 .sec {
@@ -204,7 +204,7 @@ section img#title {
 	position: relative;
 	padding: 100px;
 	background: #040426;
-	color: #ffffff;
+	color: #fff;
 	overflow-x: hidden;
 }
 .sec h2 {
@@ -215,12 +215,12 @@ section img#title {
 	font-size: 1.2em;
 }
 .sec a:link {
-	color: #ffffff;
+	color: #fff;
 	font-weight: bold;
 	font-style: italic;
 }
 .sec a:visited {
-	color: #ffffff;
+	color: #fff;
 }
 .sec .secret {
 	color: #040426;
@@ -233,7 +233,7 @@ section img#title {
 img.squish {
 	image-rendering: pixelated;
 	filter: saturate(.5);
-	opacity: 50%;
+	opacity: .5;
 	cursor: grab;
 	transition: transform .2s;
 }
@@ -280,7 +280,7 @@ img.squish:active {
 	float: left;
 	width: 50%;
 	padding: 5px;
-	color: #ffffff;
+	color: #fff;
 	align-content: center;
 }
 .two-column::after {
@@ -299,18 +299,18 @@ img.squish:active {
 	padding-right: 10px;
 	font-size: 2em;
 	font-weight: 600;
-	color: #ffffff;
+	color: #fff;
 }
 .bookmarklet-description {
 	font-size: 1.3em;
 	font-weight: 400;
-	color: #ffffff;
+	color: #fff;
 }
 
 	/* Button - Newtab */
 .button-newtab {
 	background-color: #040426;
-	color: #ffffff;
+	color: #fff;
 	align-items: center;
 	text-decoration:underline;
 	font-size: 40px;
@@ -320,13 +320,13 @@ img.squish:active {
 	transition: ease .1s;
 }
 .button-newtab:hover {
-	color: #ffffff;
-	opacity: .8;
+	color: #fff;
+	filter: opacity(.8);
 }
 .button-description {
 	font-size: 1.3em;
 	font-weight: 400;
-	color: #ffffff;
+	color: #fff;
 	padding-bottom: 402px;
 }
 
@@ -335,7 +335,7 @@ img.squish:active {
 	float: left;
 	padding: 5px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 	align-content: center;
 }
 .image-column {
@@ -364,7 +364,7 @@ img.squish:active {
 }
 .image-column img#icon:hover, .image-column svg#icon:hover, .community-column img#icon:hover, .three-column img#icon:hover {
 	transform: scale(.9) rotate(5deg);
-	opacity: .8;
+	filter: opacity(.8);
 }
 .image-row::after {
 	content: "";
@@ -402,7 +402,7 @@ img.squish:active {
 
 li.list{
 	background-color: #280730;
-	color: #ffffff;
+	color: #fff;
 	padding: 10px;
 }
 
@@ -411,7 +411,7 @@ a.description {
 }
 
 .warning {
-	color: #ff0000;
+	color: #f00;
 }
 
 p.construction {
@@ -427,14 +427,14 @@ p.construction {
 }
 #error .errorimage:hover {
 	transform: scale(.9);
-	opacity: .9;
+	filter: opacity(.9);
 }
 #error .errorimage:active {
 	transform: scaleY(.85);
 }
 
 #carrier {
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
 	text-decoration: underline;
 }
@@ -443,13 +443,12 @@ p.construction {
 	float: left;
 	width: 33.33%;
 	padding: 5px;
-	color: #ffffff;
+	color: #fff;
 	align-content: center;
 	padding-bottom: 40px;
-	font-size: px;
 }
 .video-section a {
-	color: #ffffff;
+	color: #fff;
 }
 .video-section::after {
 	content: "";
@@ -479,13 +478,13 @@ p.construction {
 .fullscreen-button {
 	text-decoration: none;
 	padding: 6px 15px;
-	color: #ffffff;
+	color: #fff;
 	border-radius: 20px;
 	transition: .1s;
 	background-color: #2b1055;
 }
 .fullscreen-button:hover {
-	background: #ffffff;
+	background: #fff;
 	border-radius: 20px;
 	color: #040426;
 }
@@ -493,7 +492,7 @@ p.construction {
 	/* Footer */
 footer {
 	background: linear-gradient(#040426, #01010e);
-	color: #ffffff;
+	color: #fff;
 	padding: 10px 10px;
 	position: absolute;
 	width: 100%;

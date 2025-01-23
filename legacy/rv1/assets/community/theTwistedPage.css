@@ -13,7 +13,7 @@ body {
 	overflow-x: hidden;
 	background-color: #01010e;
 	background-image: url("https://lh3.googleusercontent.com/a-/ACNPEu-S61PEsU4N2IuYm9iWsC1_IypD_97udzqvr9TQpWTDaIdIHLxJ2nFGilaLUZPqyLMERHv-aDzD-bz296AkH5SuGwLB9b-GkWtHYezdP-bAxiDmzh7d9MDMbY1gjJPODEhaQuIVWxQJI3xTUICgarp1TUfW4XBet5zptr3NUHF6JBKlAE8gPiAYOAQmvimQ1hdAleNWwYr-I0evRSD0x3eGI5c45YZtXLN7f6bOBDMdCrTt56nusz9ya3FjPem5XepHAfDCdudIhdQPoACd9ShY3MIh5lH3LqB_DO3tt8I_xVaBO1EBplqCCeepfgN2yhG6y3V8roHcJHHhg0QxEfHTRxuoKZFh2BcmcvYDOeeMzu9j2pmuJN14D8MxDn0sTc_LnL5xaDgHPaiT1IfTQNEPInA1fMhP4qw_UJVoB6iFsI-QIO46claqvERIgqZxRWBWgFdM7Yfi-NDzFsYAjENoipuadmLK4iD2Qn9vtDGNEGhExszRpe8YkDI5KgDXj96BklknLYuaqh2r5lDnkqtjyC9VuSTypjr_1D_gxoBkOfIJtsBAPvBux5HRoFzAPuTb4Q6hRQ1YL2OfWCs8k8Atoj8ZP2-AI5hFIWXXdE5Q0pZtjyyJKVUQsW1OAg551laLdT0-aBZa9PA_C5tNEKkYObqw6_fHYTXOGpXi5ZRDcYE_v25A3ZzupsFvUtzP1mIMnhXvi_hFpJ3YqKTc5svlPteIcP3CoqAfr-AD-QtOsDc0-HhCLjV_9U75heUNT73DXzpEk-54kzNTewfttGFlismQoRlFzle4wrA88lJLvoZQUa1vbqmUo5zw1wVrK3wDas4IZEHQo6xjxS4eDky5RA3aV1SLjCBrrEgf6Qyu-VA7GO5qjHzdX5DJ0PwvsU2eWdSuwEDmWL5bkd4tSGrZBMEX7pYiVFJ55mLOuy-HFk9VVxw7Eh9ZCB5Mug=s256-c");
-	background-blend-mode:multiply;
+	background-blend-mode: multiply;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 }
 
 header .rats-logo {
-	color: #ffffff;
+	color: #fff;
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 2em;
@@ -40,7 +40,7 @@ header .rats-logo {
 	transition: .1s;
 }
 header .rats-logo:hover {
-	background: #ffffff;
+	background: #fff;
 	color: #050522;
 	border-radius: 20px;
 }
@@ -57,13 +57,13 @@ header ul li {
 header ul li a {
 	text-decoration: none;
 	padding: 6px 15px;
-	color: #ffffff;
+	color: #fff;
 	border-radius: 20px;
 	transition: .1s;
 	border-radius: 20px;
 }
 header ul li a:hover, header ul li a.active {
-	background: #ffffff;
+	background: #fff;
 	border-radius: 20px;
 	color: #050522;
 }
@@ -71,7 +71,7 @@ header ul li a:hover, header ul li a.active {
 #text {
 	position: absolute;
 	left: 50px;
-	color: #ffffff;
+	color: #fff;
 	white-space: nowrap;
 	font-size: 7.5vw;
 	z-index: 9;
@@ -86,11 +86,11 @@ header ul li a:hover, header ul li a.active {
 .sec h2 {
 	font-size: 3.5em;
 	margin-bottom: 10px;
-	color: #ffffff;
+	color: #fff;
 }
 .sec p {
 	font-size: 1.2em;
-	color: #ffffff;
+	color: #fff;
 }
 .sec .secret {
 	color: #050522;
@@ -100,7 +100,7 @@ header ul li a:hover, header ul li a.active {
 
 .button-newtab {
 	background-color: #050522;
-	color: #ffffff;
+	color: #fff;
 	align-items: center;
 	text-decoration:underline;
 	font-size: 40px;
@@ -110,14 +110,14 @@ header ul li a:hover, header ul li a.active {
 	transition: ease .1s;
 }
 .button-newtab:hover {
-	color: #ffffff;
-	opacity: .8;
+	color: #fff;
+	filter: opacity(.8);
 }
 
 .button-description {
 	font-size: 1.3em;
 	font-weight: 400;
-	color: #ffffff;
+	color: #fff;
 	padding-bottom: 402px;
 }
 
@@ -126,7 +126,7 @@ header ul li a:hover, header ul li a.active {
 	width: 16.66%;
 	padding: 5px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 	align-content: center;
 }
 .image-column img {
@@ -136,7 +136,7 @@ header ul li a:hover, header ul li a.active {
 }
 .image-column img#icon:hover {
 	transform: scale(.9);
-	opacity: .8;
+	filter: opacity(.8);
 }
 .image-row::after {
 	content: "";
@@ -154,7 +154,7 @@ header ul li a:hover, header ul li a.active {
 
 li.list{
 	background-color: #280730;
-	color: #ffffff;
+	color: #fff;
 	padding: 10px;
 }
 
@@ -164,8 +164,8 @@ a.description {
 
 footer {
 	background: linear-gradient(transparent, #01010e);
-	color: #ffffff;
+	color: #fff;
 	padding: 10px 10px;
 	position: relative;
-	bottom:0;
+	bottom: 0;
 }
