@@ -1350,6 +1350,7 @@ const games = {
 			"",
 			"Links"
 		],
+		["Bad Piggies <i>(Hacked)</i>", "c25pa2xtYW8uZ2l0aHViLmlv"],
 		["BIG TOWER Tiny Square", "bGlveHJ5dC9saW94cnl0LWFzc2V0cy9ibG9iL21haW4vb3RoZXIvYnR0cy9pbmRleC5odG1s", "_GIT"],
 		["Drag'n'Boom Online", "bWF0aGdhbWVzNjYvbWF0aGdhbWVzNjYuZ2l0aHViLmlvL2Jsb2IvbWFpbi9nYW1lcy9odG1sNS9kcmFnbmJvb21vbmxpbmUvaW5kZXguaHRtbA==", "_GIT"],
 		["Geometry Dash RM", "UmFkb24tR2FtZXMvUmFkb24tR2FtZXMtQXNzZXRzL2Jsb2IvbWFpbi9odG1sL2dlb21ldHJ5LWRhc2gtcmVtYXN0ZXJlZC9pbmRleC5odG1s", "_GIT"],
